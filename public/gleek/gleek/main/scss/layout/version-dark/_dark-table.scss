@@ -1,0 +1,91 @@
+[data-theme-version="dark"] {
+
+    .table > tbody > tr > td {
+        color: $d-ctl;
+    }
+
+
+    .table > tbody > tr > td, 
+    .table > tbody > tr > th, 
+    .table > tfoot > tr > td, 
+    .table > tfoot > tr > th, 
+    .table > thead > tr > td, 
+    .table > thead > tr > th {
+        border-color: $d-border;
+    }
+
+    .transparent-card .table>tbody>tr:hover {
+        box-shadow: none;
+    }
+
+    table {
+        tbody tr {
+            background-color: lighten($d-bg, 3.2%);
+        }
+
+        input[type="text"], input[type="number"] {
+            background-color: $d-bg;
+            border-color: $d-border;
+            color: $d-ctl;
+        }
+    }
+
+    .table-striped tbody tr:nth-of-type(odd) {
+        background-color: $d-bg;
+    }  
+
+
+
+    //jsgrid tables
+    .jsgrid-row>.jsgrid-cell, 
+    .jsgrid-alt-row>.jsgrid-cell, 
+    .jsgrid-header-row>.jsgrid-header-cell, 
+    .jsgrid-grid-header, 
+    .jsgrid-grid-body {
+        background: $d-bg;
+        border-color: $d-border;
+        color: $d-ctl;
+    }
+
+
+    //datatables
+    table.dataTable.row-border tbody th, 
+    table.dataTable.row-border tbody td, 
+    table.dataTable.display tbody th, 
+    table.dataTable.display tbody td {
+        border-color: $d-border;
+    }
+
+    .dataTables_wrapper input[type="search"], 
+    .dataTables_wrapper input[type="text"], 
+    .dataTables_wrapper select {
+        background: $d-bg;
+        border-color: $d-border;
+        color: $d-ctl;
+    }
+
+    table.dataTable.cell-border tbody tr th:first-child, 
+    table.dataTable.cell-border tbody tr td:first-child, 
+    table.dataTable.cell-border tbody th, 
+    table.dataTable.cell-border tbody td {
+        border-color: $d-border;
+    }
+
+    .dataTables_wrapper label {
+        color: $d-ctl;
+    }
+
+    table.dataTable thead th, 
+    table.dataTable tfoot th {
+        color: $white;
+    }
+
+    .dataTables_wrapper .dataTables_paginate .paginate_button {
+        color: $white !important;
+    }
+
+
+
+
+
+}

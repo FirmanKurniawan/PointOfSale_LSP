@@ -1,0 +1,80 @@
+
+
+.pricing_table_one {
+    // background: #f8f8f8;
+    .pricing_table_content {
+        background        : $white;
+        text-align        : center;
+        border            : .1rem solid #e7e7e7;
+        border-radius     : .3rem;
+        padding           : 2.5rem;
+        -webkit-transition: all 0.25s ease-in-out;
+        transition        : all 0.25s ease-in-out;
+
+        .package {
+            font-weight: 700;
+            font-size  : 1.8rem;
+            // font-family: $p_hf;
+        }
+
+        .price {
+            font-weight: 700;
+            font-size  : 5rem;
+            // font-family: $p_hf;
+            line-height: 10rem;
+            // color      : $p_bc;
+        }
+
+        hr {
+            margin: 0;
+        }
+
+        .price_list {
+            padding   : 3rem 0;
+            text-align: left;
+            max-width : 17.5rem;
+            margin    : 0 auto;
+
+            li {
+                // font-family: $p_op;
+                color      : #909093;
+                font-size  : 1.4rem;
+                line-height: 2.5rem;
+                padding    : .7rem 0;
+
+                i {
+                    margin-right: 1.5rem;
+                    // color       : $p_bc;
+                }
+            }
+        }
+
+        .price-btn {
+            padding           : 1.5rem 5rem;
+            -webkit-box-shadow: none;
+            box-shadow        : none;
+            border            : .1rem solid $l-border;
+            // color             : $p_bc;
+            border-radius     : .5rem;
+            font-weight       : 700;
+            font-size         : 1.4rem;
+            // font-family       : $p_hf;
+            margin-bottom     : 2.5rem;
+            -webkit-transition: all 0.25s ease-in-out;
+            transition        : all 0.25s ease-in-out;
+        }
+
+        &:focus,
+        &:hover {
+            -webkit-transform : scale(1.05);
+            transform         : scale(1.05);
+            -webkit-box-shadow: 0 0 1rem rgba(0,0,0,0.175);
+            box-shadow        : 0 0 1rem rgba(0,0,0,0.175);
+
+            .price-btn {
+                // background: $p_bc;
+                color     : $danger;
+            }
+        }
+    }
+}

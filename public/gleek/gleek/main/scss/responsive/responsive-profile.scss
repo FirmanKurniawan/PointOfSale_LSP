@@ -1,0 +1,314 @@
+
+
+
+/*  1 - media screen and (max-width: 1750px)
+---------------------------------------------------------------------- */
+
+@media (min-width: 1680px) and (max-width:1750px) {}
+
+
+
+
+/*  2 - media screen and (max-width: 1680px)
+---------------------------------------------------------------------- */
+
+@media (min-width: 1680px) and (max-width:1679px) {}
+
+
+
+
+/*  3 - media screen and (max-width: 1280px)
+---------------------------------------------------------------------- */
+
+@media (min-width: 1280px) and (max-width:1679px) {}
+
+
+
+
+/*  4 - media screen and (max-width: 1199px)
+---------------------------------------------------------------------- */
+
+@media (min-width: 1200px) and (max-width: 1520px) {
+    .photo-content {
+        .profile-photo {
+            bottom: auto;
+            left: 0;
+            margin: 0 auto;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    .profile-info{    
+        .prf-col{
+            min-width: auto;
+            padding: 0 1.5rem;
+        }
+    }
+}
+
+
+
+/*  5 - media screen and (max-width: 1024px)
+---------------------------------------------------------------------- */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .photo-content {
+        .profile-photo {
+            bottom: auto;
+            left: 0;
+            margin: 0 auto;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    .profile-info{    
+        .prf-col{
+            min-width: auto;
+            padding: 0 1.5rem;
+        }
+    }
+}
+
+/*  6 - media screen and (max-width: 991px)
+---------------------------------------------------------------------- */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .photo-content {
+        .profile-photo {
+            bottom: auto;
+            left: 0;
+            margin: 0 auto;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    // .profile-info{
+    //     .border-right-1{
+    //         border-right: 0;
+    //     }
+    // }
+
+    .profile-info{    
+        .prf-col{
+            min-width: auto;
+            padding: 0 1.5rem;
+        }
+    }
+}
+
+
+/*  7 - media screen and (max-width: 767px)
+---------------------------------------------------------------------- */
+
+@media (min-width: 680px) and (max-width: 767px) {
+    .photo-content {
+        .profile-photo {
+            bottom: auto;
+            left: 0;
+            margin: 0 auto;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    // .profile-info{
+    //     .border-right-1{
+    //         border-right: 0;
+    //     }
+    // }
+
+    .profile-info{    
+        .prf-col{
+            min-width: auto;
+            padding: 0 1.5rem;
+        }
+    }
+
+    
+}
+
+
+
+/*  8 - media screen and (max-width: 680px)
+---------------------------------------------------------------------- */
+
+@media (min-width: 480px) and (max-width: 679px) {
+    .photo-content {
+        .profile-photo {
+            bottom: auto;
+            left: 0;
+            margin: 0 auto;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    .profile-info{
+        .border-right-1{
+            border-right: 0;
+        }
+    }
+
+
+
+    // .profile-tab{
+    //     .nav.nav-tabs{
+    //         display: block;
+    //         border: 0;
+    //         .nav-item{
+    //             .nav-link{
+    //                 margin-right: 0;
+    //             }
+    //         }
+    //     }
+    // }
+}
+
+
+/*  9 - media screen and (max-width: 480px)
+---------------------------------------------------------------------- */
+
+@media (min-width: 360px) and (max-width: 479px) {
+    .photo-content {
+        .profile-photo {
+            bottom: auto;
+            left: 0;
+            margin: 0 auto;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    .profile-info{
+        .border-right-1{
+            border-right: 0;
+        }
+    }
+
+    .profile-tab{
+        .nav.nav-tabs{
+            display: block;
+            border: 0;
+            .nav-item{
+                .nav-link{
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    .post-input{
+        a{
+            i{
+                margin-right: 1rem;
+                padding: .7rem 1rem;
+            }
+        }
+        .btn{
+            margin-top: -1rem;
+        }
+    }
+}
+
+
+/*  10 - media screen and (max-width: 320px)
+---------------------------------------------------------------------- */
+
+
+@media (max-width: 359px) {
+    .photo-content {
+        .profile-photo {
+            bottom: auto;
+            left: 0;
+            margin: 0 auto;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    .profile-info{
+        .border-right-1{
+            border-right: 0;
+        }
+    }
+
+    .profile-tab{
+        .nav.nav-tabs{
+            display: block;
+            border: 0;
+            .nav-item{
+                .nav-link{
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    .post-input{
+        a{
+            i{
+                margin-right: 1rem;
+                padding: .7rem 1rem;
+            }
+        }
+        .btn{
+            margin-top: -1.2rem;
+        }
+    }
+
+    
+}
+
+
+// @media (min-width: 320px) and (max-width: 359px) {
+//     .photo-content {
+//         .profile-photo {
+//             bottom: auto;
+//             left: 0;
+//             margin: 0 auto;
+//             right: 0;
+//             top: 50%;
+//             transform: translateY(-50%);
+//         }
+//     }
+
+//     .profile-info{
+//         .border-right-1{
+//             border-right: 0;
+//         }
+//     }
+
+//     .profile-tab{
+//         .nav.nav-tabs{
+//             display: block;
+//             border: 0;
+//             .nav-item{
+//                 .nav-link{
+//                     margin-right: 0;
+//                 }
+//             }
+//         }
+//     }
+
+//     .post-input{
+//         a{
+//             i{
+//                 margin-right: 1rem;
+//                 padding: .7rem 1rem;
+//             }
+//         }
+//         .btn{
+//             margin-top: -1.2rem;
+//         }
+//     }
+
+    
+// }
+

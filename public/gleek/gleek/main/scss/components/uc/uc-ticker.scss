@@ -1,0 +1,59 @@
+
+.crypto-ticker {
+    position: relative;
+    background: $white;
+    padding: 1.55rem 0;
+    // z-index: -1;
+}
+
+.ticker-overview {
+    position: absolute;
+    width: 15rem;
+    text-align: center;
+    background: $primary;
+    color: $white;
+    padding: 2.3rem 1.5rem;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    height: 100%;
+    font-size: 1.8rem;
+    font-weight: bold;
+
+    @include respond('phone') {
+        width: 11rem;
+        padding: 2.3rem 1rem;
+    }
+}
+
+.tickercontainer {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    padding: 2rem 1.5rem;
+
+    li {
+        padding: 0px 2rem !important;
+        font: bold 1.5rem 'Segoe UI';
+        color: $pale-sky;
+
+        i {
+            padding: 0px .5rem;
+        }
+        .cc {
+            font-size: 2rem;
+        }
+    }
+}
+
+.coin-status,
+.coin-value {
+    padding: 0px .5rem;
+}
+
+.gain-loose-ticker {
+    li {
+        margin: 0 5rem;
+    }
+}

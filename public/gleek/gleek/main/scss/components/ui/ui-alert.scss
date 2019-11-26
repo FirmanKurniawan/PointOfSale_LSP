@@ -1,0 +1,19 @@
+@import "../../abstracts/variable";
+
+.alert{
+    // background: $white;
+    border-radius: 4px;
+    padding: 1.8rem;
+    font-size: 1.7rem;
+
+    &-primary{
+        border-color: $primary;
+        color: $dark;
+    }
+}
+
+[data-notify="container"] {
+    .alert {
+        width: 50rem;
+    }
+}

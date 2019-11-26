@@ -1,0 +1,1153 @@
+
+[data-theme-version="dark"] {
+    
+    
+    ////////////
+    // Reset
+    ///////////
+    a.link {
+        color: $d-ctd;
+    }
+    a.link:focus,
+    a.link:hover {
+        color: $info;
+    }
+    /////////////////
+    // Header
+    /////////////////
+    .icons {
+        &>a {
+            i {
+                color: $d-ctd;
+            }
+        }
+    }
+
+
+
+
+
+    .drop-down {
+        background: lighten($d-bg, 10%);
+        color: $d-ctl;
+        border: 1px solid $d-border;
+    }
+    .dropdown-content-heading {
+        span {
+            color: $d-ctd;
+        }
+        i {
+            color: $primary;
+        }
+    }
+    .dropdown-content-body {
+        li {
+            border-top: 1px solid $d-border;
+            &.active,
+            &:focus,
+            &:hover {
+                background: lighten($d-bg, 5%);
+                border-top: 1px solid $d-border;
+            }
+            a {
+                color: $d-ctl;
+                &.active,
+                &:focus,
+                &:hover {
+                    color: $d-ctl;
+                }
+            }
+        }
+    }
+    .notification-heading {
+        color: $d-ctl;
+    }
+    .notification-text {
+        color: $d-ctl;
+    }
+    .notification-unread {
+        background: lighten($d-bg, 8%);
+        .notification-heading {
+            color: $d-ctd;
+        }
+    }
+    .more-link {
+        color: $primary;
+    }
+    .dropdown-profile {
+        .trial-day {
+            color: $primary;
+        }
+        li {
+            a {
+                color: $d-ctl;
+                &.active,
+                &:focus,
+                &:hover {
+                    color: $d-ctl;
+                }
+            }
+        }
+    }
+    svg.pulse-svg {
+        .first-circle {
+            fill: $primary;
+        }
+    }
+    .pulse-css {
+        background: $primary;
+        &:after,
+        &:before {
+            content: '';
+            background-color: $primary;
+        }
+    }
+    ////////////////////
+    // Sidebar
+    ////////////////////
+    .header {
+        
+        border-bottom: 1px solid $d-border;
+    }
+    .nav-header {
+        background: $d-bg;
+        border-bottom: 1px solid $d-border;
+    }
+    .footer {
+        .copyright {
+            background: lighten($d-bg, 5%);
+        }
+    }
+    .header-left {
+        .icons {
+            &>a {
+                color: $dark;
+            }
+        }
+    }
+    .header-search {
+        box-shadow: 0 0 .5rem $l-border;
+        .input-group {
+            .form-control {
+                &:hover,
+                &:focus,
+                &.active {
+                    border-bottom: 1px solid $d-border;
+                }
+            }
+            .input-group-text {
+                border-bottom: 1px solid $d-border;
+            }
+        }
+    }
+    .header-right {
+        .icons {
+            &>a {
+                color: $dark;
+            }
+        }
+    }
+    .nav-user {
+        border-bottom: 1px solid $d-border;
+        h5 {
+            color: $d-ctd;
+        }
+    }
+    .nav-user-option {
+        .dropdown-menu {
+            background: lighten($d-bg, 7%);
+            border: 1px solid $d-border;
+            a {
+                color: $d-ctl;
+                &:hover,
+                &:focus,
+                &.active {
+                    background: lighten($d-bg, 5%);
+                    color: $primary;
+                }
+            }
+        }
+    }
+    .nav-label {
+        color: $d-ctd;
+    }
+    .nk-sidebar {
+        background: lighten($d-bg, 3.2%);
+        ul {
+            background: darken($d-bg, 4%);
+        }
+        .metismenu {
+            background: lighten($d-bg, 3.2%);
+
+            .mega-menu ul.in li a.active, 
+            .mega-menu ul.in li a:hover, 
+            .mega-menu ul.in li a:active, 
+            .mega-menu ul.in li a:focus, 
+            a.active, 
+            a:focus, 
+            a:hover, 
+            a:active {
+                color: $white;
+                background-color: $d-bg;
+            }
+
+            &>li>a {
+                &:hover {
+                    background-color: $d-bg;
+                    color: $white;
+                }
+            }
+
+            a {
+                color: $d-ctl;
+            }
+            >li {
+                &:hover,
+                &:focus, 
+                &:active, 
+                &.active {
+                    >a {
+                        background: $d-bg;
+                        color: $white;
+
+                        &:focus {
+                            background: $d-bg;
+                            color: $white;
+                        }
+                    }
+                }
+                &.active {
+                    >a.active {
+                        background: $d-bg;
+                        color: $white;
+                    }
+                }
+            }
+            li {
+                ul {
+                    li {
+                        &:hover,
+                        &:focus {
+                            a {
+                                color: $white;
+                                background-color: $d-bg;
+                            }
+                        }
+                        &.active {
+                            a {
+                                color: $white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (min-width:768px) {
+        .mini-nav {
+            .nk-sidebar {
+                .metismenu {
+                    li {
+                        &>ul {
+                            background: #f2f6f8;
+                        }
+                    }
+                    &>li {
+                        &:hover {
+                            &>a {
+                                background: #343a40;
+                                .nav-text {
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .hamburger .line {
+        background-color: $d-ctl;
+    }
+    /////////////////
+    // breadcrumb
+    /////////////////
+
+    .page-titles {
+        background-color: lighten($color: $d-bg, $amount: 1.8);
+    }
+
+
+
+    /////////////////
+    // Widget
+    /////////////////
+    ////////////////////
+    // Widget Timeline
+    ///////////////////
+    .timeline {
+        &:before {
+            background-color: $d-border;
+        }
+    }
+    ////////////////////
+    // ICO Count Down
+    ////////////////////
+    // .countdown-content {
+    //     h1 {
+    //         color: $d-ctd!important;
+    //     }
+    //     p {
+    //         color: $d-ctd;
+    //     }
+    // }
+    // .timer {
+    //     .days,
+    //     .hours,
+    //     .minutes,
+    //     .seconds {
+    //         color: $d-ctd;
+    //     }
+    // }
+    // .countdown-right-content {
+    //     h6 {
+    //         color: $d-ctd!important;
+    //     }
+    // }
+    // .countdown-token-card {
+    //     .card {
+    //         h2 {
+    //             color: $white!important;
+    //         }
+    //         h5 {
+    //             color: $white!important;
+    //         }
+    //     }
+    // }
+    ////////////////////
+    // ICO Timeline
+    ////////////////////
+    // .timeline-header {
+    //     background: $d-bg;
+    //     color: $white;
+    //     h1 {
+    //         color: $white!important;
+    //     }
+    //     p {
+    //         color: $white!important;
+    //     }
+    // }
+    // #timeline {
+    //     div {
+    //         &:after {
+    //             background: $d-ctl;
+    //         }
+    //     }
+    //     h3 {
+    //         color: $d-ctd;
+    //     }
+    //     section {
+    //         h4 {
+    //             color: $d-ctl;
+    //         }
+    //         ul {
+    //             &:first-of-type:after {
+    //                 background: $d-bg;
+    //                 border: 2px solid $white;
+    //             }
+    //             li {
+    //                 span.price {
+    //                     color: mediumturquoise;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+    ////////////////////
+    // ICO Progress
+    ////////////////////
+    .input {
+        background-color: $primary;
+        &::before,
+        &::after {
+            background-color: $primary;
+        }
+        &.active {
+            background-color: $primary;
+            &::before {
+                background-color: $primary;
+            }
+            &::after {
+                background-color: $dark;
+            }
+            ~.input {
+                background-color: $dark;
+                &::before,
+                &::after {
+                    background-color: $dark;
+                }
+            }
+        }
+    }
+    @media (max-width: 600px) {
+        .input {
+            background-color: $primary;
+            span {
+                &::after {
+                    color: $dark;
+                }
+            }
+        }
+    }
+    //////////////////////////
+    // ICO Advisor Profile
+    /////////////////////////
+    .user-job-title {
+        color: $primary;
+    }
+    .contact-title {
+        color: $d-ctl;
+    }
+    .phone-number,
+    .mail-address,
+    .contact-email,
+    .contact-website,
+    .contact-skype,
+    .birth-date,
+    .gender {
+        color: $d-ctd;
+    }
+    ////////////////////
+    // ICO Wallet
+    ////////////////////
+    .add-wallet {
+        border: 1px dashed $l-border;
+        a {
+            p {
+                color: $d-ctd;
+            }
+        }
+    }
+    .wallet-card {
+        .wallet-address {
+            .btn {
+                border: 1px solid $l-border;
+                background: $d-bg;
+                &:hover,
+                &:focus,
+                &:active,
+                &.active {
+                    border: 1px solid $l-border;
+                    background: $d-bg;
+                }
+            }
+            .input-group-append {
+                i {
+                    color: $d-ctd;
+                }
+            }
+        }
+    }
+    ////////////////////
+    // ICO Trading View
+    ////////////////////
+    .chartTypeTabLinks {
+        background: $dark!important;
+    }
+    .cTypeTabActive {
+        background: $primary!important;
+    }
+    .tabContainer {
+        .tablinks {
+            border: 1px solid $d-border!important;
+            color: $primary;
+        }
+    }
+    .ccc-widget.ccc-chart-v3>div {
+        background: $d-bg!important;
+        border: 0!important;
+    }
+    //////////////
+    // Email
+    //////////////
+    .email-list {
+        .message {
+            a {
+                color: $d-ctl;
+            }
+            &:hover {
+                background: rgba(152, 166, 173, 0.15);
+            }
+        }
+    }
+    .email-checkbox {
+        box-shadow: inset 0 0 0 1px $d-ctl;
+    }
+    .mail-list {
+        a {
+            color: #fff;
+        }
+    }
+    .toolbar {
+        .btn-group {
+            .btn {
+                background: $dark;
+                border: 0;
+                color: $white;
+                i {
+                    color: $white!important;
+                }
+            }
+            .dropdown-menu {
+                background: $d-bg;
+                a {
+                    color: $d-ctl;
+                }
+            }
+        }
+    }
+    .read-content {
+        textarea {
+            background: $d-bg;
+            color: $d-ctl;
+        }
+    }
+    .compose-content {
+        .wysihtml5-toolbar {
+            border-color: $d-border;
+        }
+        .textarea_editor {
+            background: $d-bg!important;
+        }
+        .dropzone {
+            background: $d-bg!important;
+        }
+    }
+    ////////////////////
+    // Profile
+    ////////////////////
+    .profile-info {
+        background: $d-bg;
+        h4 {
+            color: $d-ctd!important;
+        }
+        h4.text-primary {
+            color: $primary!important;
+        }
+        p {
+            color: $d-ctl!important;
+        }
+    }
+    .profile-tab {
+        .nav-item {
+            .nav-link {
+                color: $d-ctl;
+                &:hover,
+                &.active {
+                    background: transparent;
+                    border-bottom: 2px solid $primary;
+                    color: $d-ctd;
+                }
+            }
+        }
+    }
+    .post-input {
+        a {
+            i {
+                border: 1px solid $d-border;
+                color: $d-ctl;
+            }
+        }
+    }
+    .profile-uoloaded-post {
+        a {
+            h4 {
+                color: $d-ctd!important;
+            }
+        }
+    }
+    ////////////////////
+    // Calender Event
+    ////////////////////
+    .fc-day {
+        background: #10112D;
+    }
+    .fc-widget-header {
+        border: 1px solid $d-border!important;
+    }
+    .fc-content {
+        color: $d-ctd;
+    }
+    .fc-widget-content {
+        border: 1px solid $d-border!important;
+    }
+    .fc th.fc-widget-header {
+        background: $d-border!important;
+    }
+    .fc-button {
+        background: $white;
+        border: 1px solid $d-border!important;
+        color: $d-ctl;
+    }
+    .fc-state-hover {
+        background: $white!important;
+    }
+    .fc-state-highlight {
+        background: #10112D!important;
+    }
+    .fc-cell-overlay {
+        background: $white!important;
+    }
+    .fc-unthemed .fc-today {
+        background: #10112D!important;
+    }
+    .external-event {
+        color: $white;
+    }
+    #add-category,
+    #event-modal {
+        .modal-header {
+            border-bottom: 1px solid $d-border;
+        }
+        .modal-content {
+            background: #0B0C21;
+        }
+    }
+    ////////////////////
+    // Calender Date
+    ////////////////////
+    .pignose-calendar-top-month {
+        color: #ddd !important;
+    }
+    .pignose-calendar-top-icon {
+        color: #ddd !important;
+    }
+    //////////////////
+    // Breadcrumb
+    //////////////////
+    //////////////////
+    // Breadcrumb
+    //////////////////
+    .page-titles {
+        .breadcrumb {
+            .breadcrumb-item+.breadcrumb-item {
+                color: $d-ctd;
+                &:before {
+                    color: $d-ctl;
+                }
+            }
+            .breadcrumb-item.active {
+                color: $primary;
+            }
+        }
+    }
+    /////////////////////
+    // Badge / Label
+    ////////////////////
+    .label {
+        color: $white;
+    }
+    //////////////////////
+    // UI accordion
+    //////////////////////
+    .accordion {
+        .card-header {
+            background: $dark;
+            color: $d-ctd;
+        }
+    }
+    /////////////////
+    // UI Card
+    /////////////////
+    .card {
+        background: lighten($d-bg, 3.2%);
+    }
+
+    .card.transparent-card {
+        background-color: transparent;
+    }
+
+    .text-white {
+        .card-title {
+            color: $white;
+        }
+    }
+    .card-title {
+        color: $d-ctd;
+    }
+    .card-footer {
+        background: lighten($d-bg, 7%)!important;
+    }
+    //////////////////
+    // UI Button
+    //////////////////
+    .btn-icon-left {
+        background: $white;
+    }
+    ///////////////
+    // UI Tab
+    //////////////
+    .default-tab {
+        .nav-link {
+            color: $d-ctd;
+            &.active {
+                color: $primary;
+            }
+        }
+    }
+    .custom-tab-1 {
+        .nav-link {
+            color: $d-ctd;
+            &.active {
+                background: lighten($primary, 30%);
+                border-color: lighten($primary, 30%);
+                color: $primary;
+            }
+        }
+    }
+    ////////////////////
+    // UI Dropdown
+    ///////////////////
+    .custom-dropdown {
+        .dropdown-menu {
+            border: 1px solid $d-border;
+            .dropdown-item {
+                color: $d-ctl;
+            }
+        }
+    }
+    /////////////////////////
+    // Table Basic
+    /////////////////////////
+    tbody tr {
+        background-color: lighten($color: $d-bg, $amount: 3.2);
+    }
+
+    .table>tbody>tr>td,
+    .table>tbody>tr>th,
+    .table>tfoot>tr>td,
+    .table>tfoot>tr>th,
+    .table>thead>tr>td,
+    .table>thead>tr>th {
+        border-top: 1px solid $d-border;
+    }
+    .table>thead>tr>th {
+        border-bottom: 1px solid $d-border;
+    }
+    .table-bordered {
+        td,
+        th {
+            border: 1px solid $d-border;
+        }
+    }
+    .table-striped {
+        tbody {
+            tr:nth-of-type(2n+1) {
+                background-color: darken($primary, 60%);
+            }
+        }
+    }
+    .table-hover {
+        tbody {
+            tr {
+                &:hover {
+                    background-color: darken($primary, 60%);
+                }
+            }
+        }
+    }
+    .header-border {
+        thead {
+            tr {
+                border: 1px solid $d-border;
+            }
+        }
+    }
+    ////////////////////
+    // Table Datatable
+    ///////////////////
+    .dt-buttons .dt-button {
+        background: #1976d2;
+        color: $white;
+    }
+    .dt-buttons .dt-button:hover {
+        background: #2f3d4a;
+    }
+    .dataTables_info,
+    .dataTables_length {
+        select {
+            color: #ddd;
+        }
+        option {
+            color: $d-ctd;
+        }
+    }
+    .dataTables_length select {
+        background-image: linear-gradient($d-bg, $d-bg), linear-gradient($dark, $dark);
+    }
+    .dataTables_length select:focus {
+        background-image: linear-gradient($d-bg, $d-bg), linear-gradient($dark, $dark);
+    }
+    .dataTables_filter input {
+        background-color: transparent;
+        background-image: linear-gradient($d-bg, $d-bg), linear-gradient($dark, $dark);
+    }
+    .dataTables_filter input:focus {
+        background-image: linear-gradient($d-bg, $d-bg), linear-gradient($dark, $dark);
+    }
+    table.dataTable thead .sorting::after {
+        color: rgba(50, 50, 50, 0.5);
+    }
+    .dataTables_wrapper .dataTables_paginate .paginate_button {
+        color: #67757c;
+    }
+    .dataTables_wrapper .dataTables_paginate .paginate_button.current,
+    .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+        background-color: #1976d2;
+        border: 1px solid #1976d2;
+        color: #ffffff !important;
+    }
+    .dataTables_wrapper .dataTables_paginate .paginate_button.disabled,
+    .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active,
+    .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover {
+        border: 1px solid $d-border;
+        color: #67757c;
+    }
+    .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+        background-color: #1976d2;
+        border: 1px solid #1976d2;
+        color: white;
+    }
+    .dataTables_wrapper .dataTables_paginate .paginate_button:active {
+        background-color: #67757c;
+    }
+    .tablesaw-bar .btn-group label {
+        color: #67757c !important;
+    }
+    .paging_simple_numbers .pagination .paginate_button {
+        background: $white;
+    }
+    .paging_simple_numbers .pagination .paginate_button a {
+        background: $d-bg!important;
+        padding: .5rem 1rem;
+        color: $d-ctl;
+    }
+    .paging_simple_numbers .pagination .paginate_button:hover {
+        background: $white;
+    }
+    .paging_simple_numbers .pagination .paginate_button.active a,
+    .paging_simple_numbers .pagination .paginate_button:hover a {
+        background: #1976d2;
+        color: $d-ctd;
+    }
+    ///////////////////
+    // Table JSGrid
+    //////////////////
+    .jsgrid-grid-header {
+        border: 0!important;
+    }
+    th.jsgrid-header-cell {
+        border: 0!important;
+    }
+    .jsgrid-header-cell {
+        background: lighten($d-bg, 10%);
+        border-color: $d-border!important;
+    }
+    .jsgrid-filter-row {
+        .jsgrid-cell {
+            background: lighten($d-bg, 5%);
+            border-color: $d-border!important;
+            input,
+            select {
+                background: transparent;
+                border-color: $d-border;
+            }
+        }
+    }
+    .jsgrid-row {
+        .jsgrid-cell {
+            background: transparent;
+            border-color: $d-border;
+        }
+    }
+    .jsgrid-alt-row {
+        .jsgrid-cell {
+            background: lighten($d-bg, 10%);
+            border-color: $d-border;
+        }
+    }
+    .jsgrid-edit-row>.jsgrid-cell,
+    .jsgrid-filter-row>.jsgrid-cell,
+    .jsgrid-grid-body,
+    .jsgrid-grid-header,
+    .jsgrid-header-row>.jsgrid-header-cell,
+    .jsgrid-insert-row>.jsgrid-cell {
+        border: 1px solid $d-border;
+    }
+    ////////////////
+    // Form Basic
+    ///////////////
+    .form-control {
+        border: 1px solid rgba(120, 130, 140, 0.13);
+        background: #070713;
+        color: $white;
+        &:hover {
+            background: #070713;
+            color: $white;
+        }
+        &.active,
+        &:focus {
+            border: 1px solid rgba(120, 130, 140, 0.13);
+            background: #070713;
+            color: $white;
+        }
+    }
+    .input-group-text {
+        background: $dark;
+        color: $white;
+        border-color: $dark;
+    }
+    .custom-select {
+        background-color: transparent;
+        border-color: $d-border;
+    }
+    // Styling Selectbox 
+    .drop-menu {
+        background: $d-bg;
+        border: 1px solid $d-border;
+        color: $d-ctl;
+        .select {
+            span {
+                color: $white;
+            }
+            i {
+                color: $white;
+            }
+            .currency {
+                color: #bababa;
+            }
+        }
+        &:active {
+            background-color: lighten($d-bg, 10%);
+        }
+        &.active {
+            &:hover {
+                background-color: lighten($d-bg, 10%);
+            }
+            background-color: lighten($d-bg, 10%);
+        }
+        .dropeddown {
+            background-color: lighten($d-bg, 10%);
+            li {
+                color: $white;
+                &:hover {
+                    background-color: lighten($d-bg, 20%);
+                }
+                &:active {
+                    background-color: lighten($d-bg, 20%);
+                }
+            }
+        }
+    }
+    .custom-file-label {
+        background-color: transparent;
+        border-color: $d-border;
+    }
+    .file-upload {
+        .file-upload__label {
+            color: $white;
+            background-color: lighten($d-bg, 10%);
+            &:hover {
+                background-color: lighten($d-bg, 20%);
+            }
+        }
+    }
+    /////////////////////
+    // Form Dropzone
+    /////////////////////
+    .dropzone {
+        background: #10112D;
+        border: 2px solid $d-border;
+    }
+    /////////////////////
+    // Form Tag Input
+    /////////////////////
+    .tagsinput {
+        color: $white;
+        background-color: $d-bg;
+        border: 1px solid $d-border;
+        span.tag {
+            border: 1px solid $success;
+            background: $success;
+            color: $white;
+            a {
+                color: $white;
+            }
+        }
+        span.tag.tag--yellow {
+            background-color: $warning;
+            border-color: $warning;
+        }
+        input {
+            color: $white!important;
+        }
+    }
+    ////////////////////
+    // Form Summernote
+    ////////////////////
+    .note-editor.note-frame {
+        border: 1px solid $d-border;
+    }
+    .note-editor.note-frame .panel-heading {
+        border-bottom: 1px solid $d-border;
+    }
+    .note-editor {
+        .note-editable {
+            background-color: $d-bg!important;
+        }
+        .note-btn {
+            background: $dark;
+            color: $white;
+        }
+    }
+    .note-editor.note-frame .note-statusbar {
+        background-color: lighten($d-bg, 10%);
+    }
+    ////////////////////
+    // Form Select 2
+    ////////////////////
+    .select2-selection {
+        background: $d-bg!important;
+        border-color: $d-border!important;
+        .select2-selection__rendered {
+            color: $white!important;
+            .select2-selection__choice {
+                background: lighten($d-bg, 20%);
+                border-color: lighten($d-bg, 20%);
+            }
+        }
+        .select2-selection__arrow {}
+    }
+    .select2-dropdown {
+        background: lighten($d-bg, 10%);
+        border-color: $d-border!important;
+    }
+    .select2-search__field {
+        background: $d-bg;
+        border-color: $d-border!important;
+    }
+    .select2-container--default .select2-results__option[aria-selected=false] {
+        background-color: lighten($d-bg, 10%);
+    }
+    .select2-container--default .select2-results__option[aria-selected=true] {
+        background-color: lighten($d-bg, 20%);
+    }
+    ////////////////////
+    // Form Touchpin
+    ////////////////////
+    ////////////////////
+    // Chart Amchart
+    ////////////////////
+    .amcharts-data-set-selector-div {
+        select {
+            background: #070713;
+            color: #ddd;
+        }
+    }
+    .amChartsInputField {
+        background: #070713;
+        color: #ddd;
+    }
+    .amcharts-data-set-select {
+        background: #070713;
+        color: #ddd;
+    }
+    .amcharts-period-input,
+    .amcharts-period-input-selected {
+        background: $primary;
+        color: $white;
+    }
+    ////////////////////
+    // Chart Morris
+    ////////////////////
+    .morris-hover.morris-default-style {
+        color: #666;
+        background: rgba(0, 0, 0, 0.7);
+        color: #fff!important;
+    }
+    .morris-hover-point {
+        color: rgba(257, 257, 257, 0.8)!important;
+    }
+    ///////////////////
+    // Chart Flot
+    //////////////////
+    .flotTip {
+        background: $black;
+        border: 1px solid $black;
+        color: $white;
+    }
+    ///////////////////
+    //  Extra Page
+    ///////////////////
+    .login-logo {
+        span {
+            color: $white;
+        }
+    }
+    .login-form {
+        background: #0B0C21;
+        h4 {
+            color: $d-ctd;
+        }
+        .checkbox {
+            color: $d-ctd;
+        }
+        label {
+            color: $d-ctd;
+            a {
+                color: $primary;
+            }
+        }
+    }
+    .social-login-content {
+        background: #fcfcfc;
+    }
+    .register-link {
+        a {
+            color: $primary;
+        }
+    }
+    /////////////////////
+    // Extra Invoice
+    /////////////////////
+    #invoice {
+        background: #070713;
+    }
+    #invoice-table {
+        border-bottom: 1px solid $d-border;
+    }
+    .invoice-info {
+        h2 {
+            color: $d-ctd;
+        }
+    }
+    .title {
+        h4 {
+            color: $d-ctd;
+        }
+    }
+    .tabletitle {
+        background: $d-border;
+    }
+    .service {
+        border: 1px solid $d-border;
+    }
+    //////////////
+    // Footer
+    //////////////
+    .panel-footer {
+        background: lighten($d-bg, 9%);
+        border-top: 1px solid rgba(120, 130, 140, 0.13);
+        color: $d-ctl;
+    }
+}

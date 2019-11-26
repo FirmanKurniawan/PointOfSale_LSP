@@ -1,0 +1,11 @@
+.bootgrid-header {
+    @include respond(phone) {
+        .actionBar {
+            padding: 0;
+        }
+    
+        .search {
+            margin: 0 0 10px 0;
+        }
+    }
+}

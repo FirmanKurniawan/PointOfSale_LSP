@@ -1,0 +1,92 @@
+.sale-report {
+    height: 100%;
+
+    .main-report {
+        p {
+            font-size: 1.8rem;
+            margin-bottom: 1.8rem;
+        }
+
+        h2 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+    }
+
+    h4 {
+        font-size: 2.2rem;
+    }
+
+    h2, h4 {
+        color: $white;
+    }
+
+    p {
+        margin: 0;
+    }
+}
+
+.morris-chart-filter {
+    li {
+        display: inline-block;
+        position: relative;
+
+        @include respond('phone') {
+            display: block;
+        }
+
+        @at-root [direction="rtl"] #{&} {
+            &:not(:first-child) {
+                margin-right: 5rem;
+
+                @include respond('phone') {
+                    margin-right: 0;
+                    margin-bottom: 0.4rem;
+                }
+            }
+
+            &:first-child {
+                margin-right: 0;
+            }
+        }
+
+        &:not(:last-child) {
+            margin-right: 5rem;
+
+            @include respond('phone') {
+                margin-right: 0;
+                margin-bottom: 0.4rem;
+            }
+        }
+
+        &:nth-child(1)::before {
+            background-color: $primary;
+        }
+
+        &:nth-child(2)::before {
+            background-color: $dark;
+        }
+
+        &:nth-child(3)::before {
+            background-color: $warning;
+        }
+
+        &::before {
+            position: absolute;
+            width: 1rem;
+            height: 1rem;
+            border-radius: 50%;
+            left: -1.3rem;
+            top: .6rem;
+            content: "";
+        }
+    }
+}
+
+.widget-event-ticket-sale:hover {
+    background-color: $primary;
+
+    * {
+        color: $white !important;
+    }
+}

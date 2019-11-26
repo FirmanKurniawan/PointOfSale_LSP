@@ -1,0 +1,33 @@
+@import "../../abstracts/variable";
+
+.bootstrap-tagsinput {
+    // display: flex;
+    // flex: 1;
+    padding: 0;
+    padding-left: .5rem;
+    border-radius: 0;
+    border-color: #DDDFE1;
+
+    .tag {
+        font-size: 1.8rem;
+        background-color: $primary;
+        border-radius: 0;
+        color: $white;
+        // display: flex;
+        align-items: center;
+        padding: 1.1rem 2rem;
+        margin-top: .5rem;
+    }
+
+    input[type="text"] {
+        flex: 1;
+        height: 5rem;
+        border-radius: 0;
+        border-color: $border;
+        max-width: 105px;
+    }
+
+    label{
+        margin-bottom: .5rem;
+    }
+}

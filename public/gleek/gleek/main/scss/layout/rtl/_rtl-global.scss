@@ -1,0 +1,65 @@
+html[dir="rtl"] {
+
+    //content body
+    [direction="rtl"] {
+        .content-body {
+            margin-right: 32rem;
+            margin-left: auto;
+
+            .page-titles {
+                text-align: right;
+
+                .breadcrumb {
+                    float: left;
+                }
+            }
+        }
+
+        &[data-layout="horizontal"] {
+            .content-body {
+                margin-right: 0;
+            }
+        }
+
+        &[data-sidebar-style="mini"]:not([data-layout="horizontal"]) {
+            .content-body {
+                margin-right: 6rem;
+            }
+        }
+
+        &[data-sidebar-style="compact"]:not([data-layout="horizontal"]) {
+            .content-body {
+                margin-right: 15rem;
+            }
+        }
+
+        &[data-sidebar-style="overlay"] {
+            .content-body {
+                margin-right: 0;
+            }
+        }
+    }
+
+    
+    .pricing-wrapper .single-pricing-table {
+        text-align: center;
+     }
+
+     .contact-options-dropdown {
+         left: 2rem;
+         right: auto;
+     }
+
+     .card-body.contact-card {
+         text-align: center !important;
+
+         .card-title {
+             text-align: center !important;
+         }
+     }
+
+     .default-accordion-style .card .card-header h5 i {
+         margin-left: 1.5rem;
+     }
+
+}

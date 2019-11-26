@@ -1,0 +1,108 @@
+
+
+
+
+#loading
+		.error {
+			position: absolute;
+			top: 50%;
+			left: 0;
+			right: 0;
+			text-align: center;
+			transform: translateY(-50%);
+		}
+
+		.error {
+			color: red;
+		}
+
+		#loading {
+			display: none;
+		}
+
+		#ChartContainer {
+			height: 60rem;
+		}
+
+		.top {
+			margin-top: .8rem;
+		}
+
+		#relation-selection {
+			margin-left: 1.8rem;
+		}
+
+		.top2 {
+			margin-top: .8rem;
+		}
+
+		.buttons {
+			display: inline-block;
+		}
+
+		.buttons>a,
+		.help-button {
+			display: inline-block;
+			padding-top: .4rem;
+			padding-bottom: .3rem;
+			padding-left: .4rem;
+			padding-right: .4rem;
+			margin-left: .7rem;
+			margin-right: .3rem;
+			border: 1px solid transparent;
+			border-radius: .4rem;
+			transition: all ease-out 0.2s;
+			text-decoration: none;
+			min-width: 2.5rem;
+		}
+
+		.buttons>a:hover {
+			border-color: #D6D6D6;
+		}
+
+		.buttons>a.active {
+			color: #DDDF0D;
+			border-color: #DDDF0D;
+		}
+
+		#average-button.active {
+			color: #5494D3;
+			border-color: #5494D3;
+		}
+
+		.help-button {
+			margin-left: 3.5rem;
+		}
+
+		#average-button {
+			margin-left: 1rem;
+		}
+
+		#about {
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			top: 0;
+			display: none;
+			background: rgba(22, 22, 22, 0.75);
+		}
+
+		#about-inner {
+			margin-top: 20rem;
+			display: inline-block;
+			border: 1px solid #D6D6D6;
+			border-radius: .4rem;
+			padding: 2.5rem;
+			padding-top: 1.7rem;
+			padding-bottom: 1.7rem;
+			text-align: left;
+			line-height: 130%;
+			box-shadow: 0px 0px 20px #0C0C0C;
+		}
+
+		#about-inner>h1 {
+			text-align: center;
+			font-size: 1.7em;
+			margin: 1.5rem;
+			margin-bottom: 2.5rem;
+		}

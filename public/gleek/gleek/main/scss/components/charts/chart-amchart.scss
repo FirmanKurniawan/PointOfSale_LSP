@@ -1,0 +1,235 @@
+#duration-value-axis {
+    height: 45rem;
+    width: 100%;
+}
+
+#combined-bullet {
+    height: 45rem;
+    width: 100%;
+}
+
+#zoomable-chart {
+    height: 45rem;
+    width: 100%;
+}
+
+#chartMap {
+    height: 45rem;
+    width: 100%;
+}
+
+#professional-candlesticks {
+    width: 100%;
+    height: 45rem;
+}
+
+#comparing-stock-indices {
+    width: 100%;
+    height: 45rem;
+
+    @include respond(tab-port) {
+        margin-bottom: 6rem;
+    }
+
+    @include respond(phone) {
+        margin-bottom: 15rem;
+
+        input[type="button"], input {
+            margin-top: .5rem;
+            margin-bottom: .5rem;
+        }
+    }
+}
+
+#multiple-panel-data {
+    width: 100%;
+    height: 45rem;
+
+    @include respond(tab-port) {
+        margin-bottom: 6rem;
+    }
+
+    @include respond(phone) {
+        margin-bottom: 15rem;
+
+        input[type="button"], input {
+            margin-top: .5rem;
+            margin-bottom: .5rem;
+        }
+    }
+}
+
+#depth-chart {
+    width: 100%;
+    height: 45rem;
+}
+
+#btc1 {
+    width: 100%;
+    height: 50rem;
+
+    @include respond('phone') {
+        margin-bottom: 9rem;
+        padding-bottom: 4rem;
+        height: 40rem;
+
+        fieldset {
+
+            div {
+                display: block !important;
+                margin-bottom: 1rem;
+
+                input {
+                    display: block;
+                    margin-bottom: 0.5rem;
+                }
+            }
+    
+            div:last-child {
+                float: none !important;
+            }
+        }
+    }
+}
+
+.amcharts-export-menu {
+    display: none;
+}
+
+.amcharts-data-set-selector-div {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    width: 27rem;
+    margin: 0 auto;
+    select {
+        border: 0;
+        margin-left: 1rem;
+        background: #ddd;
+        color: $black;
+    }
+}
+
+.amChartsInputField {
+    border: 0;
+    background: $primary;
+    color: $white;
+    padding: .5rem 1.5rem;
+    margin: 0 1.5rem;
+}
+
+.amcharts-data-set-select {
+    border: 0;
+    background: #ddd;
+    color: $black;
+}
+
+.amcharts-period-input,
+.amcharts-period-input-selected {
+    border: 0;
+    margin-left: 1rem;
+    background: $primary;
+    color: $white;
+    padding: .5rem 1.5rem;
+}
+
+/////////////////////
+// CSS Animation
+///////////////////
+.amcharts-graph-g2 .amcharts-graph-stroke {
+    stroke-dasharray: .3rem .3rem;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    -webkit-animation: am-moving-dashes 1s linear infinite;
+    animation: am-moving-dashes 1s linear infinite;
+}
+
+@-webkit-keyframes am-moving-dashes {
+    100% {
+        stroke-dashoffset: -3.1rem;
+    }
+}
+
+@keyframes am-moving-dashes {
+    100% {
+        stroke-dashoffset: -3.1rem;
+    }
+}
+
+.lastBullet {
+    -webkit-animation: am-pulsating 1s ease-out infinite;
+    animation: am-pulsating 1s ease-out infinite;
+}
+
+@-webkit-keyframes am-pulsating {
+    0% {
+        stroke-opacity: 1;
+        stroke-width: 0px;
+    }
+    100% {
+        stroke-opacity: 0;
+        stroke-width: 5rem;
+    }
+}
+
+@keyframes am-pulsating {
+    0% {
+        stroke-opacity: 1;
+        stroke-width: 0px;
+    }
+    100% {
+        stroke-opacity: 0;
+        stroke-width: 5rem;
+    }
+}
+
+.amcharts-graph-column-front {
+    -webkit-transition: all .3s .3s ease-out;
+    transition: all .3s .3s ease-out;
+}
+
+.amcharts-graph-column-front:hover {
+    fill: #496375;
+    stroke: #496375;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+
+@-webkit-keyframes am-draw {
+    0% {
+        stroke-dashoffset: 500%;
+    }
+    100% {
+        stroke-dashoffset: 0%;
+    }
+}
+
+@keyframes am-draw {
+    0% {
+        stroke-dashoffset: 500%;
+    }
+    100% {
+        stroke-dashoffset: 0%;
+    }
+}
+
+.amChartsPeriodSelector {
+    &>fieldset>div {
+        @include respond('tab-port') {
+            float: none !important;
+            display: block !important;
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+
+.amChartsPeriodSelector.amcharts-period-selector-div {
+    @include custommq($max: 1500px) {
+        fieldset div:nth-child(3) {
+            float: left !important;
+            margin-top: 1rem;
+        }
+    }
+}

@@ -1,0 +1,1061 @@
+ // Variable.less
+ /*    Widget One
+---------------------------*/
+@import "../../abstracts/mixin"; 
+
+
+ .stat-widget-one {
+     padding: 2rem;
+     text-align: center;
+     .stat-digit {
+         font-size: 4rem;
+         font-weight: 700;
+     }
+     .stat-text {
+         font-size: 2rem;
+         margin-bottom: .5rem;
+     }
+     .progress {
+         height: .8rem;
+         margin-bottom: 0;
+         margin-top: 2rem;
+         box-shadow: none;
+     }
+     .progress-bar {
+         box-shadow: none;
+     }
+ }
+ /*    Widget Two
+---------------------------*/
+ 
+ .stat-widget-two {
+    //  padding: 1.5rem 1.5rem;
+     transition: all 0.4s ease-in-out;
+     &:hover {
+         box-shadow: 0 .5rem 2rem rgba(0, 0, 0, 0.125);
+     }
+     .media {
+         img {
+             max-width: 7.5rem;
+         }
+         .media-body {
+             margin-top: .5rem;
+             h2 {
+                 // color: $info;
+                //  font-weight: 400;
+                font-size: 3.2rem;
+             }
+             span{
+                 font-size: 1.6rem;
+             }
+         }
+     }
+ }
+
+ .card .stat-widget-two{
+     
+    &:hover{
+        box-shadow: none;
+    }
+ }
+ 
+ .stat-widget-three {
+     display: inline-block;
+     .media-body {
+         text-align: left;
+         h2{
+             font-size: 3rem;
+         }
+         span{
+             font-size: 1.5rem;
+             font-weight: 500;
+         }
+     }
+ }
+ 
+ .stat-widget-four {
+     &.card-body {
+        padding: 2.25rem;
+     }
+
+     h4 {
+         font-size: 1.6rem;
+     }
+
+     h5 {
+         font-size: 1.5rem;
+     }
+
+     i.cc {
+         font-size: 5rem;
+         line-height: 4.5rem;
+        //  margin-left: 1rem;
+
+        @include respond('phone-land') {
+            font-size: 4rem;
+        }
+     }
+
+     
+    @include custommq($min: 1200px, $max: 1500px) {
+        &.card-body {
+            padding: 1.5rem;
+        }
+
+        h4 {
+            font-size: 1.5rem;
+        }
+
+        h5 {
+            font-size: 1.4rem;
+        }
+
+        h6 {
+            font-size: 1.4rem;
+        }
+
+        i.cc {
+            margin: 0;
+            font-size: 2.6rem;
+            line-height: 2.6rem;
+        }
+    }
+ }
+ 
+.stat-widget-five {
+    transition: all 0.4s ease-in-out;
+
+    .bottom-text {
+        display: flex;
+        justify-content: space-between;
+
+        span {
+            font-size: 1.6rem;
+            color: #7bb31a;
+        }
+
+        p, span {
+            line-height: 1;
+        }
+    }
+
+    &:hover {
+        box-shadow: 0 .5rem 2rem rgba(0, 0, 0, 0.125);
+    }
+
+    .icon {
+        font-size: 2.4rem;
+        height: 6rem;
+        width: 6rem;
+        margin-bottom: 2.4rem;
+        border-radius: 10rem;
+        // padding: 1.4rem 0;
+        color: $white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .media-body {
+        h2 {
+            font-weight: 500;
+            line-height: 1;
+            font-size: 3rem;
+        }
+
+        span {
+            font-size: 1.5rem;
+        }
+    }
+
+    p {
+        color: $l-ctd;
+        line-height: 2;
+    }
+}
+ 
+ .stat-widget-six {
+     overflow: hidden;
+
+     .nedia {
+         position: relative;
+     }
+
+    .icon {
+        position: absolute;
+        right: -35px;
+        bottom: -35px;
+        height: 110px;
+        width: 110px;
+        border-radius: 50%;
+
+        @at-root [direction="rtl"] #{&} {
+            right: auto;
+            left: -35px;
+        }
+
+        span {
+            position: absolute;
+            left: 3.5rem;
+            top: 2.5rem;
+            color: $white;
+            font-size: 2rem;
+
+            @at-root [direction="rtl"] #{&} {
+                right: 3.5rem;
+                left: auto;
+            }
+        }
+    }
+
+     .media-body {
+         h2 {
+             font-size: 3rem;
+         }
+     }
+ }
+ 
+ .stat-widget-seven {
+     
+     img {
+         max-width: 50px;
+     }
+
+     h2 {
+         font-size: 3.2rem;
+     }
+
+     h5 {
+         font-size: 1.5rem;
+     }
+
+     h2,
+     h5 {
+         color: $white;
+     }
+
+     @include custommq($min: 1200px, $max: 1300px) {
+        h2 {
+            font-size: 1.6rem;
+        }
+
+        h5 {
+            font-size: 1.3rem;
+        }
+     }
+ }
+
+ 
+
+ .stat-widget-eight {
+    .widget-left, 
+    .widget-right {
+        // flex: 1;
+    
+        h4 {
+            margin-bottom: 1.5rem;
+        }
+    
+        .count-number {
+            font-size: 3rem;
+            position: relative;
+            bottom: 3px;
+        }
+    
+        .widget-icon {
+            display: inline-block;
+            width: 9.5rem;
+            height: 9.5rem;
+            border-radius: 50%;
+            background-color: #F3F3F3;
+            text-align: center;
+            line-height: 9.5rem; 
+        }
+    }
+    
+    .widget-left {
+
+        @include media-breakpoint-up(xl) {
+            border-right: 1px solid $border;
+        }
+    }
+    
+    .widget-right {
+
+        @media(min-width: 1500px){
+            padding-left: 2rem;
+        }
+    }
+ }
+
+ .stat-widget-search-1 {
+     .form-group {
+         position: relative;
+
+         .form-control {
+             border-radius: 50px;
+             padding-left: 2rem;
+         }
+
+         .search-icon {
+             position: absolute;
+             right: 2rem;
+             top: .5rem;
+             font-size: 2.4rem;
+
+             //rtl support
+             @at-root [direction="rtl"] #{&} {
+                 left: 2rem;
+                 right: auto;
+             }
+         }
+     }
+ }
+
+ .stat-widget-search-2 {
+
+    &.widget-bottom-bordered {
+        .form-group .form-control {
+            border-bottom: 1px solid $border;
+            border-radius: 0;
+
+            @at-root [data-theme-version="dark"] #{&} {
+                border-bottom-color: $d-border;
+            }
+        }
+    }
+
+     .form-group {
+         position: relative;
+
+         .form-control {
+             border-radius: 50px;
+             padding-left: 2rem;
+             border: 0;
+             background-color: transparent;
+
+             &::placeholder{
+                color: $dark;
+             }
+         }
+
+         .search-icon {
+             position: absolute;
+             right: 2rem;
+             top: 1rem;
+             font-size: 1.6rem;
+             color: $dark;
+
+             //rtl support
+             @at-root [direction="rtl"] #{&} {
+                 left: 2rem;
+                 right: auto;
+             }
+         }
+     }
+ }
+ 
+ .stat-widget-progress {
+     .progress {
+         height: 1.2rem;
+         border-radius: 3rem;
+     }
+     span {
+         color: $l-ctl!important;
+     }
+     h5 {
+         span {
+             color: $l-ctl!important;
+         }
+     }
+ }
+ 
+.avatar-group {
+    .avatar {
+        border-radius: 5rem;
+        box-shadow: 0 0 0 .5rem #fff;
+        display: inline-block;
+        margin-left: -.5rem;
+}
+    a.btn {
+        margin-left: -.5rem;
+    }
+}
+
+@include media-breakpoint-up(xl){
+    .border-right-until-xl{
+        border-right: 1px solid #EBEBEB;
+
+        @at-root [data-theme-version="dark"] #{&} {
+            border-right: 1px solid $d-border;
+        }
+
+        @at-root [direction="rtl"] #{&} {
+            border-left: 1px solid #ebebeb;
+            border-right: none;
+        }
+
+        @at-root [direction="rtl"][data-theme-version="dark"] #{&} {
+            border-left: 1px solid $d-border;
+            border-right: none;
+        }
+    }
+}
+
+
+.ticket-widget {
+
+    &__heading--left {
+        flex: 1;
+    }
+
+    .user-avatar {
+        width: 5rem;
+        height: 5rem;
+        font-size: 1.6rem;
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    .btn {
+        padding: .2rem 1rem;
+        border-color: $iron;
+    }
+
+    ul {
+        margin-left: 6rem;
+
+    li {
+        position: relative;
+
+        &:not(:last-child) {
+            margin-bottom: 1.5rem;
+        }
+
+        &::after {
+            @include before-after(-3rem, .5rem, 1.5rem, 1.5rem, "", $white);
+            border-radius: 50%;
+            border: 5px solid #686E7C;
+        }
+    }
+    }
+}
+
+.absolute-icon-prepend-widget {
+    position: relative;
+
+    .form-control {
+        padding-left: 4rem;
+    }
+
+    .absolute-form-icon {
+        position: absolute;
+    
+        &-prepend {
+            left: 1.5rem;
+            top: 1.3rem;
+        }
+    }
+
+}
+
+.absolute-icon-append-widget {
+    position: relative;
+
+    .form-control {
+        padding-left: 4rem;
+        height: 5rem;
+    }
+
+    .absolute-form-icon {
+        position: absolute;
+    
+        &-append {
+            left: 1.5rem;
+            top: 1.5rem;
+
+            i{
+                color: $pale-sky;
+            }
+        }
+    }
+
+}
+
+.workout-icon {
+    width: 7rem;
+    height: 7rem;
+    text-align: center;
+    line-height: 7rem;
+}
+
+.widget-social-table {
+    .card-title {
+        margin-bottom: 3.5rem;
+    }
+
+    .social-icon {
+        margin-bottom: 1rem;
+
+        i {
+            font-size: 2rem;
+        }
+    }
+
+    .table td {
+        padding: 0.25rem .75rem;
+    }
+}
+
+.widget-file-container {
+
+    .file-container {
+        box-shadow: 0 0 3rem 0 rgba($black, .1);
+        text-align: center;
+        padding: 1.6rem 0;
+        width: 11.7rem;
+        margin-bottom: 1rem;
+        
+        img {
+            transition: all .3s ease-in-out;
+        }
+
+        &:hover img {
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        &:not(:last-child) {
+            margin-right: 3.3rem;
+
+            @include respond('tab-land') {
+                margin-right: 1rem;
+            }
+
+            @include respond('phone') {
+                margin-right: .5rem;
+            }
+
+            @include custommq($min: 1200px, $max: 1500px) {
+                margin-right: 1rem;
+            }
+        }
+
+        @include custommq($max: 1440px) {
+            width: 10.7rem;
+        }
+
+        @include respond(phone) {
+            width: 12.7rem;
+        }
+
+        small {
+            font-weight: 500;
+            // margin-top: 1rem;
+        }
+    }
+}
+
+
+.widget-media-bordered {
+
+    .media-colored {
+        .media-body {
+            border-color: $white;
+        }
+    }
+
+    @include custommq($min: 1200px, $max: 1440px) {
+        img {
+            height: 35px;
+        }
+    }
+
+    .media-body {
+        border-left: 1px solid $border;
+        padding-left: 2rem;
+        margin-left: .5rem;
+
+        @include custommq($min: 1200px, $max: 1440px) {
+            padding-left: .5rem;
+            margin-left: 0;
+        }
+
+        @at-root [direction="rtl"] #{&} {
+            border-right: 1px solid $border;
+            border-left: 0;
+            padding-left: auto;
+            padding-right: 2rem;
+            margin-left: auto;
+            margin-right: .5rem;
+        }
+
+        h2 {
+            font-size: 3.5rem;
+        }
+
+        p {
+            font-size: 1.6rem;
+        }
+    }
+}
+
+.card-portfolio-widget {
+    .icon {
+        color: #F67070;
+    }
+    .custom-dropdown {
+        .dropdown-menu {
+            min-width: 23rem;
+    
+            .dropdown-item {
+                font-size: 1.5rem;
+                padding: 1rem 3.5rem;
+            }
+        }
+    }
+}
+
+.widget-school-stat {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+
+    h2 {
+        font-size: 3.3rem;
+        margin-bottom: 0.7rem;
+        line-height: 1;
+    }
+
+    p {
+        font-size: 1.7rem;
+        line-height: 1;
+        margin: 0;
+    }
+    
+    // .text {
+    //     // margin-left: 3rem;
+    // }
+
+    .icon {
+        // margin-right: 2rem;
+
+        span {
+            @include circle(5rem, 50%, $white);
+            display: inline-block;
+            font-size: 1.8rem;
+            text-align: center;
+            line-height: 5rem;
+        }
+    }
+
+    h2, & {
+        color: $white;
+    }
+
+    &.bg-1 {
+        background-color: #71D875;
+
+        i {
+            color: #71D875;
+        }
+    }
+
+    &.bg-2 {
+        background-color: #FF8423;
+
+        i {
+            color: #FF8423;
+        }
+    }
+
+    &.bg-3 {
+        background-color: #00AFF0;
+
+        i {
+            color: #00AFF0;
+        }
+    }
+
+    &.bg-4 {
+        background-color: #FFC107;
+
+        i {
+            color: #FFC107;
+        }
+    }
+
+    &.bg-5 {
+        background-color: #FF5274;
+
+        i {
+            color: #FF5274;
+        }
+    }
+
+    &.bg-6 {
+        background-color: #D57FF8;
+
+        i {
+            color: #D57FF8;
+        }
+    }
+}
+
+.widget-vdo-stat {
+    padding: 5rem 4rem;
+
+    @include custommq($max: 1440px) {
+        padding: 5rem 1.5rem;
+    }
+
+    @include respond(tab-land) {
+        padding: 5rem 2.5rem;
+    }
+
+    @include respond(tab-port) {
+        padding: 5rem 1.5rem;
+    }
+
+    @include respond(phone-land) {
+        padding: 5rem 7.5rem;
+    }
+
+    @include respond(phone) {
+        padding: 5rem 1.5rem;
+    }
+
+    .icon {
+        font-size: 3rem;
+    }
+}
+
+.widget-gradient {
+    padding:  4.6rem 3rem;
+
+    &.card-body {
+        padding:  4.6rem 3rem;
+    }
+
+    p, h2, h4, h5, a, span {
+        color: $white;
+    }
+
+    h2 {
+        font-size: 3.5rem;
+
+        @include respond(phone-land) {
+            font-size: 3rem;
+        }
+    }
+
+    h3 {
+        font-size: 2.2rem;
+        margin-bottom: 0.8rem;
+
+        @include respond(phone-land) {
+            font-size: 2rem;
+        }
+    }
+
+    a {
+        text-decoration: underline;
+    }
+
+    .count {
+        position: relative;
+        z-index: 1;
+        margin-right: 4rem;
+
+        @at-root [direction="rtl"] #{&} {
+            margin-right: auto;
+            margin-left: 4rem;
+        }
+
+        @include respond(phone-land) {
+            margin-right: 2rem;
+        }
+
+        &::after {
+            position: absolute;
+            height: 4.5rem;
+            width: 4.5rem;
+            border-radius: 50px;
+            background-color: rgba($color: $white, $alpha: .1);
+            z-index: -1;
+            content: "";
+            right: 50%;
+            top: 15%;
+        }
+    }
+}
+
+.widget-circle-progress {
+
+    h2 {
+        font-size: 3.4rem;
+    }
+    
+    .circle {
+        position: relative;
+
+        .abs-text {
+            position: absolute;
+            left: 50%;
+            top: 46%;
+            font-size: 3rem;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+
+.widget-feed {
+
+    @include respond('tab-land') {
+        img {
+            width: 8rem;
+        }
+    }
+
+    @include respond('phone') {
+        img {
+            width: 5rem;
+        }
+    }
+}
+
+.widget-campaign {
+    .media {
+        .icon {
+            font-size: 2rem;
+        }
+    }
+
+    h2 {
+        font-size: 3.4rem;
+    }
+
+    h3 {
+        font-size: 3.2rem;
+        margin-bottom: 1.2rem;
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+}
+
+.sale-widget {
+    .card-title {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+        line-height: 1;
+    }
+
+    .subtitle {
+        font-size: 1.6rem;
+        margin-bottom: 1.3rem;
+    }
+
+    .price-tag {
+        font-size: 3.5rem;
+        margin: 0;
+        line-height: 1;
+    }
+}
+
+.widget-event-circle {
+    .left {
+        flex-basis: 65%;
+    }
+
+    .left, .right {
+        p {
+            font-size: 1.6rem;
+        }
+
+        h2 {
+            font-size: 2.2rem;
+        }
+    }
+}
+
+.widget-event-ticket-sale {
+    .card-body {
+        position: relative;
+
+        >p {
+            min-height: 4.5rem;
+
+            @include custommq($max: 1440px) {
+                min-height: 6.6rem;
+            }
+        }
+
+        h5 {
+            position: relative;
+            bottom: 0;
+            left: 0;
+        }
+    }
+
+    .media {
+        h2 {
+            font-size: 4rem;
+        }
+    }
+}
+
+.widget-wallet-status {
+    .upper-part {
+        h2 {
+            font-size: 3.5rem;
+        }
+
+        h5 {
+            font-size: 1.5rem;
+        }
+    }
+
+    .bottom-part {
+        h2 {
+            font-size: 2.4rem;
+        }
+
+        p {
+            font-size: 1.8rem;
+        }
+    }
+}
+
+.widget-product-revenue {
+    h4 {
+        font-weight: 500;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    li {
+        font-size: 1.6rem;
+        position: relative;
+
+        &:first-child::before {
+            background-color: $success;
+        }
+
+        &:last-child::before {
+            background-color: $info;
+        }
+
+        &::before {
+            position: absolute;
+            height: 1.1rem;
+            width: 1.1rem;
+            border-radius: 50px;
+            content: "";
+            left: -1.8rem;
+            top: 0.6rem;
+        }
+    }
+}
+
+.widget-product-data {
+    h4, h2 {
+        margin: 0;
+        line-height: 1;
+    }
+
+    h4 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+}
+
+.widget-product-sale {
+    h2 {
+        font-size: 3rem;
+    }
+}
+
+.widget-photo-stats {
+    h2 {
+        font-size: 3rem;
+        line-height: 1.1;
+    }
+}
+
+.widget-music-category {
+    h2 {
+        font-size: 5.5rem;
+        font-weight: 700;
+    }
+}
+
+.widget-active-class {
+    .card {
+        @include custommq($max: 1440px) {
+            padding-bottom: 0.5rem;
+        }
+
+        @include respond(tab-port) {
+            padding-bottom: 1.65rem;
+            padding-top: 1.65rem;
+        }
+    }
+    
+    .add-class {
+        font-size: 2rem;
+        margin-left: 1rem;
+    }
+}
+
+.widget-video-stats {
+    .single-video-widget {
+        &:not(:last-child) {
+            border-right: 1px solid $border;
+
+            @at-root [direction="rtl"] #{&} {
+                border-left: 1px solid $border;
+                border-right: 0;
+            }
+        }
+
+        @include respond(phone-land) {
+            &:nth-child(odd) {
+                border-right: 1px solid $border;
+            }
+
+            &:nth-child(even) {
+                border: none;
+            }
+        }
+    }
+
+    h2 {
+        font-size: 3.5rem;
+    }
+
+    .icon {
+        font-size: 2.8rem;
+        margin-right: 2rem;
+
+        @at-root [direction="rtl"] #{&} {
+            margin-left: 2rem;
+            margin-right: auto;
+        }
+    }
+}
+
+.widget-job-stats {
+    .circle-progress h4 {
+        font-size: 2.4rem;
+    }
+}

@@ -1,0 +1,43 @@
+
+.circle-progress{
+    display: inline-block;
+    position: relative;
+
+    &-block {
+        display: block;
+    }
+
+    .absolute-icons{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .circle-wrapper{
+        display: inline-block;
+        position: relative;
+
+        .absolute-icons{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            h6{
+                font-size: 1.6rem;
+            }
+        }
+    }
+
+    .bottom-text{
+
+        h6{
+            font-size: 1.8rem;
+        }
+
+        h4{
+            font-size: 2.4rem;
+        }
+    }
+}

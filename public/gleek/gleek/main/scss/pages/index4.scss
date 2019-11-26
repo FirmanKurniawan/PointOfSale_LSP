@@ -1,0 +1,57 @@
+.hospital-map {
+    position: relative;
+
+    .chart {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        text-align: center;
+        // transform: translateX(-50%);
+        z-index: 9;
+
+        @include respond('phone') {
+            left: 0;
+        }
+    }
+}
+
+.doctor-list {
+
+    .media {
+        transition: all .5s ease-in-out;
+        padding: 2.8rem 3rem;
+
+        &:not(:last-child) {
+            margin-bottom: 1rem;
+        }
+
+        h6 {
+            font-size: 1.4rem;
+            margin-top: 0.8rem;
+
+            @include respond('phone-land') {
+                font-size: 1.4rem;
+            }
+        }
+
+        &:hover {
+            box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.1);
+        }
+    }
+
+    @include respond('tab-land') {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        .media {
+            flex-basis: 45%;
+        }
+    }
+
+    @include respond('phone') {
+        .media {
+            flex-basis: 100%;
+        }
+    }
+}

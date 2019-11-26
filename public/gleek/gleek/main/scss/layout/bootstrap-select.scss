@@ -1,0 +1,40 @@
+// .selectpicker{
+//     background: transparent;
+//     color: $dark;
+// }
+
+.bootstrap-select{
+
+    .btn{
+        color: $dark;
+        padding: 1.2rem 1.8rem;
+
+        &:hover,&:focus{
+            background: transparent;
+            color: $dark;
+            border-color: #DDDFE1;
+            outline: none !important;
+        }
+    }
+
+    &.show{
+
+        .btn{
+            background: transparent;
+            border-color: #DDDFE1;
+            color: $dark;
+        }
+    }
+
+    .text-muted{
+        background: transparent;
+        border-color: #DDDFE1;
+
+        &.dropdown-toggle::after{
+            color: $dark;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+

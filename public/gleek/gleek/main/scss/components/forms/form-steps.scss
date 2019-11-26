@@ -1,0 +1,369 @@
+@import "../../abstracts/variable";
+@import "../../abstracts/mixin";
+
+
+.wizard > .content > .body input.error {
+    position: absolute;
+    top: 100% !important;
+}
+
+.wizard {
+
+    &>.steps {
+        li {
+            a {
+                @include respond(phone-land) {
+                    padding: 1em 4px;
+                }
+            }
+        }
+    }
+
+    .content  {
+        min-height: 50rem;
+
+        @include respond(tab-port) {
+            min-height: 55rem;
+        }
+
+        & > .body {
+            background-color: $white;
+            width: 100%;
+            height: 100%;
+            padding: 0 15rem;
+
+            @include respond(phone) {
+                padding: 0;
+            }
+    
+            input.error {
+                position: relative;
+            }
+    
+            label.error {
+                position: absolute;
+                top: 100%;
+                margin-left: 0;
+            }
+        }
+    }
+
+    .emial-setup {
+        label.mailclinet {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 15rem;
+            height: 15rem;
+            border-radius: 50%;
+            cursor: pointer;
+            background-color: #EEF5F9;
+
+            @include respond(phone) {
+                width: 10rem;
+                height: 10rem;
+            }
+
+            .mail-icon {
+                font-size: 6rem;
+                display: inline-block;
+                line-height: 1;
+                margin-top: -1rem;
+
+                @include respond(phone) {
+                    font-size: 4rem;
+                }
+            }
+
+            .mail-text {
+                font-size: 1.4rem;
+                text-align: center;
+                margin-top: -.5rem;
+
+                @include respond(phone) {
+                    font-size: 1.2rem;
+                }
+            }
+
+            input[type="radio"] {
+                display: none;
+            }
+        }
+    }
+
+    .skip-email {
+        margin-top: 6rem;
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        a {
+            color: $primary;
+            text-decoration: underline;
+        }
+    }
+
+    &>.actions {
+        li:not(.disabled) {
+            a {
+                background-color: $primary;
+                color: $white;
+            }
+        }
+    }
+}
+
+.step-form-horizontal {
+    .wizard {
+        padding-top: 10rem;
+        
+        .steps {
+            li {
+                position: relative;
+
+                &.done {
+                    a {
+                        text-align: center;
+                        background-color: $white;
+                        color: $dark;
+
+                        &:hover {
+                            text-align: center;
+                            background-color: $white;
+                            color: $dark;
+                        }
+
+                        .number {
+                            color: $white;
+                            background: #f096fb;
+                            background: -moz-linear-gradient(left, #f096fb 0%, #f5586d 100%);
+                            background: -webkit-linear-gradient(left, #f096fb 0%,#f5586d 100%);
+                            background: linear-gradient(to right, #f096fb 0%,#f5586d 100%);
+                            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f096fb', endColorstr='#f5586d',GradientType=1 );
+                            border-color: transparent; 
+                        }
+                    }
+                }
+
+                &.current a, &.disabled a {
+                    background-color: $white;
+                    text-align: center;
+                    color: $dark;
+
+                    &:hover, &:active {
+                        background-color: $white;
+                        color: $dark;
+                    }
+                }
+
+                &.current a {
+                    .number {
+                        color: #f096fb;
+                        background: $white;
+                        border: 2px solid #f096fb; 
+                    }
+                }
+
+                &.disabled a {
+                    .number {
+                        color: $primary;
+                    }
+                }
+
+                a {
+                    position: relative;
+                    z-index: 1;
+
+                    @include respond(phone-land) {
+                        padding-left: 0;
+                        padding-right: 0;
+                        margin: 0;
+                    }
+
+                    @include respond(phone) {
+                        font-size: 1.2rem;
+                        padding-top: 1.5rem;
+                    }
+
+                    .number {
+                        position: absolute;
+                        top: -100%;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        background-color: $white;
+                        border: 1px solid $border;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 6rem;
+                        border-radius: 50px;
+                        width: 6rem;
+
+                        @include respond(phone) {
+                            width: 4rem;
+                            height: 4rem;
+                        }
+                        
+                    }
+                }
+
+                &:not(:last-child) {
+                    z-index: 1;
+
+                    &::after {
+                        position: absolute;
+                        width: 100%;
+                        height: 1rem;
+                        content: "";
+                        left: 50%;
+                        top: -2.5rem;
+                        background-color: #f096fb;
+                        z-index: -1;
+
+                        @include respond(phone) {
+                            height: .6rem;
+                            top: -2.7rem;
+                        }
+                    }
+
+                    &.current {
+                        &::after {
+                            background-color: #F3F3F3;
+                        }
+
+
+                        &~li {
+                            &::after {
+                                background-color: #F3F3F3;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .actions {
+            padding: 0 15rem;
+
+            @include respond(phone) {
+                padding: 0;
+            }
+        }
+    }
+}
+
+.step-form-tab {
+    .wizard {
+        .steps {
+            li {
+                @include respond(phone) {
+                    width: 50%;
+                }
+
+                &:not(.current) a {
+                    background-color: #EEEEEE;
+                    color: $primary;
+                }
+
+                &.current a {
+                    background-color: $primary;
+                }
+
+                &.done a {
+                    background-color: rgba($color: $primary, $alpha: .5);
+                    color: $primary;
+
+                }
+
+                &:last-child {
+                    a {
+                        margin-right: 0;
+
+                        // @include respond(phone) {
+                        //     margin-right: 0.5em;
+                        // }
+                    }
+                }
+
+                &:first-child {
+                    a {
+                        margin-left: 0;
+
+                        // @include respond(phone) {
+                        //     margin-left: 0.5em;
+                        // }
+                    }
+                }
+
+                a {
+                    @include respond(phone) {
+                        margin: 0 0.5em 0.5em;
+
+                        &:hover {
+                            padding: 1em 4px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.step-form-vertical {
+    .wizard.vertical {
+        &>.steps {
+            width: 27%;
+
+            li {
+                a {
+                    @include respond(phone-land) {
+                        margin-left: 0;
+                        margin-right: 0;
+                    }
+
+                    @include respond(phone) {
+                        padding: .5rem;
+                    }
+                }
+
+                &:not(.current) a {
+                    background-color: #EEEEEE;
+                    color: $primary;
+                }
+
+                &.current a {
+                    background-color: $primary;
+                }
+
+                &.done a {
+                    background-color: rgba($color: $primary, $alpha: .5);
+                    color: $primary;
+
+                }
+            }
+        }
+
+        &>.content {
+            width: 73%;
+            margin: 0;
+
+            &>.body {
+                padding: 0 8rem;
+
+                @include respond(phone) {
+                    padding: 1rem;
+                }
+            }
+        }
+
+        &>.actions {
+            padding: 0 8rem;
+
+            @include respond(phone) {
+                padding: 0;
+            }
+        }
+    }
+}

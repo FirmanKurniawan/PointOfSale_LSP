@@ -1,0 +1,13 @@
+[data-theme-version="dark"] {
+
+    #morris-donut-chart text {
+        fill: $white;
+    }
+
+    .earning-chart-data ul li, 
+    .revenue-chart-list li, 
+    .views-chart-area li {
+        color: $d-ctl;
+    }
+
+}

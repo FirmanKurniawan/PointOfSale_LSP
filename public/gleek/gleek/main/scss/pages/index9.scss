@@ -1,0 +1,75 @@
+
+.social-network-stats {
+    .item {
+        flex-basis: 100%;
+        margin-top: 1rem;
+    }
+}
+
+.video-engagement {
+    h2 {
+        font-size: 3rem;
+        margin-bottom: 0;
+        line-height: 1.2;
+
+        @include respond(phone) {
+            font-size: 2rem;
+        }
+    }
+}
+
+.social-network-table .table-padded {
+    border-spacing: 0 1rem;
+}
+
+.social-network-stats {
+
+    .item-youtube, .item-facebook {
+        @include custommq($min: 1400px) {
+            margin-right: 3rem;
+        }
+    }
+
+    .table tr td:first-child {
+        font-weight: bold;
+        font-size: 1.6rem;
+    }
+
+}
+
+.social-network-table {
+    .table > tbody > tr > td {
+        color: $pale-sky;
+    }
+}
+
+.campaign-statistics {
+    .card-title {
+        margin-bottom: 2.5rem;
+    }
+
+    .current-campaign-list {
+        margin-top: 1.5rem;
+    
+        .status-icon, .campaign-details, .campaign-status {
+            font-size: 1.6rem;
+            line-height: 1;
+        }
+
+        .status-icon {
+            display: flex;
+        }
+    
+        .campaign-status {
+            margin-right: 5rem;
+
+            @at-root [direction="rtl"] #{&} {
+                margin-left: 5rem;
+            }
+
+            @include respond(phone) {
+                margin-right: 2rem;
+            }
+        }
+    }
+}

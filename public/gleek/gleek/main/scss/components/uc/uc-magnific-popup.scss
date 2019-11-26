@@ -1,0 +1,17 @@
+.popup-images {
+    a {
+        display: inline-block;
+        padding: 0.5rem;
+    }
+}
+
+.white-popup-block {
+    background-color: #fff;
+    width: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    padding: 3rem;
+    border-radius: 3px;
+}

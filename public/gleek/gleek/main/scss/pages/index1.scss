@@ -1,0 +1,71 @@
+.active-member{
+    table > thead > tr > th{
+        border-top: 0!important;
+        border-bottom: 0!important;
+        padding-top: 0;
+        padding-bottom: 1.5rem;
+    }
+    table > tbody > tr > td{
+        border-top: 0!important;
+    }
+    .table{
+        margin-bottom: 0;
+    }
+}
+
+.map-coruntry-list {
+
+    @include respond("tab-port") {
+        margin-top: 2rem;
+    }
+
+    @include custommq($min: 1500px, $max: null) {
+        margin-left: 5rem;
+    }
+}
+
+
+.restaurant-country-data {
+    background: $primary;
+    position: absolute;
+    top: -7.4rem;
+    right: -1.9rem;
+    bottom: -3rem;
+    width: 100%;
+    padding: 2rem;
+    text-align: center;
+
+    @at-root [direction="rtl"] #{&} {
+        right: 2rem;
+    }
+
+    @include respond("tab-port") {
+        position: relative;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        margin-top: 2rem;
+    }
+
+    @include custommq($min: 992px, $max: 1500px) {
+        top: -6.8rem;
+        bottom: -2.5rem;
+    }
+
+    p {
+        font-size: 1.8rem;
+        color: $white;
+        margin-bottom: 0px;
+        // font-weight: 400;
+    }
+
+    h3 {
+        color: $white;
+    }
+}
+
+.recent-order-list-table {
+    &.table-padded {
+        border-spacing: 0 1rem;
+    }
+}

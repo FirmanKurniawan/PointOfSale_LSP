@@ -1,0 +1,31 @@
+$font: (
+    "medium": 1.5rem, 
+    "small": 1.4rem, 
+    "x-small": 1.3rem, 
+    "tiny": 1.2rem
+);
+
+$borders: (
+    "right", "left", "top", "bottom", ""
+);
+
+//Generating border classess
+@each $value in $borders {
+    @if $value == "" {
+        .border {
+            border: 1px solid $border !important;
+        }
+    } @else {
+        .border-#{$value} {
+            border-#{$value}: 1px solid $border !important;
+        }
+    }
+}
+
+
+//Generating font sizes
+@each $name, $value in $font {
+    .font-#{$name} {
+        font-size:  $value !important;
+    }
+}

@@ -1,0 +1,1787 @@
+//  ///////////
+
+/*    Color Mixins
+-------------------*/
+
+.color-white {
+    color: $white;
+}
+
+
+.color-muted,
+.text-muted {
+    color: $muted !important;
+}
+
+.color-dpink,
+.text-dpink {
+    color: $deep-pink;
+}
+
+.color-lgreen,
+.text-lgreen {
+    color: $light-green;
+}
+
+.color-gray,
+.text-gray {
+    color: $gray;
+}
+
+.color-pale-sky,
+.text-pale-sky {
+    color: $pale-sky;
+}
+
+
+
+
+
+.icon-muted{
+
+    i{
+        color: $muted !important;
+    }
+}
+
+.icon-dpink{
+
+    i{
+        color: $deep-pink !important;
+    }
+}
+
+.icon-success{
+    
+    i{
+        color: $success !important;
+    }
+}
+
+.icon-primary{
+
+    i{
+        color: $primary !important;
+    }
+}
+
+
+.icon-danger{
+
+    i{
+        color: $danger !important;
+    }
+}
+
+.icon-warning{
+
+    i{
+        color: $warning !important;
+    }
+}
+
+
+.bg-dark {
+    background-color: $dark;
+    color: $white;
+    fill: $dark;
+}
+
+.bg-light {
+    background-color: $light;
+    color: $dark;
+    fill: $light;
+}
+
+.bg-white {
+    background-color: $white;
+}
+
+.bg-transparent {
+    background-color: transparent;
+    color: $black;
+}
+
+.bg-dpink {
+    background-color: $deep-pink !important;
+}
+
+.bg-lgreen {
+    background-color: $light-green !important;
+}
+
+.bg-inverse{
+    background: $inverse !important;
+}
+
+.bg-pink{
+    background: $pink !important;
+}
+
+/*  Background Darken
+----------------------*/
+
+.bg-primary-darken-5 {
+    background-color: darken($primary, 50%);
+}
+
+.bg-secondary-darken-5 {
+    background-color: darken($secondary, 50%);
+}
+
+.bg-success-darken-5 {
+    background-color: darken($success, 50%);
+}
+
+.bg-info-darken-5 {
+    background-color: darken($info, 50%);
+}
+
+.bg-danger-darken-5 {
+    background-color: darken($danger, 50%);
+}
+
+.bg-warning-darken-5 {
+    background-color: darken($warning, 50%);
+}
+
+
+/*  Background Lighten
+----------------------*/
+
+.bg-primary-lighten-2 {
+    background-color: lighten($primary, 30%);
+    color: $primary;
+}
+
+.bg-secondary-lighten-2 {
+    background-color: lighten($secondary, 30%);
+    color: $secondary;
+}
+
+.bg-success-lighten-2 {
+    background-color: lighten($success, 30%);
+    color: $success;
+}
+
+.bg-info-lighten-2 {
+    background-color: lighten($info, 30%);
+    color: $info;
+}
+
+.bg-danger-lighten-2 {
+    background-color: lighten($danger, 30%);
+    color: $danger;
+}
+
+.bg-warning-lighten-2 {
+    background-color: lighten($warning, 30%);
+    color: $warning;
+}
+
+
+/*  Background Transparent
+----------------------*/
+.bg-primary-rgba1 {
+    background-color: rgba($primary, 10%);
+}
+
+.bg-secondary-rgba1 {
+    background-color: rgba($secondary, 10%);
+}
+
+.bg-success-rgba1 {
+    background-color: rgba($success, 10%);
+}
+
+.bg-info-rgba1 {
+    background-color: rgba($info, 10%);
+}
+
+.bg-danger-rgba1 {
+    background-color: rgba($danger, 10%);
+}
+
+.bg-warning-rgba1 {
+    background-color: rgba($warning, 10%);
+}
+
+.bg-inverse-rgba1{
+    background-color: rgba($inverse, 10%)
+}
+
+
+/*    Border Mixins
+--------------------------*/
+
+.border-primary {
+    border-color: $primary;
+}
+
+.border-secondary {
+    border-color: $secondary;
+}
+
+.border-success {
+    border-color: $success;
+}
+
+.border-info {
+    border-color: $info;
+}
+
+.border-danger {
+    border-color: $danger;
+}
+
+.border-warning {
+    border-color: $warning;
+}
+
+.border-dark {
+    border-color: $dark;
+}
+
+
+/*    Brand Background
+-----------------------------*/
+
+.bg-facebook {
+    background: $facebook;
+    fill: $facebook;
+}
+
+.bg-twitter {
+    background: $twitter;
+    fill: $twitter;
+}
+
+.bg-youtube {
+    background: $youtube;
+    fill: $youtube;
+}
+
+.bg-instagram {
+    background: $instagram;
+    fill: $instagram;
+}
+
+.bg-google-plus {
+    background: $google-plus;
+    fill: $google-plus;
+}
+
+.bg-linkedin {
+    background: $linkedin;
+    fill: $linkedin;
+}
+
+.color-facebook {
+    color: $facebook;
+}
+
+.color-instagram {
+    color: $instagram;
+}
+
+.color-twitter {
+    color: $twitter;
+}
+
+.color-youtube {
+    color: $youtube;
+}
+
+
+/*    Checkbox Color
+-----------------------------*/
+
+.chk-col-primary[type="checkbox"] {
+    &:checked {
+        + {
+            label {
+                &::before {
+                    border-bottom: 2px solid $primary;
+                    border-right: 2px solid $primary;
+                }
+            }
+        }
+    }
+}
+
+.chk-col-red[type="checkbox"] {
+    &:checked {
+        + {
+            label {
+                &::before {
+                    border-bottom: 2px solid $red;
+                    border-right: 2px solid $red;
+                }
+            }
+        }
+    }
+}
+
+.chk-col-pink[type="checkbox"] {
+    &:checked {
+        + {
+            label {
+                &::before {
+                    border-bottom: 2px solid $pink;
+                    border-right: 2px solid $pink;
+                }
+            }
+        }
+    }
+}
+
+.chk-col-purple[type="checkbox"] {
+    &:checked {
+        + {
+            label {
+                &::before {
+                    border-bottom: 2px solid $purple;
+                    border-right: 2px solid $purple;
+                }
+            }
+        }
+    }
+}
+
+.chk-col-deep-purple[type="checkbox"] {
+    &:checked {
+        + {
+            label {
+                &::before {
+                    border-bottom: 2px solid $deep-purple;
+                    border-right: 2px solid $deep-purple;
+                }
+            }
+        }
+    }
+}
+
+.chk-col-indigo[type="checkbox"] {
+    &:checked {
+        + {
+            label {
+                &::before {
+                    border-bottom: 2px solid $indigo;
+                    border-right: 2px solid $indigo;
+                }
+            }
+        }
+    }
+}
+
+.chk-col-blue[type="checkbox"] {
+    &:checked {
+        + {
+            label {
+                &::before {
+                    border-bottom: 2px solid $blue;
+                    border-right: 2px solid $blue;
+                }
+            }
+        }
+    }
+}
+
+.chk-col-light-blue[type="checkbox"] {
+    &:checked {
+        + {
+            label {
+                &::before {
+                    border-bottom: 2px solid $light-blue;
+                    border-right: 2px solid $light-blue;
+                }
+            }
+        }
+    }
+}
+
+.chk-col-cyan[type="checkbox"] {
+    &:checked {
+        + {
+            label {
+                &::before {
+                    border-bottom: 2px solid $cyan;
+                    border-right: 2px solid $cyan;
+                }
+            }
+        }
+    }
+}
+
+.chk-col-teal[type="checkbox"] {
+    &:checked {
+        + {
+            label {
+                &::before {
+                    border-bottom: 2px solid $teal;
+                    border-right: 2px solid $teal;
+                }
+            }
+        }
+    }
+}
+
+.chk-col-green[type="checkbox"] {
+    &:checked {
+        + {
+            label {
+                &::before {
+                    border-bottom: 2px solid $green;
+                    border-right: 2px solid $green;
+                }
+            }
+        }
+    }
+}
+
+.chk-col-light-green[type="checkbox"] {
+    &:checked {
+        + {
+            label {
+                &::before {
+                    border-bottom: 2px solid $light-green;
+                    border-right: 2px solid $light-green;
+                }
+            }
+        }
+    }
+}
+
+.chk-col-lime[type="checkbox"] {
+    &:checked {
+        + {
+            label {
+                &::before {
+                    border-bottom: 2px solid $lime;
+                    border-right: 2px solid $lime;
+                }
+            }
+        }
+    }
+}
+
+.chk-col-yellow[type="checkbox"] {
+    &:checked {
+        + {
+            label {
+                &::before {
+                    border-bottom: 2px solid $yellow;
+                    border-right: 2px solid $yellow;
+                }
+            }
+        }
+    }
+}
+
+.chk-col-amber[type="checkbox"] {
+    &:checked {
+        + {
+            label {
+                &::before {
+                    border-bottom: 2px solid $amber;
+                    border-right: 2px solid $amber;
+                }
+            }
+        }
+    }
+}
+
+.chk-col-orange[type="checkbox"] {
+    &:checked {
+        + {
+            label {
+                &::before {
+                    border-bottom: 2px solid $orange;
+                    border-right: 2px solid $orange;
+                }
+            }
+        }
+    }
+}
+
+.chk-col-deep-orange[type="checkbox"] {
+    &:checked {
+        + {
+            label {
+                &::before {
+                    border-bottom: 2px solid $deep-orange;
+                    border-right: 2px solid $deep-orange;
+                }
+            }
+        }
+    }
+}
+
+.chk-col-brown[type="checkbox"] {
+    &:checked {
+        + {
+            label {
+                &::before {
+                    border-bottom: 2px solid $brown;
+                    border-right: 2px solid $brown;
+                }
+            }
+        }
+    }
+}
+
+.chk-col-grey[type="checkbox"] {
+    &:checked {
+        + {
+            label {
+                &::before {
+                    border-bottom: 2px solid $grey;
+                    border-right: 2px solid $grey;
+                }
+            }
+        }
+    }
+}
+
+.chk-col-blue-grey[type="checkbox"] {
+    &:checked {
+        + {
+            label {
+                &::before {
+                    border-bottom: 2px solid $blue-grey;
+                    border-right: 2px solid $blue-grey;
+                }
+            }
+        }
+    }
+}
+
+.chk-col-black[type="checkbox"] {
+    &:checked {
+        + {
+            label {
+                &::before {
+                    border-bottom: 2px solid $black;
+                    border-right: 2px solid $black;
+                }
+            }
+        }
+    }
+}
+
+.chk-col-white[type="checkbox"] {
+    &:checked {
+        + {
+            label {
+                &::before {
+                    border-bottom: 2px solid $white;
+                    border-right: 2px solid $white;
+                }
+            }
+        }
+    }
+}
+
+// Filled In
+//-------------------
+.filled-in.chk-col-red[type="checkbox"] {
+    &:checked {
+        + {
+            label {
+                &::after {
+                    background-color: $red;
+                    border: 2px solid $red;
+                }
+            }
+        }
+    }
+}
+
+.filled-in.chk-col-pink[type="checkbox"] {
+    &:checked {
+        + {
+            label {
+                &::after {
+                    background-color: $pink;
+                    border: 2px solid $pink;
+                }
+            }
+        }
+    }
+}
+
+.filled-in.chk-col-purple[type="checkbox"] {
+    &:checked {
+        + {
+            label {
+                &::after {
+                    background-color: $purple;
+                    border: 2px solid $purple;
+                }
+            }
+        }
+    }
+}
+
+.filled-in.chk-col-deep-purple[type="checkbox"] {
+    &:checked {
+        + {
+            label {
+                &::after {
+                    background-color: $deep-purple;
+                    border: 2px solid $deep-purple;
+                }
+            }
+        }
+    }
+}
+
+.filled-in.chk-col-indigo[type="checkbox"] {
+    &:checked {
+        + {
+            label {
+                &::after {
+                    background-color: $indigo;
+                    border: 2px solid $indigo;
+                }
+            }
+        }
+    }
+}
+
+.filled-in.chk-col-blue[type="checkbox"] {
+    &:checked {
+        + {
+            label {
+                &::after {
+                    background-color: $blue;
+                    border: 2px solid $blue;
+                }
+            }
+        }
+    }
+}
+
+.filled-in.chk-col-light-blue[type="checkbox"] {
+    &:checked {
+        + {
+            label {
+                &::after {
+                    background-color: $light-blue;
+                    border: 2px solid $light-blue;
+                }
+            }
+        }
+    }
+}
+
+.filled-in.chk-col-cyan[type="checkbox"] {
+    &:checked {
+        + {
+            label {
+                &::after {
+                    background-color: $cyan;
+                    border: 2px solid $cyan;
+                }
+            }
+        }
+    }
+}
+
+.filled-in.chk-col-teal[type="checkbox"] {
+    &:checked {
+        + {
+            label {
+                &::after {
+                    background-color: $teal;
+                    border: 2px solid $teal;
+                }
+            }
+        }
+    }
+}
+
+.filled-in.chk-col-green[type="checkbox"] {
+    &:checked {
+        + {
+            label {
+                &::after {
+                    background-color: $green;
+                    border: 2px solid $green;
+                }
+            }
+        }
+    }
+}
+
+.filled-in.chk-col-light-green[type="checkbox"] {
+    &:checked {
+        + {
+            label {
+                &::after {
+                    background-color: $light-green;
+                    border: 2px solid $light-green;
+                }
+            }
+        }
+    }
+}
+
+.filled-in.chk-col-lime[type="checkbox"] {
+    &:checked {
+        + {
+            label {
+                &::after {
+                    background-color: $lime;
+                    border: 2px solid $lime;
+                }
+            }
+        }
+    }
+}
+
+.filled-in.chk-col-yellow[type="checkbox"] {
+    &:checked {
+        + {
+            label {
+                &::after {
+                    background-color: $yellow;
+                    border: 2px solid $yellow;
+                }
+            }
+        }
+    }
+}
+
+.filled-in.chk-col-amber[type="checkbox"] {
+    &:checked {
+        + {
+            label {
+                &::after {
+                    background-color: $amber;
+                    border: 2px solid $amber;
+                }
+            }
+        }
+    }
+}
+
+.filled-in.chk-col-orange[type="checkbox"] {
+    &:checked {
+        + {
+            label {
+                &::after {
+                    background-color: $orange;
+                    border: 2px solid $orange;
+                }
+            }
+        }
+    }
+}
+
+.filled-in.chk-col-deep-orange[type="checkbox"] {
+    &:checked {
+        + {
+            label {
+                &::after {
+                    background-color: $deep-orange;
+                    border: 2px solid $deep-orange;
+                }
+            }
+        }
+    }
+}
+
+.filled-in.chk-col-brown[type="checkbox"] {
+    &:checked {
+        + {
+            label {
+                &::after {
+                    background-color: $brown;
+                    border: 2px solid $brown;
+                }
+            }
+        }
+    }
+}
+
+.filled-in.chk-col-grey[type="checkbox"] {
+    &:checked {
+        + {
+            label {
+                &::after {
+                    background-color: $grey;
+                    border: 2px solid $grey;
+                }
+            }
+        }
+    }
+}
+
+.filled-in.chk-col-blue-grey[type="checkbox"] {
+    &:checked {
+        + {
+            label {
+                &::after {
+                    background-color: $blue-grey;
+                    border: 2px solid $blue-grey;
+                }
+            }
+        }
+    }
+}
+
+.filled-in.chk-col-black[type="checkbox"] {
+    &:checked {
+        + {
+            label {
+                &::after {
+                    background-color: $black;
+                    border: 2px solid $black;
+                }
+            }
+        }
+    }
+}
+
+.filled-in.chk-col-white[type="checkbox"] {
+    &:checked {
+        + {
+            label {
+                &::after {
+                    background-color: $white;
+                    border: 2px solid $white;
+                }
+            }
+        }
+    }
+}
+
+// Radio Button
+//===============
+.radio-col-red[type="radio"] {
+    &:checked {
+        + {
+            label {
+                &::after {
+                    background-color: $red;
+                    border-color: $red;
+                }
+            }
+        }
+    }
+}
+
+.radio-col-pink[type="radio"] {
+    &:checked {
+        + {
+            label {
+                &::after {
+                    background-color: $pink;
+                    border-color: $pink;
+                }
+            }
+        }
+    }
+}
+
+.radio-col-purple[type="radio"] {
+    &:checked {
+        + {
+            label {
+                &::after {
+                    background-color: $purple;
+                    border-color: $purple;
+                }
+            }
+        }
+    }
+}
+
+.radio-col-deep-purple[type="radio"] {
+    &:checked {
+        + {
+            label {
+                &::after {
+                    background-color: $deep-purple;
+                    border-color: $deep-purple;
+                }
+            }
+        }
+    }
+}
+
+.radio-col-indigo[type="radio"] {
+    &:checked {
+        + {
+            label {
+                &::after {
+                    background-color: $indigo;
+                    border-color: $indigo;
+                }
+            }
+        }
+    }
+}
+
+.radio-col-blue[type="radio"] {
+    &:checked {
+        + {
+            label {
+                &::after {
+                    background-color: $blue;
+                    border-color: $blue;
+                }
+            }
+        }
+    }
+}
+
+.radio-col-light-blue[type="radio"] {
+    &:checked {
+        + {
+            label {
+                &::after {
+                    background-color: $light-blue;
+                    border-color: $light-blue;
+                }
+            }
+        }
+    }
+}
+
+.radio-col-cyan[type="radio"] {
+    &:checked {
+        + {
+            label {
+                &::after {
+                    background-color: $cyan;
+                    border-color: $cyan;
+                }
+            }
+        }
+    }
+}
+
+.radio-col-teal[type="radio"] {
+    &:checked {
+        + {
+            label {
+                &::after {
+                    background-color: $teal;
+                    border-color: $teal;
+                }
+            }
+        }
+    }
+}
+
+.radio-col-green[type="radio"] {
+    &:checked {
+        + {
+            label {
+                &::after {
+                    background-color: $green;
+                    border-color: $green;
+                }
+            }
+        }
+    }
+}
+
+.radio-col-light-green[type="radio"] {
+    &:checked {
+        + {
+            label {
+                &::after {
+                    background-color: $light-green;
+                    border-color: $light-green;
+                }
+            }
+        }
+    }
+}
+
+.radio-col-lime[type="radio"] {
+    &:checked {
+        + {
+            label {
+                &::after {
+                    background-color: $lime;
+                    border-color: $lime;
+                }
+            }
+        }
+    }
+}
+
+.radio-col-yellow[type="radio"] {
+    &:checked {
+        + {
+            label {
+                &::after {
+                    background-color: $yellow;
+                    border-color: $yellow;
+                }
+            }
+        }
+    }
+}
+
+.radio-col-amber[type="radio"] {
+    &:checked {
+        + {
+            label {
+                &::after {
+                    background-color: $amber;
+                    border-color: $amber;
+                }
+            }
+        }
+    }
+}
+
+.radio-col-orange[type="radio"] {
+    &:checked {
+        + {
+            label {
+                &::after {
+                    background-color: $orange;
+                    border-color: $orange;
+                }
+            }
+        }
+    }
+}
+
+.radio-col-deep-orange[type="radio"] {
+    &:checked {
+        + {
+            label {
+                &::after {
+                    background-color: $deep-orange;
+                    border-color: $deep-orange;
+                }
+            }
+        }
+    }
+}
+
+.radio-col-brown[type="radio"] {
+    &:checked {
+        + {
+            label {
+                &::after {
+                    background-color: $brown;
+                    border-color: $brown;
+                }
+            }
+        }
+    }
+}
+
+.radio-col-grey[type="radio"] {
+    &:checked {
+        + {
+            label {
+                &::after {
+                    background-color: $grey;
+                    border-color: $grey;
+                }
+            }
+        }
+    }
+}
+
+.radio-col-blue-grey[type="radio"] {
+    &:checked {
+        + {
+            label {
+                &::after {
+                    background-color: $blue-grey;
+                    border-color: $blue-grey;
+                }
+            }
+        }
+    }
+}
+
+.radio-col-black[type="radio"] {
+    &:checked {
+        + {
+            label {
+                &::after {
+                    background-color: $black;
+                    border-color: $black;
+                }
+            }
+        }
+    }
+}
+
+.radio-col-white[type="radio"] {
+    &:checked {
+        + {
+            label {
+                &::after {
+                    background-color: $white;
+                    border-color: $white;
+                }
+            }
+        }
+    }
+}
+
+.with-gap.radio-col-red[type="radio"] {
+    &:checked {
+        + {
+            label {
+                &::before {
+                    border: 2px solid $red;
+                }
+                &::after {
+                    background-color: $red;
+                    border: 2px solid $red;
+                }
+            }
+        }
+    }
+}
+
+.with-gap.radio-col-pink[type="radio"] {
+    &:checked {
+        + {
+            label {
+                &::before {
+                    border: 2px solid $pink;
+                }
+                &::after {
+                    background-color: $pink;
+                    border: 2px solid $pink;
+                }
+            }
+        }
+    }
+}
+
+.with-gap.radio-col-purple[type="radio"] {
+    &:checked {
+        + {
+            label {
+                &::before {
+                    border: 2px solid $purple;
+                }
+                &::after {
+                    background-color: $purple;
+                    border: 2px solid $purple;
+                }
+            }
+        }
+    }
+}
+
+.with-gap.radio-col-deep-purple[type="radio"] {
+    &:checked {
+        + {
+            label {
+                &::before {
+                    border: 2px solid $deep-purple;
+                }
+                &::after {
+                    background-color: $deep-purple;
+                    border: 2px solid $deep-purple;
+                }
+            }
+        }
+    }
+}
+
+.with-gap.radio-col-indigo[type="radio"] {
+    &:checked {
+        + {
+            label {
+                &::before {
+                    border: 2px solid $indigo;
+                }
+                &::after {
+                    background-color: $indigo;
+                    border: 2px solid $indigo;
+                }
+            }
+        }
+    }
+}
+
+.with-gap.radio-col-blue[type="radio"] {
+    &:checked {
+        + {
+            label {
+                &::before {
+                    border: 2px solid $blue;
+                }
+                &::after {
+                    background-color: $blue;
+                    border: 2px solid $blue;
+                }
+            }
+        }
+    }
+}
+
+.with-gap.radio-col-light-blue[type="radio"] {
+    &:checked {
+        + {
+            label {
+                &::before {
+                    border: 2px solid $light-blue;
+                }
+                &::after {
+                    background-color: $light-blue;
+                    border: 2px solid $light-blue;
+                }
+            }
+        }
+    }
+}
+
+.with-gap.radio-col-cyan[type="radio"] {
+    &:checked {
+        + {
+            label {
+                &::before {
+                    border: 2px solid $cyan;
+                }
+                &::after {
+                    background-color: $cyan;
+                    border: 2px solid $cyan;
+                }
+            }
+        }
+    }
+}
+
+.with-gap.radio-col-teal[type="radio"] {
+    &:checked {
+        + {
+            label {
+                &::before {
+                    border: 2px solid $teal;
+                }
+                &::after {
+                    background-color: $teal;
+                    border: 2px solid $teal;
+                }
+            }
+        }
+    }
+}
+
+.with-gap.radio-col-green[type="radio"] {
+    &:checked {
+        + {
+            label {
+                &::before {
+                    border: 2px solid $green;
+                }
+                &::after {
+                    background-color: $green;
+                    border: 2px solid $green;
+                }
+            }
+        }
+    }
+}
+
+.with-gap.radio-col-light-green[type="radio"] {
+    &:checked {
+        + {
+            label {
+                &::before {
+                    border: 2px solid $light-green;
+                }
+                &::after {
+                    background-color: $light-green;
+                    border: 2px solid $light-green;
+                }
+            }
+        }
+    }
+}
+
+.with-gap.radio-col-lime[type="radio"] {
+    &:checked {
+        + {
+            label {
+                &::before {
+                    border: 2px solid $lime;
+                }
+                &::after {
+                    background-color: $lime;
+                    border: 2px solid $lime;
+                }
+            }
+        }
+    }
+}
+
+.with-gap.radio-col-yellow[type="radio"] {
+    &:checked {
+        + {
+            label {
+                &::before {
+                    border: 2px solid $yellow;
+                }
+                &::after {
+                    background-color: $yellow;
+                    border: 2px solid $yellow;
+                }
+            }
+        }
+    }
+}
+
+.with-gap.radio-col-amber[type="radio"] {
+    &:checked {
+        + {
+            label {
+                &::before {
+                    border: 2px solid $amber;
+                }
+                &::after {
+                    background-color: $amber;
+                    border: 2px solid $amber;
+                }
+            }
+        }
+    }
+}
+
+.with-gap.radio-col-orange[type="radio"] {
+    &:checked {
+        + {
+            label {
+                &::before {
+                    border: 2px solid $orange;
+                }
+                &::after {
+                    background-color: $orange;
+                    border: 2px solid $orange;
+                }
+            }
+        }
+    }
+}
+
+.with-gap.radio-col-deep-orange[type="radio"] {
+    &:checked {
+        + {
+            label {
+                &::before {
+                    border: 2px solid $deep-orange;
+                }
+                &::after {
+                    background-color: $deep-orange;
+                    border: 2px solid $deep-orange;
+                }
+            }
+        }
+    }
+}
+
+.with-gap.radio-col-brown[type="radio"] {
+    &:checked {
+        + {
+            label {
+                &::before {
+                    border: 2px solid $brown;
+                }
+                &::after {
+                    background-color: $brown;
+                    border: 2px solid $brown;
+                }
+            }
+        }
+    }
+}
+
+.with-gap.radio-col-grey[type="radio"] {
+    &:checked {
+        + {
+            label {
+                &::before {
+                    border: 2px solid $grey;
+                }
+                &::after {
+                    background-color: $grey;
+                    border: 2px solid $grey;
+                }
+            }
+        }
+    }
+}
+
+.with-gap.radio-col-blue-grey[type="radio"] {
+    &:checked {
+        + {
+            label {
+                &::before {
+                    border: 2px solid $blue-grey;
+                }
+                &::after {
+                    background-color: $blue-grey;
+                    border: 2px solid $blue-grey;
+                }
+            }
+        }
+    }
+}
+
+.with-gap.radio-col-black[type="radio"] {
+    &:checked {
+        + {
+            label {
+                &::before {
+                    border: 2px solid $black;
+                }
+                &::after {
+                    background-color: $black;
+                    border: 2px solid $black;
+                }
+            }
+        }
+    }
+}
+
+.with-gap.radio-col-white[type="radio"] {
+    &:checked {
+        + {
+            label {
+                &::before {
+                    border: 2px solid $white;
+                }
+                &::after {
+                    background-color: $white;
+                    border: 2px solid $white;
+                }
+            }
+        }
+    }
+}
+
+//Switch Color
+//---------------
+.switch {
+    label {
+        input[type="checkbox"] {
+            &:checked {
+                &:not(:disabled) {
+                    ~ {
+                        .lever.switch-col-red {
+                            &:active {
+                                &::after {
+                                    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(251, 58, 58, 0.1);
+                                }
+                            }
+                        }
+                        .lever.switch-col-pink {
+                            &:active {
+                                &::after {
+                                    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(233, 30, 99, 0.1);
+                                }
+                            }
+                        }
+                        .lever.switch-col-purple {
+                            &:active {
+                                &::after {
+                                    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(116, 96, 238, 0.1);
+                                }
+                            }
+                        }
+                        .lever.switch-col-deep-purple {
+                            &:active {
+                                &::after {
+                                    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(103, 58, 183, 0.1);
+                                }
+                            }
+                        }
+                        .lever.switch-col-indigo {
+                            &:active {
+                                &::after {
+                                    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(63, 81, 181, 0.1);
+                                }
+                            }
+                        }
+                        .lever.switch-col-blue {
+                            &:active {
+                                &::after {
+                                    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(2, 190, 201, 0.1);
+                                }
+                            }
+                        }
+                        .lever.switch-col-light-blue {
+                            &:active {
+                                &::after {
+                                    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(3, 169, 244, 0.1);
+                                }
+                            }
+                        }
+                        .lever.switch-col-cyan {
+                            &:active {
+                                &::after {
+                                    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(0, 188, 212, 0.1);
+                                }
+                            }
+                        }
+                        .lever.switch-col-teal {
+                            &:active {
+                                &::after {
+                                    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(0, 150, 136, 0.1);
+                                }
+                            }
+                        }
+                        .lever.switch-col-green {
+                            &:active {
+                                &::after {
+                                    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(38, 198, 218, 0.1);
+                                }
+                            }
+                        }
+                        .lever.switch-col-light-green {
+                            &:active {
+                                &::after {
+                                    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(139, 195, 74, 0.1);
+                                }
+                            }
+                        }
+                        .lever.switch-col-lime {
+                            &:active {
+                                &::after {
+                                    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(205, 220, 57, 0.1);
+                                }
+                            }
+                        }
+                        .lever.switch-col-yellow {
+                            &:active {
+                                &::after {
+                                    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(255, 232, 33, 0.1);
+                                }
+                            }
+                        }
+                        .lever.switch-col-amber {
+                            &:active {
+                                &::after {
+                                    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(255, 193, 7, 0.1);
+                                }
+                            }
+                        }
+                        .lever.switch-col-orange {
+                            &:active {
+                                &::after {
+                                    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(255, 152, 0, 0.1);
+                                }
+                            }
+                        }
+                        .lever.switch-col-deep-orange {
+                            &:active {
+                                &::after {
+                                    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(255, 87, 34, 0.1);
+                                }
+                            }
+                        }
+                        .lever.switch-col-brown {
+                            &:active {
+                                &::after {
+                                    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(121, 85, 72, 0.1);
+                                }
+                            }
+                        }
+                        .lever.switch-col-grey {
+                            &:active {
+                                &::after {
+                                    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(158, 158, 158, 0.1);
+                                }
+                            }
+                        }
+                        .lever.switch-col-blue-grey {
+                            &:active {
+                                &::after {
+                                    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(96, 125, 139, 0.1);
+                                }
+                            }
+                        }
+                        .lever.switch-col-black {
+                            &:active {
+                                &::after {
+                                    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(0, 0, 0, 0.1);
+                                }
+                            }
+                        }
+                        .lever.switch-col-white {
+                            &:active {
+                                &::after {
+                                    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(255, 255, 255, 0.1);
+                                }
+                            }
+                        }
+                    }
+                }
+                + {
+                    .lever.switch-col-red {
+                        background-color: rgba(251, 58, 58, 0.5);
+                        &::after {
+                            background-color: #fb3a3a;
+                        }
+                    }
+                    .lever.switch-col-pink {
+                        background-color: rgba(233, 30, 99, 0.5);
+                        &::after {
+                            background-color: #e91e63;
+                        }
+                    }
+                    .lever.switch-col-purple {
+                        background-color: rgba(116, 96, 238, 0.5);
+                        &::after {
+                            background-color: #7460ee;
+                        }
+                    }
+                    .lever.switch-col-deep-purple {
+                        background-color: rgba(103, 58, 183, 0.5);
+                        &::after {
+                            background-color: #673ab7;
+                        }
+                    }
+                    .lever.switch-col-indigo {
+                        background-color: rgba(63, 81, 181, 0.5);
+                        &::after {
+                            background-color: #3f51b5;
+                        }
+                    }
+                    .lever.switch-col-blue {
+                        background-color: rgba(2, 190, 201, 0.5);
+                        &::after {
+                            background-color: #02bec9;
+                        }
+                    }
+                    .lever.switch-col-light-blue {
+                        background-color: rgba(3, 169, 244, 0.5);
+                        &::after {
+                            background-color: #03a9f4;
+                        }
+                    }
+                    .lever.switch-col-cyan {
+                        background-color: rgba(0, 188, 212, 0.5);
+                        &::after {
+                            background-color: #00bcd4;
+                        }
+                    }
+                    .lever.switch-col-teal {
+                        background-color: rgba(0, 150, 136, 0.5);
+                        &::after {
+                            background-color: #009688;
+                        }
+                    }
+                    .lever.switch-col-green {
+                        background-color: rgba(38, 198, 218, 0.5);
+                        &::after {
+                            background-color: #26c6da;
+                        }
+                    }
+                    .lever.switch-col-light-green {
+                        background-color: rgba(139, 195, 74, 0.5);
+                        &::after {
+                            background-color: #8bc34a;
+                        }
+                    }
+                    .lever.switch-col-lime {
+                        background-color: rgba(205, 220, 57, 0.5);
+                        &::after {
+                            background-color: #cddc39;
+                        }
+                    }
+                    .lever.switch-col-yellow {
+                        background-color: rgba(255, 232, 33, 0.5);
+                        &::after {
+                            background-color: #ffe821;
+                        }
+                    }
+                    .lever.switch-col-amber {
+                        background-color: rgba(255, 193, 7, 0.5);
+                        &::after {
+                            background-color: #ffc107;
+                        }
+                    }
+                    .lever.switch-col-orange {
+                        background-color: rgba(255, 152, 0, 0.5);
+                        &::after {
+                            background-color: #ff9800;
+                        }
+                    }
+                    .lever.switch-col-deep-orange {
+                        background-color: rgba(255, 87, 34, 0.5);
+                        &::after {
+                            background-color: #ff5722;
+                        }
+                    }
+                    .lever.switch-col-brown {
+                        background-color: rgba(121, 85, 72, 0.5);
+                        &::after {
+                            background-color: #795548;
+                        }
+                    }
+                    .lever.switch-col-grey {
+                        background-color: rgba(158, 158, 158, 0.5);
+                        &::after {
+                            background-color: #9e9e9e;
+                        }
+                    }
+                    .lever.switch-col-blue-grey {
+                        background-color: rgba(96, 125, 139, 0.5);
+                        &::after {
+                            background-color: #607d8b;
+                        }
+                    }
+                    .lever.switch-col-black {
+                        background-color: rgba(0, 0, 0, 0.5);
+                        &::after {
+                            background-color: #000000;
+                        }
+                    }
+                    .lever.switch-col-white {
+                        background-color: rgba(255, 255, 255, 0.5);
+                        &::after {
+                            background-color: #ffffff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.gradient {
+    &-1 {
+        @extend %gradient-1;
+    }
+    &-2 {
+        @extend %gradient-2;
+    }
+    &-3 {
+        @extend %gradient-3;
+    }
+    &-4 {
+        @extend %gradient-4;
+    }
+    &-5 {
+        @extend %gradient-5;
+    }
+    &-6 {
+        @extend %gradient-6;
+    }
+    &-7 {
+        @extend %gradient-7;
+    }
+    &-8 {
+        @extend %gradient-8;
+    }
+}
+

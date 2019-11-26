@@ -1,0 +1,54 @@
+.month-name {
+    min-width: 7rem;
+    display: inline-block;
+}
+
+.total-sale-card {
+    .list {
+
+        li {
+            display: inline-block;
+            position: relative;
+            
+            &:not(:last-child) {
+                margin-right: 5rem;
+            }
+
+            @at-root [direction="rtl"] #{&} {
+            
+                &:not(:first-child) {
+                    margin-right: 5rem;
+                }
+
+                &:first-child {
+                    margin-right: 0;
+                }
+
+            }
+
+            &:before {
+                position: absolute;
+                left: -1.8rem;
+                top: .7rem;
+                width: 1rem;
+                height: 1rem;
+                border-radius: 50%;
+                content: "";
+            }
+
+            &:first-child::before {
+                background-color: #51CCA9;
+            }
+
+            &:last-child::before {
+                background-color: rgb(208, 123, 237);
+            }
+        }
+    }
+}
+
+.product-details-table {
+    &.table-padded {
+        border-spacing: 0 1rem;
+    }
+}

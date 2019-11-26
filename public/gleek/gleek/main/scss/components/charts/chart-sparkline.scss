@@ -1,0 +1,15 @@
+#daily-sales, #comparison-rate, #usage-chart, #walet-status {
+    width: 100%;
+    display: block;
+
+    canvas {
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+}
+
+// #daily-sales {
+//     @include respond(tab-land) {
+//         height: 7rem !important;
+//     }
+// }

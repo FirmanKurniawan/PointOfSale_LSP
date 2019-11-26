@@ -1,0 +1,128 @@
+.bootstrap-pagination {
+    margin-bottom: 2rem;
+
+    h5{
+        margin-bottom: 1rem;
+        font-size: 1.8rem;
+    }
+}
+
+.pagination {
+    margin-bottom: .5rem;
+
+    .page-item {
+
+        .page-link {
+            height: 5rem;
+            border-radius: 0;
+            text-align: center;
+            line-height: 3.8rem;
+
+            &:focus{
+                outline: 0;
+                box-shadow: none;
+            }
+
+            &:hover{
+                background: $primary;
+                color: $white;
+                border-color: $primary;
+            }
+        }
+
+        &.active .page-link {
+            background-color: $primary;
+            border-color: $primary;
+            color: $white;
+        }
+
+        .page-link {
+            width: 6.5rem;
+            color: $muted;
+        }
+
+        &:first-child .page-link, &:last-child .page-link {
+            border-radius: 0;
+        }
+
+        &.page-indicator .page-link {
+            width: 8rem;
+        }
+
+        &.page-indicator:hover{
+            .page-link{
+                color: $dark;
+            }
+        }
+
+        &:last-child .page-link{
+            margin-right: 0;
+        }
+
+        &:first-child .page-link{
+
+            @at-root [direction="rtl"] #{&} {
+                margin-right: 0;
+            }
+        }
+    }
+
+    &-md.pagination {
+        .page-item {
+
+            .page-link {
+                height: 4.5rem;
+                width: 6rem;
+            }
+        }
+    }
+
+    &-sm.pagination {
+        .page-item {
+
+            .page-link {
+                height: 3.5rem;
+                width: 5.5rem;
+                line-height: 2.9rem;
+            }
+        }
+    }
+
+    &-rounded.pagination {
+
+        .page-item:first-child .page-link, .page-item:last-child .page-link {
+            border-radius: 5rem;
+        }
+        
+        .page-link {
+            width: 5rem;
+            height: 5rem;
+            border-radius: 5rem;
+            border: 0;
+            box-shadow: 2px 3px 10px 0px rgba(119, 119, 119, 0.1); 
+            margin-right: 1.5rem;
+
+            @include respond('phone-land') {
+                margin-right: 1rem;
+                height: 4rem;
+                width: 4rem;
+                line-height: 3rem;
+            }
+        }
+
+        &.pagination-md {
+            .page-link {
+                height: 4rem;
+                width: 4rem;
+                line-height: 2.9rem;
+            }
+        }
+
+        &.pagination-sm {
+            .page-link {
+                height: 3.5rem;
+                width: 3.5rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,68 @@
+
+
+.timeline {
+    list-style: none;
+    padding: .8rem 0 .8rem;
+    position: relative;
+    &:before {
+      top: 2rem;
+      bottom: 0;
+      position: absolute;
+      content: " ";
+      width: .2rem;
+      left: 2.5rem;
+      margin-right: -1.5rem;
+    }
+    > li {
+      margin-bottom: .5rem;
+      position: relative;
+      &:before {
+        content: " ";
+        display: table;
+      }
+      &:after {
+        content: " ";
+        display: table;
+        clear: both;
+      }
+      > {
+        .timeline-panel {
+          width: calc(100% - 3.5rem);
+          float: right;
+          border-radius: .2rem;
+          // padding: .5rem 2rem;
+          position: relative;
+        }
+        .timeline-badge {
+            border-radius: 50%;
+            height: 1.5rem;
+            left: 1.9rem;
+            position: absolute;
+            top: 1rem;
+            width: 1.5rem;
+        }
+      }
+    }
+  }
+  
+  .timeline-body > p {
+    font-size: 1.2rem;
+  }
+  
+  .timeline-badge {
+    &.primary {
+      background-color: $primary !important;
+    }
+    &.success {
+      background-color: $success !important;
+    }
+    &.warning {
+      background-color: $warning !important;
+    }
+    &.danger {
+      background-color: $danger !important;
+    }
+    &.info {
+      background-color: $info !important;
+    }
+  }

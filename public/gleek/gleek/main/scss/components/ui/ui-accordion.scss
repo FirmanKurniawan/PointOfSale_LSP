@@ -1,0 +1,114 @@
+ // Variable.scss
+
+
+.accordion{
+    .card{
+        margin-bottom: .7rem;
+    }
+    .card-header{
+        cursor: pointer;
+        background: $white;
+        color: $l-ctd!important;
+    }
+
+}
+
+// #accordion-one, 
+#accordion-one,.default-accordion-style{
+    .fa{
+        float: right;
+    }
+
+    [data-toggle="collapse"] .fa:before {  
+        content: "\f068";
+    }
+      
+    [data-toggle="collapse"].collapsed .fa:before {
+    content: "\f067";
+    }
+
+    .card{
+        box-shadow: none !important;
+        border-bottom: 1px solid $iron !important;
+
+        .card-header{
+            padding: 1.6rem;
+
+            h5{
+                font-size: 1.7rem;
+                line-height: 35px;
+                // color: $primary;
+
+                // &.collapsed{
+                //     color: $dark;
+                // }
+
+                i{
+                    width: 35px;
+                    height: 35px;
+                    border-radius: 50%;
+                    border: 1px solid $iron;
+                    font-size: 18px;
+                    text-align: center;
+                    line-height: 35px;
+                    -webkit-text-stroke: 1px white !important;
+                }
+            }
+        }
+
+        &-body{
+            padding: 0 2rem 2rem;
+
+            p:not(:last-child){
+                margin-bottom: 2.5rem;
+            }
+
+            p:first-child{
+                margin-top: 0;
+            }
+        }
+    }
+
+    .card-header h5[aria-expanded=true]{
+        color: $primary;
+    }
+}
+
+
+
+
+#accordion-two{
+    .fa{
+        float: right;
+    }
+
+    [data-toggle="collapse"] .fa:before {  
+        content: "\f106";
+    }
+      
+    [data-toggle="collapse"].collapsed .fa:before {
+    content: "\f107";
+    }
+}
+
+#accordion-three{
+    .fa{
+        float: right;
+    }
+
+    [data-toggle="collapse"] .fa:before {  
+        content: "\f107";
+    }
+      
+    [data-toggle="collapse"].collapsed .fa:before {
+    content: "\f105";
+    }
+}
+
+.card-body .accordion .card:hover{
+    box-shadow: 2px 3px 10px 0px rgba(119, 119, 119, 0.1);
+}
+
+
+
+  

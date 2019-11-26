@@ -1,0 +1,21 @@
+.grid-col {
+    padding: 2rem !important;
+    background: #fff;
+    box-shadow: 2px 3px 10px 0px rgba(119, 119, 119, 0.1); 
+
+    
+
+
+    // @include respond('tab') {
+    //     margin-bottom: 2rem;
+    // }
+}
+
+.row.grid {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.row.grid .grid-col:first-child{
+    text-align: left;
+}

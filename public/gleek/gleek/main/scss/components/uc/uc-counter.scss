@@ -1,0 +1,10 @@
+@import './../../abstracts/variable';
+
+.counter-wrapper {
+    text-align: center;
+
+    span.counter {
+        font-size: 4rem;
+        color: $dark;
+    }
+}

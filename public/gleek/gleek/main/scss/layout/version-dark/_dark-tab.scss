@@ -1,0 +1,34 @@
+[data-theme-version="dark"] {
+    .nav-tabs {
+        border-bottom-color: $d-border; 
+
+        &-vertical {
+            border-right-color: $d-border;
+        }
+
+        &-vertical.right-align {
+            border-left-color: $d-border;
+        }
+
+        .nav-link {
+            &:hover {
+                border-color: $d-bg;
+            }
+
+            &.active {
+                background-color: $d-bg;
+                border: 1px solid $d-border;
+            }
+        }
+    }
+
+    .tab-pane-img {
+        border-color: $d-border;
+    }
+
+    .bordered-tab {
+        .tab-pane {
+            border-color: $d-border;
+        }
+    }
+}

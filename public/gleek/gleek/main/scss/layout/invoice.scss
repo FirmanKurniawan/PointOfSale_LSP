@@ -1,0 +1,62 @@
+@import "../abstracts/variable";
+
+
+.invoice-info-card {
+
+    .card-header{
+        border-bottom: 1px solid rgba($iron, .4);
+    }
+
+    .distributors {
+        margin-bottom: 8rem;
+    }
+    
+    .invoice-to {
+        margin-bottom: 4rem;
+    }
+    
+    .invoice-id {
+        margin-bottom: 4rem;
+    }
+
+}
+
+.invoice-details-table {
+
+    .table > thead > tr > th {
+        border-bottom: 1px solid $border;
+    }
+
+    .table > tbody > tr > td {
+        border-top: 0;
+        border-bottom: 1px solid $border;
+    }
+
+    .table > tbody > tr:last-child > td {
+        border: 0;
+    }
+
+    .table > tbody > tr > td:empty {
+        border: 0;
+    }
+}
+
+.invoice-save-btns {
+    &>div {
+
+        @media(min-width: 1200px){
+            flex-basis: 10%;
+        }
+    }
+}
+
+.invoice-list-header-left {
+    .btn {
+        color: $primary;
+
+        &:hover {
+            background-color: $primary;
+            color: $white;
+        }
+    }
+}

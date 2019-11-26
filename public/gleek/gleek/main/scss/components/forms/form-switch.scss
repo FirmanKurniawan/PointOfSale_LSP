@@ -1,0 +1,98 @@
+
+
+.js-switch {
+
+    & + .switchery {
+        border-radius: 50px;
+        margin-right: 4rem;
+
+        &>small {
+            top: .2rem;
+        }
+    }
+
+    &.js-switch-lg  {
+        & + .switchery {
+            height: 5rem;
+            width: 10rem;
+
+            &>small {
+                width: 4.5rem;
+                height: 4.5rem;
+            }
+        }
+    }
+
+    &.js-switch-md  {
+        & + .switchery {
+            height: 3.8rem;
+            width: 7.5rem;
+
+            &>small {
+                width: 3.3rem;
+                height: 3.3rem;
+            }
+        }
+    }
+
+    &.js-switch-sm  {
+        & + .switchery {
+            height: 2.3rem;
+            width: 4.2rem;
+
+            &>small {
+                width: 1.9rem;
+                height: 1.9rem;
+            }
+        }
+    }
+
+    &-square {
+
+        & + .switchery {
+            border-radius: 0;
+    
+            &>small {
+                border-radius: 0;
+                top: .1rem;
+            }
+        }
+
+        &.js-switch-lg  {
+            & + .switchery {
+                height: 5rem;
+                width: 10rem;
+    
+                &>small {
+                    width: 4.8rem;
+                    height: 4.8rem;
+                }
+            }
+        }
+
+        &.js-switch-md  {
+            & + .switchery {
+                height: 4.6rem;
+                width: 10rem;
+    
+                &>small {
+                    width: 5rem;
+                    height: 4.4rem;
+                }
+            }
+        }
+
+        &.js-switch-sm  {
+            & + .switchery {
+                height: 2.8rem;
+                width: 5.7rem;
+    
+                &>small {
+                    width: 2.8rem;
+                    height: 2.6rem;
+                }
+            }
+        }
+    }
+    
+}

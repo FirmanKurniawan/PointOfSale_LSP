@@ -1,0 +1,20 @@
+@import "../../abstracts/variable";
+
+.twitter-typeahead {
+    width: 100%;
+
+    .tt-menu {
+        width: 100%;
+        background-color: $white;
+
+        .tt-suggestion {
+            padding: 1rem;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $primary;
+                color: $white;
+            }
+        }
+    }
+}

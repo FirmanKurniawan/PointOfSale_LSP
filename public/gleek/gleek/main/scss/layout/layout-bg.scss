@@ -1,0 +1,834 @@
+@import "../abstracts/variable";
+
+[data-nav-headerbg="color_1"] {
+    .nav-header {
+        background-color: $color_pallate_1;
+    }
+}
+
+[data-nav-headerbg="color_2"] {
+    .nav-header {
+        background-color: $color_pallate_2 !important;
+    }
+}
+
+[data-nav-headerbg="color_3"] {
+    .nav-header {
+        background-color: $color_pallate_3 !important;
+    }
+}
+
+[data-nav-headerbg="color_4"] {
+    .nav-header {
+        background-color: $color_pallate_4 !important;
+    }
+}
+
+[data-nav-headerbg="color_5"] {
+    .nav-header {
+        background-color: $color_pallate_5 !important;
+    }
+}
+
+[data-nav-headerbg="color_6"] {
+    .nav-header {
+        background-color: $color_pallate_6 !important;
+    }
+}
+
+[data-nav-headerbg="color_7"] {
+    .nav-header {
+        background-color: $color_pallate_7 !important;
+    }
+}
+
+[data-nav-headerbg="color_8"] {
+    .nav-header {
+        background-color: $color_pallate_8 !important;
+    }
+}
+
+[data-nav-headerbg="color_9"] {
+    .nav-header {
+        background-color: $color_pallate_9 !important;
+    }
+}
+
+[data-nav-headerbg="color_10"] {
+    .nav-header {
+        background-color: $color_pallate_10 !important;
+    }
+}
+
+[data-headerbg="color_1"] {
+    .header {
+        background-color: $white;
+    }
+}
+
+[data-headerbg="color_2"] {
+    .header {
+        background-color: $color_pallate_2 !important;
+        color: $white !important;
+    }
+}
+
+[data-headerbg="color_3"] {
+    .header {
+        background-color: $color_pallate_3 !important;
+        color: $white !important;
+    }
+}
+
+[data-headerbg="color_4"] {
+    .header {
+        background-color: $color_pallate_4 !important;
+        color: $white !important;
+    }
+}
+
+[data-headerbg="color_5"] {
+    .header {
+        background-color: $color_pallate_5 !important;
+        color: $white !important;
+    }
+}
+
+[data-headerbg="color_6"] {
+    .header {
+        background-color: $color_pallate_6 !important;
+        color: $white !important;
+    }
+}
+
+[data-headerbg="color_7"] {
+    .header {
+        background-color: $color_pallate_7 !important;
+        color: $white !important;
+    }
+}
+
+[data-headerbg="color_8"] {
+    .header {
+        background-color: $color_pallate_8 !important;
+        color: $white !important;
+    }
+}
+
+[data-headerbg="color_9"] {
+    .header {
+        background-color: $color_pallate_9 !important;
+        color: $white !important;
+    }
+}
+
+[data-headerbg="color_10"] {
+    .header {
+        background-color: $color_pallate_10 !important;
+        color: $white !important;
+    }
+}
+
+[data-headerbg="color_2"], 
+[data-headerbg="color_3"], 
+[data-headerbg="color_4"], 
+[data-headerbg="color_5"], 
+[data-headerbg="color_6"], 
+[data-headerbg="color_7"], 
+[data-headerbg="color_8"], 
+[data-headerbg="color_9"], 
+[data-headerbg="color_10"] 
+{
+    .header {
+
+        .icons>a, .icons i {
+            color: $white !important;
+        }
+
+        .header-search .input-group .input-group-text i {
+            color: $muted !important;
+        }
+    }
+
+}
+
+[data-sibebarbg="color_1"] {
+    .nk-sidebar .metismenu {
+        background-color: $white;
+    }
+}
+
+[data-sibebarbg="color_2"] {
+    .nk-sidebar {
+        background-color: $color_pallate_2 !important;
+
+        .metismenu {
+            background-color: $color_pallate_2 !important;
+
+            .mega-menu ul.in li a:hover {
+                color: $white !important;
+            }
+
+            ul {
+                background-color: darken($color: $color_pallate_2, $amount: 10%);
+
+                &.in {
+                    li.active a {
+                        color: $white !important;
+
+                        &:hover {
+                            color: $white !important;
+                        }
+                    }
+                }
+            }
+
+            a:hover, a:active, a.active {
+                background-color: darken($color: $color_pallate_2, $amount: 20%) !important;
+                color: $white !important;
+            }
+
+            &>li {
+                &.active {
+                    &>a {
+                        background-color: darken($color: $color_pallate_2, $amount: 20%) !important;
+                    }
+                }
+
+                &:hover, &:focus, &.active {
+                    &>a {
+                        background-color: darken($color: $color_pallate_2, $amount: 20%) !important;
+                        color: $white !important;
+
+                        @at-root [data-sidebar-style="mini"]#{&} {
+                            background-color: darken($color: $color_pallate_2, $amount: 20%) !important;
+
+                            &:hover, &:focus, &:active {
+                                background-color: darken($color: $color_pallate_2, $amount: 20%) !important;
+                                color: $white !important;
+                            }
+                        }
+
+                        @at-root [data-sidebar-style="full"]#{&} {
+                            background-color: darken($color: $color_pallate_2, $amount: 20%) !important;
+
+                            &:hover, &:focus, &:active {
+                                background-color: darken($color: $color_pallate_2, $amount: 20%) !important;
+                                color: $white !important;
+                            }
+                        }
+
+                        &:hover, &:focus, &:active {
+                            background-color: darken($color: $color_pallate_2, $amount: 20%) !important;
+                            color: $white !important;
+                        }
+                    }
+                }
+            }
+    
+            * {
+                color: $white !important;
+            }
+        }
+    } 
+}
+
+[data-sibebarbg="color_3"] {
+    .nk-sidebar {
+        background-color: $color_pallate_3 !important;
+
+        .metismenu {
+            background-color: $color_pallate_3 !important;
+
+            .mega-menu ul.in li a:hover {
+                color: $white !important;
+            }
+
+            ul {
+                background-color: darken($color: $color_pallate_3, $amount: 10%) !important;
+
+                &.in {
+                    li.active a {
+                        color: $white !important;
+
+                        &:hover {
+                            color: $white !important;
+                        }
+                    }
+                }
+            }
+
+            a:hover, a:active, a.active {
+                background-color: darken($color: $color_pallate_3, $amount: 20%) !important;
+                color: $white !important;
+            }
+
+            &>li {
+                &.active {
+                    &>a {
+                        background-color: darken($color: $color_pallate_3, $amount: 20%) !important;
+                    }
+                }
+
+                &:hover, &:focus, &.active {
+                    &>a {
+                        background-color: darken($color: $color_pallate_3, $amount: 20%) !important;
+                        color: $white !important;
+
+                        @at-root [data-sidebar-style="mini"]#{&} {
+                            background-color: darken($color: $color_pallate_3, $amount: 20%) !important;
+
+                            &:hover, &:focus, &:active {
+                                background-color: darken($color: $color_pallate_3, $amount: 20%) !important;
+                                color: $white !important;
+                            }
+                        }
+
+                        @at-root [data-sidebar-style="full"]#{&} {
+                            background-color: darken($color: $color_pallate_3, $amount: 20%) !important;
+
+                            &:hover, &:focus, &:active {
+                                background-color: darken($color: $color_pallate_3, $amount: 20%) !important;
+                                color: $white !important;
+                            }
+                        }
+
+                        &:hover, &:focus, &:active {
+                            background-color: darken($color: $color_pallate_3, $amount: 20%) !important;
+                            color: $white !important;
+                        }
+                    }
+                }
+            }
+    
+            * {
+                color: $white;
+            }
+        }
+    }
+}
+
+[data-sibebarbg="color_4"] {
+    .nk-sidebar {
+        background-color: $color_pallate_4 !important;
+
+        .metismenu {
+            background-color: $color_pallate_4 !important;
+
+            .mega-menu ul.in li a:hover {
+                color: $white !important;
+            }
+
+            ul {
+                background-color: darken($color: $color_pallate_4, $amount: 10%) !important;
+
+                &.in {
+                    li.active a {
+                        color: $white !important;
+
+                        &:hover {
+                            color: $white !important;
+                        }
+                    }
+                }
+            }
+
+            a:hover, a:active, a.active {
+                background-color: darken($color: $color_pallate_4, $amount: 20%) !important;
+                color: $white !important;
+            }
+
+            &>li {
+                &.active {
+                    &>a {
+                        background-color: darken($color: $color_pallate_4, $amount: 20%) !important;
+                    }
+                }
+
+                &:hover, &:focus, &.active {
+                    &>a {
+                        background-color: darken($color: $color_pallate_4, $amount: 20%) !important;
+                        color: $white !important;
+
+                        @at-root [data-sidebar-style="mini"]#{&} {
+                            background-color: darken($color: $color_pallate_4, $amount: 20%) !important;
+
+                            &:hover, &:focus, &:active {
+                                background-color: darken($color: $color_pallate_4, $amount: 20%) !important;
+                                color: $white !important;
+                            }
+                        }
+
+                        @at-root [data-sidebar-style="full"]#{&} {
+                            background-color: darken($color: $color_pallate_4, $amount: 20%) !important;
+
+                            &:hover, &:focus, &:active {
+                                background-color: darken($color: $color_pallate_4, $amount: 20%) !important;
+                                color: $white !important;
+                            }
+                        }
+
+                        &:hover, &:focus, &:active {
+                            background-color: darken($color: $color_pallate_4, $amount: 20%) !important;
+                            color: $white !important;
+                        }
+                    }
+                }
+            }
+    
+            * {
+                color: $white;
+            }
+        }
+    } 
+}
+
+[data-sibebarbg="color_5"] {
+    .nk-sidebar {
+        background-color: $color_pallate_5 !important;
+
+        .metismenu {
+            background-color: $color_pallate_5 !important;
+
+            .mega-menu ul.in li a:hover {
+                color: $white !important;
+            }
+
+            ul {
+                background-color: darken($color: $color_pallate_5, $amount: 10%) !important;
+
+                &.in {
+                    li.active a {
+                        color: $white !important;
+
+                        &:hover {
+                            color: $white !important;
+                        }
+                    }
+                }
+            }
+
+            a:hover, a:active, a.active {
+                background-color: darken($color: $color_pallate_5, $amount: 20%) !important;
+                color: $white !important;
+            }
+
+            &>li {
+                &.active {
+                    &>a {
+                        background-color: darken($color: $color_pallate_5, $amount: 20%) !important;
+                    }
+                }
+
+                &:hover, &:focus, &.active {
+                    &>a {
+                        background-color: darken($color: $color_pallate_5, $amount: 20%) !important;
+                        color: $white !important;
+
+                        @at-root [data-sidebar-style="mini"]#{&} {
+                            background-color: darken($color: $color_pallate_5, $amount: 20%) !important;
+
+                            &:hover, &:focus, &:active {
+                                background-color: darken($color: $color_pallate_5, $amount: 20%) !important;
+                                color: $white !important;
+                            }
+                        }
+
+                        @at-root [data-sidebar-style="full"]#{&} {
+                            background-color: darken($color: $color_pallate_5, $amount: 20%) !important;
+
+                            &:hover, &:focus, &:active {
+                                background-color: darken($color: $color_pallate_5, $amount: 20%) !important;
+                                color: $white !important;
+                            }
+                        }
+
+                        &:hover, &:focus, &:active {
+                            background-color: darken($color: $color_pallate_5, $amount: 20%) !important;
+                            color: $white !important;
+                        }
+                    }
+                }
+            }
+    
+            * {
+                color: $white;
+            }
+        }
+    } 
+}
+
+[data-sibebarbg="color_6"] {
+    .nk-sidebar {
+        background-color: $color_pallate_6 !important;
+
+        .metismenu {
+            background-color: $color_pallate_6 !important;
+
+            .mega-menu ul.in li a:hover {
+                color: $white !important;
+            }
+
+            ul {
+                background-color: darken($color: $color_pallate_6, $amount: 10%) !important;
+
+                &.in {
+                    li.active a {
+                        color: $white !important;
+
+                        &:hover {
+                            color: $white !important;
+                        }
+                    }
+                }
+            }
+
+            a:hover, a:active, a.active {
+                background-color: darken($color: $color_pallate_6, $amount: 20%) !important;
+                color: $white !important;
+            }
+
+            &>li {
+                &.active {
+                    &>a {
+                        background-color: darken($color: $color_pallate_6, $amount: 20%) !important;
+                    }
+                }
+
+                &:hover, &:focus, &.active {
+                    &>a {
+                        background-color: darken($color: $color_pallate_6, $amount: 20%) !important;
+                        color: $white !important;
+
+                        @at-root [data-sidebar-style="mini"]#{&} {
+                            background-color: darken($color: $color_pallate_6, $amount: 20%) !important;
+
+                            &:hover, &:focus, &:active {
+                                background-color: darken($color: $color_pallate_6, $amount: 20%) !important;
+                                color: $white !important;
+                            }
+                        }
+
+                        @at-root [data-sidebar-style="full"]#{&} {
+                            background-color: darken($color: $color_pallate_6, $amount: 20%) !important;
+
+                            &:hover, &:focus, &:active {
+                                background-color: darken($color: $color_pallate_6, $amount: 20%) !important;
+                                color: $white !important;
+                            }
+                        }
+
+                        &:hover, &:focus, &:active {
+                            background-color: darken($color: $color_pallate_6, $amount: 20%) !important;
+                            color: $white !important;
+                        }
+                    }
+                }
+            }
+    
+            * {
+                color: $white;
+            }
+        }
+    }
+}
+
+[data-sibebarbg="color_7"] {
+    .nk-sidebar {
+        background-color: $color_pallate_7 !important;
+
+        .metismenu {
+            background-color: $color_pallate_7 !important;
+
+            .mega-menu ul.in li a:hover {
+                color: $white !important;
+            }
+
+            ul {
+                background-color: darken($color: $color_pallate_7, $amount: 10%) !important;
+
+                &.in {
+                    li.active a {
+                        color: $white !important;
+
+                        &:hover {
+                            color: $white !important;
+                        }
+                    }
+                }
+            }
+
+            a:hover, a:active, a.active {
+                background-color: darken($color: $color_pallate_7, $amount: 20%) !important;
+                color: $white !important;
+            }
+
+            &>li {
+                &.active {
+                    &>a {
+                        background-color: darken($color: $color_pallate_7, $amount: 20%) !important;
+                    }
+                }
+
+                &:hover, &:focus, &.active {
+                    &>a {
+                        background-color: darken($color: $color_pallate_7, $amount: 20%) !important;
+                        color: $white !important;
+
+                        @at-root [data-sidebar-style="mini"]#{&} {
+                            background-color: darken($color: $color_pallate_7, $amount: 20%) !important;
+
+                            &:hover, &:focus, &:active {
+                                background-color: darken($color: $color_pallate_7, $amount: 20%) !important;
+                                color: $white !important;
+                            }
+                        }
+
+                        @at-root [data-sidebar-style="full"]#{&} {
+                            background-color: darken($color: $color_pallate_7, $amount: 20%) !important;
+
+                            &:hover, &:focus, &:active {
+                                background-color: darken($color: $color_pallate_7, $amount: 20%) !important;
+                                color: $white !important;
+                            }
+                        }
+
+                        &:hover, &:focus, &:active {
+                            background-color: darken($color: $color_pallate_7, $amount: 20%) !important;
+                            color: $white !important;
+                        }
+                    }
+                }
+            }
+    
+            * {
+                color: $white;
+            }
+        }
+    }
+}
+
+[data-sibebarbg="color_8"] {
+    .nk-sidebar {
+        background-color: $color_pallate_8 !important;
+         
+        .metismenu {
+            background-color: $color_pallate_8 !important;
+
+            .mega-menu ul.in li a:hover {
+                color: $white !important;
+            }
+
+            ul {
+                background-color: darken($color: $color_pallate_8, $amount: 10%) !important;
+
+                &.in {
+                    li.active a {
+                        color: $white !important;
+
+                        &:hover {
+                            color: $white !important;
+                        }
+                    }
+                }
+            }
+
+            a:hover, a:active, a.active {
+                background-color: darken($color: $color_pallate_8, $amount: 20%) !important;
+                color: $white !important;
+            }
+
+            &>li {
+                &.active {
+                    &>a {
+                        background-color: darken($color: $color_pallate_8, $amount: 20%) !important;
+                    }
+                }
+
+                &:hover, &:focus, &.active {
+                    &>a {
+                        background-color: darken($color: $color_pallate_8, $amount: 20%) !important;
+                        color: $white !important;
+
+                        @at-root [data-sidebar-style="mini"]#{&} {
+                            background-color: darken($color: $color_pallate_8, $amount: 20%) !important;
+
+                            &:hover, &:focus, &:active {
+                                background-color: darken($color: $color_pallate_8, $amount: 20%) !important;
+                                color: $white !important;
+                            }
+                        }
+
+                        @at-root [data-sidebar-style="full"]#{&} {
+                            background-color: darken($color: $color_pallate_8, $amount: 20%) !important;
+
+                            &:hover, &:focus, &:active {
+                                background-color: darken($color: $color_pallate_8, $amount: 20%) !important;
+                                color: $white !important;
+                            }
+                        }
+
+                        &:hover, &:focus, &:active {
+                            background-color: darken($color: $color_pallate_8, $amount: 20%) !important;
+                            color: $white !important;
+                        }
+                    }
+                }
+            }
+
+            * {
+                color: $white;
+            }
+        }
+    }
+}
+
+[data-sibebarbg="color_9"] {
+    .nk-sidebar {
+        background-color: $color_pallate_9 !important;
+        
+        .metismenu {
+            background-color: $color_pallate_9 !important;
+
+            .mega-menu ul.in li a:hover {
+                color: $white !important;
+            }
+
+            ul {
+                background-color: darken($color: $color_pallate_9, $amount: 10%) !important;
+
+                &.in {
+                    li.active a {
+                        color: $white !important;
+
+                        &:hover {
+                            color: $white !important;
+                        }
+                    }
+                }
+            }
+
+            a:hover, a:active, a.active {
+                background-color: darken($color: $color_pallate_9, $amount: 20%) !important;
+                color: $white !important;
+            }
+
+            &>li {
+                &.active {
+                    &>a {
+                        background-color: darken($color: $color_pallate_9, $amount: 20%) !important;
+                    }
+                }
+
+                &:hover, &:focus, &.active {
+                    &>a {
+                        background-color: darken($color: $color_pallate_9, $amount: 20%) !important;
+                        color: $white !important;
+
+                        @at-root [data-sidebar-style="mini"]#{&} {
+                            background-color: darken($color: $color_pallate_9, $amount: 20%) !important;
+
+                            &:hover, &:focus, &:active {
+                                background-color: darken($color: $color_pallate_9, $amount: 20%) !important;
+                                color: $white !important;
+                            }
+                        }
+
+                        @at-root [data-sidebar-style="full"]#{&} {
+                            background-color: darken($color: $color_pallate_9, $amount: 20%) !important;
+
+                            &:hover, &:focus, &:active {
+                                background-color: darken($color: $color_pallate_9, $amount: 20%) !important;
+                                color: $white !important;
+                            }
+                        }
+
+                        &:hover, &:focus, &:active {
+                            background-color: darken($color: $color_pallate_9, $amount: 20%) !important;
+                            color: $white !important;
+                        }
+                    }
+                }
+            }
+
+            * {
+                color: $white;
+            }
+        }
+    } 
+}
+
+[data-sibebarbg="color_10"] {
+    .nk-sidebar {
+        background-color: $color_pallate_10 !important;
+
+        .metismenu {
+            background-color: $color_pallate_10 !important;
+
+            .mega-menu ul.in li a:hover {
+                color: $white !important;
+            }
+
+            ul {
+                background-color: darken($color: $color_pallate_10, $amount: 10%) !important;
+
+                &.in {
+                    li.active a {
+                        color: $white !important;
+
+                        &:hover {
+                            color: $white !important;
+                        }
+                    }
+                }
+            }
+
+            a:hover, a:active, a.active {
+                background-color: darken($color: $color_pallate_10, $amount: 20%) !important;
+                color: $white !important;
+            }
+
+            &>li {
+                &.active {
+                    &>a {
+                        background-color: darken($color: $color_pallate_10, $amount: 20%) !important;
+                    }
+                }
+
+                &:hover, &:focus, &.active {
+                    &>a {
+                        background-color: darken($color: $color_pallate_10, $amount: 20%) !important;
+                        color: $white !important;
+
+                        @at-root [data-sidebar-style="mini"]#{&} {
+                            background-color: darken($color: $color_pallate_10, $amount: 20%) !important;
+
+                            &:hover, &:focus, &:active {
+                                background-color: darken($color: $color_pallate_10, $amount: 20%) !important;
+                                color: $white !important;
+                            }
+                        }
+
+                        @at-root [data-sidebar-style="full"]#{&} {
+                            background-color: darken($color: $color_pallate_10, $amount: 20%) !important;
+
+                            &:hover, &:focus, &:active {
+                                background-color: darken($color: $color_pallate_10, $amount: 20%) !important;
+                                color: $white !important;
+                            }
+                        }
+
+                        &:hover, &:focus, &:active {
+                            background-color: darken($color: $color_pallate_10, $amount: 20%) !important;
+                            color: $white !important;
+                        }
+                    }
+                }
+            }
+    
+            * {
+                color: $white;
+            }
+        }
+    } 
+}

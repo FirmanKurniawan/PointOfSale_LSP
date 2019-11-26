@@ -1,0 +1,318 @@
+// @import "../../assets/plugins/bootstrap/css/bootstrap.min.css";
+@import "../../assets/plugins/animate/animate.min.css";
+@import "../../assets/plugins/metismenu/css/metisMenu.min.css";
+@import "../../assets/plugins/bootstrap-select/dist/css/bootstrap-select.min.css";
+@import "../../assets/plugins/dragula/dragula.min.css";
+
+@import "../abstracts/maps";
+* {
+    outline: none;
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+
+    &::after {
+        margin: 0;
+        padding: 0;
+    }
+    
+    &::before {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+html {
+    font-size: 62.5%;
+
+    @include respond('tab-land') {
+        font-size: 56.25%;
+    }
+
+    @include respond('tab-port') {
+        font-size: 50%;
+    }
+}
+
+body {
+    font-family: $pf;
+    margin: 0;
+    overflow-x: hidden;
+    font-size: $base-font-size;
+    height: 100%;
+    background-color: $l-bg;
+    color: $l-ctl;
+    box-sizing: border-box;
+    position: relative;
+    max-width: 100%;
+    font-weight: 400;
+}
+
+#main-wrapper {
+    opacity: 0;
+    transition: all 0.25s ease-in;
+    overflow: hidden;
+    position: relative;
+}
+
+#main-wrapper {
+    &.show {
+        opacity: 1;
+    }
+}
+
+a {
+    transition: all 0.4s ease-in-out;
+    color: $black;
+}
+
+a:focus,
+a:hover {
+    text-decoration: none;
+    color: $primary;
+}
+
+a.link {
+    color: $l-ctd;
+}
+
+a.link:focus,
+a.link:hover {
+    color: $info;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.img-responsive {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+}
+
+.img-rounded {
+    border-radius: .4rem;
+}
+
+.img-flag {
+    height: 1.5rem;
+    width: 1.8rem;
+}
+
+.img-full {
+    width: 100%;
+}
+
+.mdi-set,
+.mdi:before {
+    line-height: initial;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    
+    color: $l-ctd;
+    // font-family: $fm;
+}
+
+h1 {
+    line-height: 4rem;
+    font-size: 3.6rem;
+    font-weight: 600;
+}
+
+h2 {
+    line-height: 3.6rem;
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+h3 {
+    line-height: 3rem;
+    font-size: 2.1rem;
+    font-weight: 600;
+}
+
+h4 {
+    line-height: 2.2rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+h5 {
+    line-height: 1.8rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+h6 {
+    line-height: 1.6rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.heading {
+    &-primary {
+        font-size: $heading-primary-size;
+
+        &-title{
+            font-size: 2.2rem;
+            color: $primary;
+        }
+    }
+    &-primary-light {
+        font-size: $heading-primary-size;
+        font-weight: 400;
+    }
+    &-light {
+        font-weight: 400;
+    }
+}
+
+.sub-heading {
+    font-size: $sub-heading-size;
+}
+
+.display-5 {
+    font-size: 3rem;
+}
+
+.display-6 {
+    font-size: 3.6rem;
+}
+
+.box {
+    border-radius: .4rem;
+    padding: 1rem;
+}
+
+.img-circle {
+    border-radius: 100%;
+}
+
+.content-body {
+    .container-fluid {
+        padding: 1.5rem 3rem 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .content-body {
+        .container-fluid {
+            padding: 1.5rem 1.5rem 0;
+        }
+    }
+}
+
+.c-pointer {
+    cursor: pointer;
+}
+
+.rotate-90 {
+    transform: rotate(90deg);
+}
+
+.jqstooltip {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+.l-border-1 {
+    border: 1px solid $l-border;
+}
+
+.d-border-1 {
+    border: 1px solid $d-border;
+}
+
+/////////////
+// Border
+/////////////
+.border-white-2 {
+    border: 2px solid $white;
+}
+
+.border-bottom-1 {
+    border-bottom: 1px solid $l-border;
+}
+
+.border-top-1 {
+    border-top: 1px solid $l-border;
+}
+
+.border-right-1 {
+    border-right: 1px solid $l-border;
+}
+
+.border-left-1 {
+    border-left: 1px solid $l-border;
+}
+
+//////////////////////
+// Background Overlay
+///////////////////////
+.dark-overlay-1 {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.dark-overlay-2 {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.dark-overlay-3 {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.dark-overlay-4 {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.dark-overlay-5 {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.dark-overlay-6 {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.dark-overlay-7 {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.dark-overlay-8 {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.dark-overlay-9 {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.section-heading {
+    margin-bottom: 3.5rem;
+}
+
+.ofhidden {
+    overflow: hidden;
+}
+
+.flex-item {
+    flex: 1;
+}
+
+.tt-uppercase {
+    text-transform: uppercase;
+}
+
+.font-weight-semi-bold {
+    font-weight: 500;
+}

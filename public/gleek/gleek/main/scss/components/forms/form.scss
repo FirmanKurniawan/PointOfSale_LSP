@@ -1,0 +1,316 @@
+ /*    
+
+
+Input Style
+------------------------*/
+ 
+ .input-rounded {
+     border-radius: 50%;
+ }
+ 
+ .transparent-append {
+     .form-control {
+         border-right: 0 !important;
+     }
+     .input-group-text {
+         background-color: $l-bg;
+         border-color: rgba(120, 130, 140, 0.13);
+     }
+ }
+ 
+ .input-success {
+     .input-group-text {
+         background-color: $l-bg;
+         border-color: $success;
+     }
+ }
+ 
+ .input-warning {
+     .input-group-text {
+         background-color: $l-bg;
+         border-color: $warning;
+     }
+ }
+ 
+ .input-danger {
+     .input-group-text {
+         background-color: $l-bg;
+         border-color: $danger;
+     }
+ }
+ 
+ /////////////////////////
+ // Show Password
+ ////////////////////////
+ .show-pass {
+     cursor: pointer;
+     i {
+         font-size: 1.6rem;
+         padding-right: 10px;
+     }
+ }
+ 
+ .form-group {
+     margin-bottom: 2rem;
+     position: relative;
+ }
+ 
+ .form-control {
+     border-radius: 0;
+     box-shadow: none;
+     font-family: $pf;
+     height: 4.5rem;
+     border: 1px solid #DDDFE1;
+     background: $l-bg;
+     color: $black;
+     font-weight: 500;
+     
+     &:hover {
+         box-shadow: none;
+         background: $l-bg;
+         color: $black;
+     }
+     &.active,
+     &:focus {
+         box-shadow: none;
+         border: 1px solid rgba(120, 130, 140, 0.13);
+         background: $l-bg;
+         color: $black;
+     }
+ }
+ 
+ .input-default {
+     border-radius: .4rem;
+ }
+ 
+ .input-flat {
+     border-radius: 0;
+ }
+ 
+ .input-rounded {
+     border-radius: 10rem;
+ }
+ 
+ // 
+ /*****************************************
+  Input Size
+******************************************/
+ 
+ .form-control {
+     min-height: 4rem;
+     font-size: $base-font-size;
+ }
+ 
+ .form-control.form-control-sm {
+     min-height: 4rem;
+     height: 4rem;
+ }
+ 
+ .form-control.form-control-lg {
+     min-height: 6rem;
+ }
+ 
+ // File input
+ /*****************************************
+  upload button styles
+******************************************/
+ 
+ .file-upload {
+     position: relative;
+     display: inline-block;
+     .file-upload__label {
+         display: block;
+         padding: 0.5em 1.5em;
+         border-radius: 0.4em;
+         -webkit-transition: background 0.3s;
+         transition: background 0.3s;
+         &:hover {
+             cursor: pointer;
+         }
+     }
+     .file-upload__input {
+         position: absolute;
+         left: 0;
+         top: 0;
+         right: 0;
+         bottom: 0;
+         font-size: 1;
+         width: 0;
+         height: 100%;
+         opacity: 0;
+     }
+ }
+ 
+ ///////////////////////////////
+ // Styling Selectbox 
+ //////////////////////////////
+ .drop-menu {
+    //  width: 100%;
+     display: inline-block;
+     border-radius: .5rem;
+     -webkit-transition: all 0.5s ease;
+     transition: all 0.5s ease;
+     position: relative;
+     font-size: 1.6rem;
+     height: 100%;
+     text-align: left;
+
+     .form-control{
+        height: 3.5rem;
+     }
+
+     .select {
+         cursor: pointer;
+         display: block;
+         padding: 1rem;
+         i {
+             font-size: 1.6rem;
+             margin-top: .5rem;
+             cursor: pointer;
+             -webkit-transition: all 0.3s ease-in-out;
+             transition: all 0.3s ease-in-out;
+            //  float: right;
+            margin-left: 1.5rem;
+         }
+         .currency {
+             font-size: 1.3rem;
+             cursor: pointer;
+             -webkit-transition: all 0.3s ease-in-out;
+             transition: all 0.3s ease-in-out;
+             float: right;
+         }
+     }
+     &.active {
+         &:hover {
+             border-radius: 5px 5px 0 0;
+         }
+         border-radius: 5px 5px 0 0;
+         .select i {
+             -webkit-transform: rotate(180deg);
+             transform: rotate(180deg);
+         }
+     }
+     .dropeddown {
+         position: absolute;
+         width: 100%;
+         left: 0;
+         margin-top: 1px;
+         border-radius: 0 1px .5rem .5rem;
+         overflow: hidden;
+         display: none;
+         max-height: 14.4rem;
+         overflow-y: auto;
+         z-index: 9;
+         background-color: $white;
+         padding: 0;
+         list-style: none;
+         
+         li {
+             padding: 1rem;
+             -webkit-transition: all 0.2s ease-in-out;
+             transition: all 0.2s ease-in-out;
+             cursor: pointer;
+             color: $l-ctd;
+         }
+     }
+ }
+ 
+ /////////////////////////
+ // wysihtml5
+ /////////////////////////
+ .wysihtml5-toolbar {
+     height: 5rem;
+ }
+ 
+ .textarea_editor {
+     min-height: 30rem;
+ }
+ 
+ /////////////////////////
+ // TouchPin
+ /////////////////////////
+ .bootstrap-touchspin {
+     .input-group-btn,
+     .input-group-prepend,
+     .input-group-append,
+     .form-control {
+         margin: 1rem 0px 0px;
+     }
+ }
+ 
+ /////////////////////////
+ // Label color
+ /////////////////////////
+ .text-label {
+     color: $l-ctd;
+ }
+
+.input-group {
+
+    &.input-with-img {
+        position: relative;
+
+        .form-control {
+            padding-left: 6.5rem;
+            background-color: $white;
+            min-height: 5rem;
+        }
+
+        img {
+            position: absolute;
+            z-index: 9;
+            left: 1rem;
+            top: 0.5rem;
+        }
+    }
+}
+
+
+.input-group-prepend-big {
+    .form-control {
+        height: 5.5rem;
+    }
+
+    .input-group-text {
+        font-size: 1.4rem;
+    }
+}
+
+
+// .input-group-lg > .form-control, .input-group-lg > .input-group-prepend > .input-group-text, .input-group-lg > .input-group-append > .input-group-text, .input-group-lg > .input-group-prepend > .btn, .input-group-lg > .input-group-append > .btn {
+//     font-size: 1.6rem;
+//     padding: 2.9rem 1rem;
+// }
+
+
+.input-group {
+    .input-group-append {
+        @at-root [direction="rtl"] #{&} {
+            margin-right: -1px;
+            margin-left: 0;
+        }
+    }
+
+
+    .input-group-prepend {
+        @at-root [direction="rtl"] #{&} {
+            margin-left: -1px;
+            margin-right: 0;
+        }
+    }
+}
+
+.bootstrap-select {
+    button.btn {
+        z-index: 0;
+    }
+}
+
+.dropdown-header {
+    font-size: 1.875rem;
+}
+
+.custom-control-input {
+    opacity: 1;
+    z-index: 1;
+}

@@ -1,0 +1,181 @@
+.file-storage-card {
+    min-height: 29rem;
+    
+    .progress-wrapper {
+        margin-top: 6rem;
+        margin-bottom: 4rem;
+
+        .progress {
+            height: 1.5rem;
+        }
+
+        .progress-bar {
+            background-color: $deep-pink;
+        }
+    }
+}
+
+.file-types {
+
+    .media {
+        flex-basis: 20%;
+
+        @include respond(phone-land) {
+            margin-bottom: 1.5rem;
+        }
+
+        @include respond(phone) {
+            flex-basis: 50%;
+        }
+    }
+
+    .media-icon {
+        height: 4.5rem;
+        width: 4.5rem;
+        border-radius: 50%;
+        color: $white;
+        text-align: center;
+        line-height: 4.5rem;
+    }
+
+    .document {
+        .media-icon {
+            background-color: #1D8FF7;
+        }
+        
+        p {
+            color: #1D8FF7;
+        }
+    }
+
+    .images {
+        .media-icon {
+            background-color: #FF8423;
+        }
+        
+        p {
+            color: #FF8423;
+        }
+    }
+
+    .videos {
+        .media-icon {
+            background-color: #FF5274;
+        }
+        
+        p {
+            color: #FF5274;
+        }
+    }
+
+    .audios {
+        .media-icon {
+            background-color: #D57FF8;
+        }
+        
+        p {
+            color: #D57FF8;
+        }
+    }
+
+    .zips {
+        .media-icon {
+            background-color: #7F63F4;
+        }
+        
+        p {
+            color: #7F63F4;
+        }
+    }
+}
+
+.file-storage-container-column {
+    padding-right: 0;
+
+    @at-root [direction="rtl"] #{&} {
+        padding-left: 0;
+        padding-right: 12px;
+    }
+
+    @include custommq($max: 1440px) {
+        padding-right: 12px;
+    }
+}
+
+.document-storage-table-column {
+    padding-left: 0;
+
+    @at-root [direction="rtl"] #{&} {
+        padding-right: 0;
+        padding-left: 12px;
+    }
+
+    @include custommq($max: 1440px) {
+        padding-left: 12px;
+    }
+}
+
+.download-docs-card {
+    .card-body {
+        padding: 4rem 0;
+
+        @include respond(phone-land) {
+            flex-basis: 50%;
+        }
+    }
+
+    .document h2 {
+        color: #1D8FF7;
+    }
+
+    .image h2 {
+        color: #FF8423;
+    }
+
+    .video h2 {
+        color: #FF5274;
+    }
+
+    .audio h2 {
+        color: #D57FF8;
+    }
+
+    .zip h2 {
+        color: #7F63F4;
+    }
+
+    h2 {
+        font-size: 3.4rem;
+
+        @include custommq($max: 1440px) {
+            font-size: 2.4rem;
+            line-height: 1;
+        }
+    }
+}
+
+.doc-storage-table {
+    background-color: $primary;
+    tr {
+        background-color: $primary;
+
+        td:first-child {
+            font-weight: 700;
+
+        }
+    }
+    .table > tbody > tr > td {
+        color: $white;
+        padding: .5rem 0.75rem;
+    }
+}
+
+.widget-file-container {
+    .card-title {
+        margin-bottom: 2.5rem;
+
+        @include media-breakpoint-up(md) {
+            margin-bottom: 4.5rem;
+        }
+    }
+}

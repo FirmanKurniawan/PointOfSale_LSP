@@ -1,0 +1,239 @@
+
+
+
+.user-card1{
+    
+    .btn{
+        padding: .5rem 2rem;
+        margin: 1.5rem 0;
+        font-weight: 500;
+        border-radius: .3rem;
+    }
+
+    .card-footer{
+        border: 0;
+        padding-bottom: 3rem;
+    }
+
+    &:hover{
+
+        .btn{
+            background: $primary;
+            color: $white;
+        }
+
+        .card-footer h5{
+            color: $primary;
+        }
+    }
+
+    p{
+        font-size: 1.6rem;
+    }
+    
+}
+
+.circle-style{
+    width: 132px;
+    height: 132px;
+    display: inline-block;
+    border-radius: 50%;
+    background: $white;
+    position: relative;
+    transition: all .4s ease-out;
+
+    &::before{
+        content: "";
+        width: 20px;
+        height: 100%;
+        display: block;
+        background: $white;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &::after{
+        content: "";
+        width: 20px;
+        height: 100%;
+        display: block;
+        position: absolute;
+        background: $white;
+        left: 50%;
+        transform: translateX(-50%) rotate(90deg);
+    }
+
+    img{
+        width: 125px;
+        height: 125px;
+        border-radius: 50%;
+        position: absolute;
+        z-index: 100;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+
+.user-card2{
+    
+    img{
+        width: 120px;
+        height: 120px;
+    }
+
+    .btn{
+        padding: .5rem 2rem;
+        margin: 2rem 0 1.5rem;
+        font-weight: 500;
+        border-radius: .3rem;
+        transition: all .4s ease-out;
+    }
+
+    h4{
+        color: $primary;
+    }
+
+    i{
+        font-size: 1.6rem;
+        color: $primary;
+    }
+
+    &:hover{
+        .btn{
+            background: $primary;
+            color: $white;
+
+            i{
+                color: $white;
+            }
+        }
+
+        .circle-style{
+            background: $primary;
+        }
+
+        
+    }
+
+    & p{
+        font-size: 1.6rem;
+    }
+    
+}
+
+
+.user-card3{
+    img{
+        width: 120px;
+        height: 120px;
+    }
+
+    .btn{
+        padding: .5rem 2rem;
+        margin: 2rem 0 1.5rem;
+        font-weight: 500;
+        border-radius: .3rem;
+        transition: all .4s ease-out;
+    }
+
+    & p{
+        font-size: 1.6rem;
+    }
+
+    &:hover{
+        .btn{
+            background: $primary;
+            color: $white;
+        }
+
+        h4{
+            color: $primary;
+        }
+    }
+    
+}
+
+.user-card4{
+
+    img{
+        width: 130px;
+        height: 130px;
+        border: 2px solid $white;
+        padding: 5px;
+        transition: all .4s ease-out;
+    }
+
+    .btn{
+        padding: .5rem 2rem;
+        margin: 1rem .5rem;
+        font-weight: 500;
+        border-radius: .3rem;
+    }
+
+    &:hover{
+        img{
+            border-color: $primary;
+        }
+    }
+    
+}
+
+.user-card5{
+    a{
+        img{
+            width: 6rem;
+            margin-right: 1rem;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

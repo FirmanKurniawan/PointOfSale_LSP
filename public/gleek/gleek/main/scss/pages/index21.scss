@@ -1,0 +1,70 @@
+.social-posting-buttons {
+    a {
+        position: relative;
+        padding: 1.5rem 1.8rem;
+        font-size: 1.8rem;
+
+        i {
+            position: absolute;
+            left: 3rem;
+            top: 2rem;
+        }
+    }
+}
+
+.card-icon {
+    span {
+        i {
+            font-size: 3.5rem;
+            margin-top: 1rem;
+        }
+    }
+}
+
+.additional-widget-section {
+    .form-control {
+        height: 6rem;
+        color: $pale-sky;
+    }
+
+    .input-group {
+        box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.1);
+
+        .btn {
+            padding: 0.65rem 5.538rem;
+        }
+    }
+}
+
+.posted-job-table {
+    &> tbody > tr > td {
+        color: $pale-sky;
+    }
+}
+
+.job-application-details {
+    .single-card-item {
+        // &:not(:last-child) {
+            margin-bottom: 4rem;
+        // }
+
+        h2 {
+            font-size: 3.5rem;
+            margin-bottom: .4rem;
+        }
+
+        p {
+            font-size: 1.7rem;
+            margin: 0;
+            color: $pale-sky;
+            line-height: 1;
+        }
+    }
+}
+
+.sorting-box {
+
+    button.btn {
+        background-color: transparent;
+    }
+}

@@ -1,0 +1,138 @@
+ // Variable.scss
+
+#invoice {
+    position     : relative;
+    margin-bottom: 12rem;
+    padding      : 3rem;
+    background: $white;
+}
+
+#invoice-table {
+    padding      : 3rem 0;
+    border-bottom: .1rem solid $l-border;
+}
+
+#invoice-top {
+    min-height: 12rem;
+}
+
+#invoice-mid {
+    min-height: 12rem;
+}
+
+#invoice-bot {
+    min-height: 25rem;
+}
+
+.invoice-logo {
+    float          : left;
+    height         : 6rem;
+    width          : 6rem;
+    background     : url("http://michaeltruong.ca/images/logo1.png") no-repeat;
+    background-size: 6rem 6rem;
+}
+
+.clientlogo {
+    float          : left;
+    height         : 6rem;
+    width          : 6rem;
+    background     : url("http://michaeltruong.ca/images/client.jpg") no-repeat;
+    background-size: 6rem 6rem;
+    border-radius  : 5rem;
+}
+
+.invoice-info {
+    display    : block;
+    float      : left;
+    margin-left: 2rem;
+
+    h2 {
+        font-size: 1.4rem;
+        color: $l-ctd;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+}
+
+.title {
+    float: right;
+
+    h4 {
+        text-align: right;
+        color: $l-ctd;
+    }
+}
+
+.title p {
+    text-align: right;
+    font-size : 1.2rem;
+}
+
+#project {
+    margin-left: 52%;
+
+    p {
+        font-size: 1.2rem;
+    }
+}
+
+#invoice-table {
+    h2 {
+        font-size: 1.8rem;
+    }
+}
+
+.tabletitle {
+    padding   : .5rem;
+    background: $l-border;
+}
+.service {
+    border: .1rem solid $l-border;
+}
+
+
+.payment-details .table-borderless tbody tr td{
+
+    &:not(:last-child){
+        color: $dark;
+    }
+    
+    &:last-child{
+        color: $muted;
+    }
+}
+
+
+.table-item {
+    width: 50%;
+}
+
+.itemtext {
+    font-size: 0.9em;
+}
+
+#legalcopy {
+    margin-top: 3rem;
+
+    p {
+        font-size: 1.2rem;
+    }
+}
+
+.legal {
+    width: 70%;
+}
+/* All Invoice Page Responsive
+--------------------------- */
+@media (max-width: 48rem) {
+    .control-bar {
+        padding: 1.5rem 1.5rem 4rem;
+    }
+}
+@media (max-width: 36rem) {
+    .notaxrelated {
+        margin-top: 1.5rem;
+    }
+}

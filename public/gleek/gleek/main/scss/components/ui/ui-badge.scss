@@ -1,0 +1,95 @@
+
+
+// .badge {
+//     font-weight: 400;
+// }
+
+
+.badge-xs {
+    font-size        : .9rem;
+    -webkit-transform: translate(0, -.2rem);
+    -ms-transform    : translate(0, -.2rem);
+    -o-transform     : translate(0, -.2rem);
+    transform        : translate(0, -.2rem);
+}
+
+.badge-sm {
+    font-size: 1.2rem;
+    -webkit-transform: translate(0, -.2rem);
+    -ms-transform    : translate(0, -.2rem);
+    -o-transform     : translate(0, -.2rem);
+    transform        : translate(0, -.2rem);
+}
+
+.badge-success {
+    background-color: $success;
+}
+
+.badge-info {
+    background-color: $info;
+}
+
+.badge-primary {
+    background-color: $primary;
+}
+
+.badge-warning {
+    background-color: $warning;
+}
+
+.badge-danger {
+    background-color: $danger;
+}
+
+.badge-dark {
+    background-color: $dark;
+}
+
+.badge-light {
+    background-color: $light;
+}
+
+
+
+
+
+
+
+//
+
+.bootstrap-label{
+    .label{
+        margin-bottom: 1rem;
+        display: inline-block;
+        margin-right: 1rem;
+
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+}
+
+.bootstrap-badge{
+
+    .badge{
+        padding: 0.6rem 1rem;
+        margin-bottom: 1rem;
+        margin-right: 1rem;
+
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+}
+
+.bootstrap-badge-buttons{
+
+    button{
+        margin-right: .2rem;
+        margin-bottom: 1rem;
+
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+}

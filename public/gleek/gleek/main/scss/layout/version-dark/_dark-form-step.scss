@@ -1,0 +1,13 @@
+[data-theme-version="dark"] {
+    .wizard .content > .body {
+        background-color: lighten($d-bg, 3.2%);
+    }
+
+    .wizard .steps li:not(.current) a, .step-form-vertical .wizard.vertical > .steps li:not(.current) a {
+        background-color: $d-bg;
+    }
+
+    .wizard > .content > .body input {
+        border-color: $d-border;
+    }
+}

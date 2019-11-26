@@ -1,0 +1,192 @@
+
+
+
+  
+  .flex-parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .input-flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80vw;
+    height: 10rem;
+    max-width: 100rem;
+    position: relative;
+    z-index: 0;
+  }
+  
+  .input {
+    width: 2.5rem;
+    height: 2.5rem;
+    position: relative;
+    border-radius: 50%;
+    background-color: $primary;
+    &:hover {
+      cursor: pointer;
+    }
+    &::before, &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      z-index: -1;
+      top: 50%;
+      background-color: $primary;
+      transform: translateY(-50%);
+      width: 4vw;
+      height: .5rem;
+      max-width: 5rem;
+    }
+    &::before {
+      left: calc(-4vw + 1.2rem);
+    }
+    &::after {
+      right: calc(-4vw + 1.2rem);
+    }
+    &.active {
+      background-color: $primary;
+
+      ~.input {
+          background-color: $dark;
+          &::before,
+          &::after {
+              background-color: $dark;
+          }
+      }
+
+      &::before, &::after {
+        background-color: $primary;
+      }
+
+      span {
+        font-weight: 700;
+        &::before {
+          font-size: 1.3rem;
+        }
+        &::after {
+          font-size: 1.5rem;
+        }
+      }
+    }
+    span {
+      width: .1rem;
+      height: .1rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      visibility: hidden;
+      &::before {
+        visibility: visible;
+        position: absolute;
+        left: 50%;
+      }
+      &::after {
+        visibility: visible;
+        position: absolute;
+        left: 50%;
+        content: attr(data-year);
+        top: 2.5rem;
+        transform: translateX(-50%);
+        font-size: 1.4rem;
+      }
+      &::before {
+        content: attr(data-info);
+        top: -6.5rem;
+        width: 7rem;
+        transform: translateX(-.5rem) rotateZ(-45deg);
+        font-size: 1.2rem;
+        text-indent: -1rem;
+      }
+    }
+  }
+  
+  .description-flex-container {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 3rem;
+    margin-top: 5rem;
+    text-align: center;
+    width: 80vw;
+    p {
+      margin-top: 0;
+      display: none;
+      &.active {
+        display: block;
+      }
+    }
+  }
+  
+  @media (min-width: 1250px) {
+    .input {
+      &::before {
+        left: -3.7rem;
+      }
+      &::after {
+        right: -3.7rem;
+      }
+    }
+  }
+  
+  @media (max-width: 850px) {
+    .input {
+      width: 1.7rem;
+      height: 1.7rem;
+      &::before, &::after {
+        height: .3rem;
+      }
+      &::before {
+        left: calc(-4vw + .8rem);
+      }
+      &::after {
+        right: calc(-4vw + .8rem);
+      }
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .flex-parent {
+      justify-content: initial;
+    }
+    .input-flex-container {
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
+      height: auto;
+      margin-top: 15vh;
+    }
+    .input {
+      width: 6rem;
+      height: 6rem;
+      margin: 0 1rem 5rem;
+      &::before, &::after {
+        content: none;
+      }
+      span {
+        width: 100%;
+        height: 100%;
+        display: block;
+        &::before {
+          top: calc(100% + .5rem);
+          transform: translateX(-50%);
+          text-indent: 0;
+          text-align: center;
+        }
+        &::after {
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+    .description-flex-container {
+      margin-top: 3rem;
+      text-align: center;
+    }
+  }
+  

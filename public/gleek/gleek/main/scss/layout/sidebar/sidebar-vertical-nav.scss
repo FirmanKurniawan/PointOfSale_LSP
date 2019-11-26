@@ -1,0 +1,36 @@
+
+
+[data-layout="vertical"] {
+    .nk-sidebar {
+        .mega-menu{
+            .mega-menu-col {
+                max-width: 100%;
+                flex: 0 0 100%;
+            }
+        }
+    }
+}
+
+[data-sidebar-position="fixed"][data-layout="vertical"] {
+    .nav-header {
+        position: fixed;
+        left: auto;
+        z-index: 9;
+    }
+
+    .nk-sidebar {
+        position: fixed;
+    }
+
+    .menu-toggle {
+        .nk-sidebar {
+            position: fixed;
+        }
+    }
+}
+
+[data-header-position="fixed"][data-sidebar-position="fixed"][data-sidebar-style="overlay"][data-layout="vertical"][data-container="boxed"] {
+    .nk-sidebar {
+        position: absolute;
+    }
+}

@@ -1,0 +1,31 @@
+html[dir="rtl"] {
+
+    //sidebar styles
+    [direction="rtl"] {
+
+        .nk-sidebar .metismenu .active>.has-arrow:after, 
+        .nk-sidebar .metismenu .has-arrow[aria-expanded=true]:after {
+            transform: rotate(-135deg) translateY(-50%);
+        }
+
+        .nk-sidebar {
+            text-align: right;
+
+            .metismenu {
+                .has-arrow {
+                    &:after {
+                        left: 2.5rem;
+                        right: auto;
+                        transform: rotate(-45deg) translateY(-50%);
+                    }
+                }
+
+                .nav-badge {
+                    left: 4.5rem;
+                    right: auto;
+                }
+            }
+        }
+    }
+
+}

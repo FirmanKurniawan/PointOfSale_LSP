@@ -1,0 +1,431 @@
+@import "../../abstracts/variable";
+
+.sidebar-right {
+    right: -25rem;
+    position: fixed;
+    top: 0;
+    width: 25rem;
+    background-color: $white;
+    height: calc(100% - 11.3rem);
+    margin-top: 6rem;
+    transition: all .5s ease-in-out;
+    padding-bottom: 3rem;
+
+    .slimScrollDiv {
+        @at-root [direction="rtl"] #{&} {
+            overflow: visible !important;
+        }
+    }
+
+    .sidebar-right-trigger {
+        position: absolute;
+        z-index: 9;
+        top: 6rem;
+        right: 100%;
+        background-color: $primary;
+        color: $white;
+        display: inline-block;
+        height: 5rem;
+        width: 5rem;
+        text-align: center;
+        line-height: 4.7rem;
+        font-size: 2.1rem;
+        border-radius: 50px;
+
+        span {
+            display: inline-block;
+            animation: bounce .7s infinite ease-in-out;
+            
+        }
+    }
+
+    &.show {
+        right: 0;
+        z-index: 999;
+    }
+
+    .nav-tabs {
+        justify-content: space-between;
+        position: sticky;
+        top: 0;
+        background-color: $white;
+        z-index: 2;
+                    
+        @at-root [data-theme-version="dark"] #{&} {
+            background-color: $d-bg;
+        }
+        
+
+        .nav-item {
+            margin-bottom: 0;
+            flex: 1;
+
+            .nav-link {
+                border: 0;
+                font-size: 1.8rem;
+                border-bottom: 1px solid transparent;
+                text-align: center;
+                background-color: $white;
+                    
+                @at-root [data-theme-version="dark"] #{&} {
+                    background-color: $d-bg;
+                }
+
+                &.active {
+                    border-color: $primary;
+                    
+                    @at-root [data-theme-version="dark"] #{&} {
+                        border-right: none;
+                        border-left: none;
+                        border-top: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .tab-content {
+        padding: 2rem;
+
+        .tab-pane {
+
+            .admin-settings {
+                p {
+                    margin-bottom: .5rem;
+                }
+
+                //All color switcher scss goes here
+                [type="radio"] {
+                    & + label {
+                        &::after {
+                            height: 2.5rem;
+                            width: 2.5rem;
+                            text-align: center;
+                            line-height: 1.2;
+                            left: 0;
+                            top: 0;
+                        }
+
+                        &::before {
+                            height: 2.5rem;
+                            width: 2.5rem;
+                        }
+                    }
+
+                    &:not(:checked) + label {
+                        &::after {
+                            z-index: 0;
+                            transform: scale(1);
+                        }
+
+                        &::before {
+
+                        }
+                    }
+
+                    &:checked + label {
+                        &::after {
+                            content: "✓";
+                            color: $white;
+                        }
+
+                        &::before {
+
+                        }
+                    }
+
+                    &#nav_header_bg_1 {
+                        &:not(:checked) + label {
+                            &::after {
+                                background-color: $color_pallate_1;
+                                border: 0.2rem solid $color_pallate_1;
+                            }
+                        }
+
+                        &:checked + label {
+                            &::after {
+                                background-color: $color_pallate_1;
+                                border: 0.2rem solid $color_pallate_1;
+                            }
+                        }
+                    }
+
+                    &#header_bg_1, &#sidebar_bg_1  {
+                        &:not(:checked) + label {
+                            &::after {
+                                background-color: $white;
+                                border: 0.2rem solid $dark;
+                            }
+                        }
+
+                        &:checked + label {
+                            &::after {
+                                background-color: $white;
+                                border: 0.2rem solid $dark;
+                                color: $dark;
+                            }
+                        }
+                    }
+                    
+                    &#nav_header_bg_2, &#header_bg_2,&#sidebar_bg_2 {
+                        &:not(:checked) + label {
+                            &::after {
+                                background-color: $color_pallate_2;
+                                border: 0.2rem solid $color_pallate_2;
+                            }
+                        }
+                        
+                        &:checked + label {
+                            &::after {
+                                background-color: $color_pallate_2;
+                                border: 0.2rem solid $color_pallate_2;
+                            }
+                        }
+                    }
+
+                    &#nav_header_bg_3, &#header_bg_3, &#sidebar_bg_3 {
+                        &:not(:checked) + label {
+                            &::after {
+                                background-color: $color_pallate_3;
+                                border: 0.2rem solid $color_pallate_3;
+                            }
+                        }
+                        
+                        &:checked + label {
+                            &::after {
+                                background-color: $color_pallate_3;
+                                border: 0.2rem solid $color_pallate_3;
+                            }
+                        }
+                    }
+
+                    &#nav_header_bg_4, &#header_bg_4, &#sidebar_bg_4 {
+                        &:not(:checked) + label {
+                            &::after {
+                                background-color: $color_pallate_4;
+                                border: 0.2rem solid $color_pallate_4;
+                            }
+                        }
+                        
+                        &:checked + label {
+                            &::after {
+                                background-color: $color_pallate_4;
+                                border: 0.2rem solid $color_pallate_4;
+                            }
+                        }
+                    }
+
+                    &#nav_header_bg_5, &#header_bg_5, &#sidebar_bg_5 {
+                        &:not(:checked) + label {
+                            &::after {
+                                background-color: $color_pallate_5;
+                                border: 0.2rem solid $color_pallate_5;
+                            }
+                        }
+                        
+                        &:checked + label {
+                            &::after {
+                                background-color: $color_pallate_5;
+                                border: 0.2rem solid $color_pallate_5;
+                            }
+                        }
+                    }
+
+                    &#nav_header_bg_6, &#header_bg_6, &#sidebar_bg_6 {
+                        &:not(:checked) + label {
+                            &::after {
+                                background-color: $color_pallate_6;
+                                border: 0.2rem solid $color_pallate_6;
+                            }
+                        }
+                        
+                        &:checked + label {
+                            &::after {
+                                background-color: $color_pallate_6;
+                                border: 0.2rem solid $color_pallate_6;
+                            }
+                        }
+                    }
+
+                    &#nav_header_bg_7, &#header_bg_7, &#sidebar_bg_7 {
+                        &:not(:checked) + label {
+                            &::after {
+                                background-color: $color_pallate_7;
+                                border: 0.2rem solid $color_pallate_7;
+                            }
+                        }
+                        
+                        &:checked + label {
+                            &::after {
+                                background-color: $color_pallate_7;
+                                border: 0.2rem solid $color_pallate_7;
+                            }
+                        }
+                    }
+
+                    &#nav_header_bg_8, &#header_bg_8, &#sidebar_bg_8 {
+                        &:not(:checked) + label {
+                            &::after {
+                                background-color: $color_pallate_8;
+                                border: 0.2rem solid $color_pallate_8;
+                            }
+                        }
+                        
+                        &:checked + label {
+                            &::after {
+                                background-color: $color_pallate_8;
+                                border: 0.2rem solid $color_pallate_8;
+                            }
+                        }
+                    }
+
+                    &#nav_header_bg_9, &#header_bg_9, &#sidebar_bg_9 {
+                        &:not(:checked) + label {
+                            &::after {
+                                background-color: $color_pallate_9;
+                                border: 0.2rem solid $color_pallate_9;
+                            }
+                        }
+                        
+                        &:checked + label {
+                            &::after {
+                                background-color: $color_pallate_9;
+                                border: 0.2rem solid $color_pallate_9;
+                            }
+                        }
+                    }
+
+                    &#nav_header_bg_10, &#header_bg_10, &#sidebar_bg_10 {
+                        &:not(:checked) + label {
+                            &::after {
+                                background-color: $color_pallate_10;
+                                border: 0.2rem solid $color_pallate_10;
+                            }
+                        }
+                        
+                        &:checked + label {
+                            &::after {
+                                background-color: $color_pallate_10;
+                                border: 0.2rem solid $color_pallate_10;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .sidebar-recent-activity {
+                margin-bottom: 5rem;
+                    
+                @at-root [direction="rtl"] #{&} {
+                    text-align: right;
+                }
+
+                .timeline {
+                    padding-top: 1.5rem;
+
+                    &.timeline-workplan{
+                        &::before {
+                            left: 6.5%;
+                            top: 4rem;
+                    
+                            @at-root [data-theme-version="dark"] #{&} {
+                                background-color: $d-border;
+                            }
+                    
+                            @at-root [direction="rtl"] #{&} {
+                                right: 6.5%;
+                            }
+                        }
+
+                        .timeline-badge {
+                            left: 11.4%;
+                    
+                            @at-root [direction="rtl"] #{&} {
+                                right: -3%;
+                            }
+                        }
+
+                        .timeline-panel {
+                            width: 85%;
+                            margin-top: .5rem;
+                    
+                            @at-root [direction="rtl"] #{&} {
+                                float: left;
+                            }
+
+                            p {
+                                margin-top: 0;
+                                font-size: 1.4rem;
+                                margin-bottom: 0.5rem;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .user-chat {
+                .all-chats {
+
+                    @at-root [direction="rtl"] #{&} {
+                        padding: 0;
+                    }
+
+                    .single-chat {
+                        padding: 0;
+                    
+                        @at-root [data-theme-version="dark"] #{&} {
+                            background-color: transparent;
+
+                            .chat-open {
+                                color: $white;
+                            }
+                        }
+
+                        @at-root [direction="rtl"] #{&} {
+                            text-align: right;
+                        }
+
+                        .user-img img {
+                            border-radius: 50px;
+                        }
+
+                        &:not(:last-child) {
+                            margin-bottom: 1.5rem;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@keyframes bounce {
+	0% {
+        transform: translateX(-8%);;
+        -webkit-transform: translateX(-8%);; 
+        }
+	50% {
+        transform: translateX(8%);;
+        -webkit-transform: translateX(8%);; 
+        }
+	100% {
+        transform: translateX(-8%);; 
+        -webkit-transform: translateX(-8%);; 
+        }
+}
+
+@-webkit-keyframes bounce {
+	0% {
+        transform: translateX(-8%);;
+        -webkit-transform: translateX(-8%);; 
+        }
+	50% {
+        transform: translateX(8%);;
+        -webkit-transform: translateX(8%);; 
+        }
+	100% {
+        transform: translateY(-8%);; 
+        -webkit-transform: translateY(-8%);; 
+        }
+}

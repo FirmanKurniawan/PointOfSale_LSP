@@ -1,0 +1,210 @@
+.table-meta {
+    display: flex;
+
+    &-item {
+        flex: 1;
+    }
+
+    .meta-right {
+        display: flex;
+        justify-content: flex-end;
+
+        .stat-widget-search-2 {
+            width: 100%;
+
+            @include media-breakpoint-up(xl){
+                width: 50%;
+            }
+        }
+    }
+}
+
+.table-show-ticket.table {
+    min-width: 770px;
+    margin-bottom: 0;
+
+    &.table-striped tbody tr:nth-of-type(odd) {
+        background-color: #fafafa;
+    }
+    
+    & > tbody > tr > td {
+        padding: 3rem 2rem;
+        color: $dark !important;
+
+        .btn {
+            width: 10rem;
+            padding: .1rem 1.8rem;
+
+            &-open {
+                background-color: #FA9500;
+                color: $white;
+            }
+
+            &-pending {
+                background-color: #607D8B;
+                color: $white;
+            }
+
+            &-close {
+                background-color: $white;
+                border: 1px solid $border;
+                color: $muted;
+            }
+        }
+    }
+    
+    & > thead > tr > th {
+        padding: 2.5rem 2rem;
+    }
+
+    & > tbody > tr > td, & > tbody > tr > th, & > tfoot > tr > td, & > tfoot > tr > th, & > thead > tr > td, & > thead > tr > th {
+        border-top: 0;
+        font-size: 1.6rem;
+        color: $dark;
+        font-weight: 500;
+
+        label {
+            margin: 0;
+            padding: 0;
+            height: 1.5rem;
+        }
+    }
+
+    thead th {
+        vertical-align: middle;
+
+        &:first-child{
+            padding-left: 2rem;
+
+            @include media-breakpoint-up(lg) {
+                padding-left: 4rem;
+            }
+        }
+
+        &:last-child{
+            padding-right: 2rem;
+
+            @include media-breakpoint-up(lg) {
+                padding-right: 3rem;
+            }
+        }
+    }
+
+    tbody tr td{
+
+        &:first-child{
+            padding-left: 2rem;
+
+            @include media-breakpoint-up(lg) {
+                padding-left: 4rem;
+            }
+        }
+
+        &:last-child{
+            padding-right: 3rem;
+        }
+
+        .label{
+            font-size: 14px;
+            padding: .6rem 2.2rem;
+        }
+
+        // [type=checkbox] + label::before{
+        //     border: 2px solid #DDDFE1 !important;
+        // }
+    }
+}
+
+.ticket-issuer-profile { 
+    // }
+
+    .user-avatar {
+        height: 8rem;
+        width: 8rem;
+    }
+}
+
+.avatar-shadow{
+    box-shadow: 2px 3px 10px 0px rgba(119, 119, 119, 0.1);
+}
+
+.support-tickets {
+
+    .ticket-id, .ticket-heading {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .ticket-id .btn {
+        width: 10rem;
+        padding: 0.1rem 1.8rem;
+        color: $white;
+    }
+
+    .share-box h4{
+        font-size: 1.6rem;
+    }
+
+    .share-box .btn {
+        width: auto;
+        background-color: transparent;
+        color: $l-ctd;
+        border: 1px solid $iron;
+        padding: .8rem 1.5rem;
+
+        i{
+            transform: rotate(-5deg) scaleX(-1);
+        }
+    }
+
+    .problems-list-wrapper {
+
+        .problems-list {
+            &>li {
+                padding: 3rem 0;
+                border-bottom: 1px solid #DDDFE1;
+            }
+
+        }
+    }
+
+    .border-bottom{
+        border-color: $iron !important;
+    }
+}
+
+.ticket-comment-form{
+
+    .form-control{
+        border-radius: 5px;
+        padding: 1rem 2rem;
+
+        &::placeholder {
+            color: $dark;
+            font-size: 1.6rem;
+        }
+    }
+
+    label{
+        border: 1px solid #DDDFE1;
+        border-radius: 5px;
+        font-size: 1.6rem;
+        color: $muted;
+        cursor: pointer;
+
+        i{
+            font-size: 24px;
+            color: #58AAFD;
+            padding-right: 1rem;
+            position: relative;
+            top: 1px;
+        }
+    }
+
+    .btn{
+        padding: 0.6rem 3.5rem;
+        font-size: 1.8rem;
+        font-weight: normal;
+    }
+    
+}

@@ -1,0 +1,40 @@
+.market-capital-dt.table-padded {
+    tr td:first-child i {
+        font-size: 3rem;
+        margin-right: 0.5rem;
+    }
+}
+
+.select-coin {
+    .drop-menu .dropeddown {
+        width: 15%;
+
+        @include respond('phone') {
+            width: 40%;
+        }
+    }
+}
+
+.wallet-card {
+    .input-group-text {
+        background-color: #F3F6F9;
+
+        i {
+            color: $l-ctl;
+
+            &.cc {
+                color: $primary;
+            }
+        }
+    }
+
+    .form-control {
+        color: $l-ctl;
+    }
+}
+
+.buying-order-table, .selling-order-table {
+    &.table > tbody > tr > td, &.table > tbody > tr > th {
+        color: $pale-sky;
+    }
+}

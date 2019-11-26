@@ -1,0 +1,31 @@
+[data-sidebar-style="mini"] {
+    .nav-control {
+        z-index: 99;
+    }
+}
+
+
+[data-header-position="fixed"] {
+    .nav-header {
+        position: fixed;
+        z-index: 99;
+        left: auto;
+    }
+ } 
+
+
+ @include respond('phone-land') {
+    .nav-header {
+        .brand-logo {
+            height: 100%;
+
+            a {
+                height: 100%;
+                padding: 0 !important;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+ }

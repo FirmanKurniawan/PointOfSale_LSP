@@ -1,0 +1,132 @@
+ // Variable.scss
+ .progress-bar {
+     background-color: $primary;
+ }
+ 
+ .progress-bar-primary {
+     background-color: $primary;
+ }
+ 
+ .progress-bar-success {
+     background-color: $success;
+ }
+ 
+ .progress-bar-info {
+     background-color: $info;
+ }
+ 
+ .progress-bar-danger {
+     background-color: $danger;
+ }
+ 
+ .progress-bar-warning {
+     background-color: $warning;
+ }
+ 
+ .progress-bar-pink {
+     background-color: $pink;
+ }
+ 
+ .progress {
+    height: .6rem;
+    border-radius: 30px;
+
+    &-label{
+
+        h3{
+            font-size: 1.7rem;
+            color: $dark;
+            margin-bottom: 0;
+        }
+    }
+
+    &--medium{
+        height: 12px;
+
+        .progress-bar{
+            height: 12px;
+            font-size: 12px;
+        }
+
+        &.progress-vertical-bottom,&.progress-vertical{
+            width: 12px;
+            font-size: 12px;
+        }
+    }
+
+    &--large{
+        height: 16px;
+
+        .progress-bar{
+            height: 16px;
+            font-size: 16px;
+        }
+
+        &.progress-vertical-bottom,&.progress-vertical{
+            width: 16px;
+            font-size: 16px;
+        }
+    }
+
+    &--extraLarge{
+        height: 19px;
+
+        .progress-bar{
+            height: 19px;
+            font-size: 19px;
+        }
+
+        &.progress-vertical-bottom,&.progress-vertical{
+            width: 19px;
+            font-size: 19px;
+        }
+    }
+ }
+ 
+ .progress-bar.active,
+ .progress.active .progress-bar {
+     animation: 2s linear 0s normal none infinite running progress-bar-stripes;
+ }
+ 
+ .progress-vertical {
+     display: inline-block;
+     height: 25rem;
+     margin-bottom: 0;
+     margin-right: 2rem;
+     min-height: 25rem;
+     position: relative;
+ }
+ 
+ .progress-vertical-bottom {
+     display: inline-block;
+     height: 25rem;
+     margin-bottom: 0;
+     margin-right: 2rem;
+     min-height: 25rem;
+     position: relative;
+     transform: rotate(180deg);
+ }
+ 
+ .progress-animated {
+     animation-duration: 5s;
+     animation-name: myanimation;
+     transition: all 5s ease 0s;
+ }
+ 
+ @keyframes myanimation {
+     0% {
+         width: 0;
+     }
+ }
+ 
+ @keyframes myanimation {
+     0% {
+         width: 0;
+     }
+ }
+ 
+ .browser {
+     .progress {
+         height: .8rem;
+     }
+ }

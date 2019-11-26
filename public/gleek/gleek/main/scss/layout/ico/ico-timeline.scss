@@ -1,0 +1,130 @@
+ 
+.timeline-header {
+    height: auto;
+    text-align: center;
+    padding: 2.3rem 1rem 2.3rem 1rem;
+    position: relative;
+    background: $l-bg;
+    color: $l-ctd;
+    h1 {
+        color: $l-ctd!important;
+    }
+    p {
+        color: $l-ctd!important;
+    }
+  }
+  
+  
+  #timeline {
+    position: relative;
+    display: table; //*For Firefox
+    height: 100%;
+    margin: {
+      left: auto;
+      right: auto;
+      top: 5rem;
+    }
+    div {
+      &:after {
+        content: '';
+        width: .2rem;
+        position: absolute;
+        top: .5rem;
+        bottom: 0rem;
+        left: 6rem;
+        z-index: 1;
+        background: $l-ctl;
+      }
+    }
+    h3 {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 5rem;
+      margin: 0;
+      color: $l-ctd;
+      font: {
+        size: 1em;
+        weight: 400;
+      }
+      @media (min-width: 62em) {
+        font-size: 1.1em;
+      }
+    }
+    section.year {
+    position: relative;
+    &:first-child section{
+      margin-top: -1.3em;
+      padding-bottom: 0;
+    }
+    section {
+      position: relative;
+      padding-bottom: 1.25em;
+      margin-bottom: 2.2em;
+      h4 {
+        position: absolute;
+        bottom: 0;
+        color: $l-ctl;
+        font: {
+          size: .9em;
+          weight: 400;
+        }
+        line-height: 1.2em;
+        margin: 0;
+        padding: 0 0 0 8.9rem;
+        @media (min-width: 62em) {
+          font-size: 1em;
+        }
+      }
+      ul {
+        list-style-type: none;
+        padding: 0 0 0 7.5rem;
+        margin: -1.35rem 0 1em;
+        max-width: 32rem;
+        font-size: 1em;
+        @media (min-width: 62em) {
+          font-size: 1.1em;
+          padding: 0 0 0 8.1rem;
+        }
+        &:last-child {
+          margin: {
+            bottom: 0;
+          }
+        }
+        &:first-of-type:after {
+          content: '';
+          width: 1.2rem;
+          height: 1.2rem;
+          @include border-radius(50%);
+          position: absolute;
+          left: 5.5rem;
+          top: .3rem;
+          z-index: 2;
+          background: $l-bg;
+          border: .2rem solid $dark;
+        }
+        li {
+          margin-left: .5rem;
+          &:before {
+            content: '·';
+            margin-left: -.5rem;
+            padding-right: .3rem;
+          }
+          &:not(:first-child) {
+            margin-top: .5rem;
+          }
+          span.price {
+            font-weight: 500;
+            color: mediumturquoise;
+          }
+        }
+      }
+    }
+  }
+  }
+  
+  #price {
+    display: inline;
+  }
+  
+
+  

@@ -1,0 +1,18 @@
+
+
+.coin-exchange{
+    .input-group-prepend {
+        min-width: 10rem;
+        .drop-menu{
+            border-radius: 0;
+            .select{
+                padding: 15px 1rem;
+            }
+        }
+      }
+}
+
+
+#morris-exchange-chart{
+    height: 30rem;
+}

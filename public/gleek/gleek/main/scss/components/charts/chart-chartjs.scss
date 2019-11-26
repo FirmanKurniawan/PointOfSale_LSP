@@ -1,0 +1,126 @@
+#monthly-orders-chart {
+    height: 26rem !important;
+}
+
+#project-bar1 {
+    height: 34.5rem !important;
+}
+
+#transaction-payable, #transaction-receivable {
+    height: 6.1rem !important;
+}
+
+#transaction {
+    height: 36.2rem !important;
+}
+
+#total-income {
+    height: 33rem !important;
+}
+
+#trend-chart {
+    height: 6.3rem !important;
+
+    @include custommq($min: 1200px, $max: 1440px) {
+        height: 6.5rem !important;
+    }
+}
+
+#weekly-view-chart, #t-monthly-likes-chart, #weekly-likes-chart {
+    height: 8.5rem !important;
+}
+
+#chart-views-display {
+    height: 33.6rem !important;
+}
+
+#storage-used-chart {
+    height: 22.5rem !important;
+}
+
+#temparature-chart {
+    height: 32rem !important;
+}
+
+#most-selling-items {
+    height: 30rem !important;
+}
+
+#mixedChart {
+    height: 35rem !important;
+}
+
+
+#ticket-small-chart-1 {
+    height: 11.6rem !important;
+}
+
+  
+#ticket-small-chart-2 {
+    height: 11.6rem !important;
+}
+
+#canvas1, #canvas2, #canvas3, #canvas4 {
+    height: 11.9rem !important;
+}
+
+#impression-chart, #top-products, #conversion-chart, #cpa-chart {
+    height: 9rem !important;
+}
+
+#call-monitors {
+    height: 37.5rem !important;
+}
+
+#call-trend-chart-1, 
+#call-trend-chart-2, 
+#call-trend-chart-3,
+#call-trend-chart-4,
+#call-trend-chart-5,
+#call-trend-chart-6,
+#call-trend-chart-7 {
+    height: 3rem !important;
+    width: 13rem !important;
+}
+
+#chart-gross-sale, #chart-online-sale, #chart-venue-expenses {
+    height: 7rem !important;
+}
+
+#total-revenue {
+    height: 30rem !important;
+
+    @include custommq($min: 1200px, $max: 1440px) {
+        height: 28rem !important;
+    }
+}
+
+#sold-product {
+    height: 10rem !important;
+}
+
+
+
+#chart-campaign {
+    height: 30rem !important;
+}
+
+#product-sales-chart {
+    height: 39.8rem !important
+}
+
+#most-selling-items-electronics {
+    height: 36rem !important;
+}
+
+#sort-chart, #sort-graph, #sort-track, #sort-diagrams {
+    height: 3rem !important;
+}
+
+#revenue-chart {
+    height: 26rem !important;
+}
+
+#hospital-survey {
+    height: 33rem !important;
+}

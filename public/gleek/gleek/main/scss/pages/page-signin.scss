@@ -1,0 +1,91 @@
+ // Variable.scss
+
+
+#login-page2{
+    body{ 
+    background: url(../../assets/images/background/login-register2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    position: relative;
+    &::after{
+        position: absolute;
+        content: '';
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: rgba(34,144,255,0.5);
+        z-index: -1;
+    }
+    }
+}
+
+#login-page1{
+    body{ 
+        background: url(../../assets/images/background/login-register.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        width: 100%;
+        position: relative;
+        &::after{
+            position: absolute;
+            content: '';
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background: rgba(34,144,255,0.5);
+            z-index: -1;
+        }
+    }
+}
+
+
+.form-input-content {
+    height: 100%;
+    display: flex;
+    // align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .card{
+        margin-bottom: 0;
+        .card-body{
+            padding: 5rem;
+            .form-control{
+                background: transparent;
+            }
+            .btn{
+                max-width: 20rem;
+                width: 100%;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+
+.login-info {
+    position: absolute;
+    left: 5rem;
+    bottom: 10rem;
+    h2,p,h5{
+        color: $white!important;
+    }
+}
+.login-logo {
+    span {
+        color: $white;
+    }
+}
+
+.social-login-content {
+    background: #fcfcfc;
+}
+.register-link {
+    a {
+        color: $primary;
+    }
+}

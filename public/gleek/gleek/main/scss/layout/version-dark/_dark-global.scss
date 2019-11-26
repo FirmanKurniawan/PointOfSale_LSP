@@ -1,0 +1,303 @@
+[data-theme-version="dark"] {
+
+    //index crypto page
+    .wallet-card .wallet-address {
+
+        .form-control {
+            border-color: $d-border;
+        }
+
+        .input-group-append button {
+            background-color: $d-bg;
+        }
+    }
+
+    .tickercontainer li {
+        color: $d-ctl;
+    }
+
+
+    //index download page
+    .doc-storage-table {
+        table tbody tr {
+            background-color: $primary;
+        }
+    }
+
+
+    //index music page
+    .file-uploading-widget .music-list li {
+        background-color: $d-bg;
+    }
+
+    .sorting-buttons [type=radio] + label {
+        color: $d-ctl;        
+    }
+
+    .sorting-buttons .hover-card, .sorting-buttons .hover-card::after {
+        background-color: $d-bg;
+    }
+
+
+    // index video page
+    .widget-video-stats .single-video-widget:not(:last-child) {
+        border-right: 1px solid $d-border;
+
+        @at-root [direction="rtl"]#{&} {
+            border-right: none;
+            border-left: 1px solid $d-border;
+        }
+    }
+
+
+    //index weather
+    .temp-top span {
+        color: $d-ctl;
+    }
+
+
+    //email compose page
+    .compose-content {
+        .mce-panel {
+            background-color: lighten($d-bg, 3.2%);
+        }
+
+        .dropzone  {
+            background: lighten($d-bg, 3.2%) !important;
+        }
+    }
+
+
+    //app profile page
+    .profile-info {
+        background: lighten($d-bg, 3.2%) !important;
+
+        // h4 {
+        //     color: $d-ctl !important;
+        // }
+    }
+
+    .profile-tab .nav-item .nav-link {
+        color: $white;
+
+        &:hover, &:active, &.active {
+            border: none;
+            background-color: transparent;
+            border-bottom: 2px solid $d-ctl;
+            color: $white;
+        }
+    }
+
+    .profile-uoloaded-post a h4 {
+        color: $white;
+    }
+
+
+    //app chat page
+    .chat-contacts {
+        background-color: lighten($d-bg, 3.2%);
+        
+        .event-sideber-search {
+            background-color: lighten($d-bg, 3.2%);
+        }
+
+        .event-msg-left {
+            .list-group-item {
+                background-color: lighten($d-bg, 3.2%);
+
+                &.active {
+                    background-color: $d-bg;
+                }
+
+                .media .media-body p {
+                    color: $d-ctl !important;
+                }
+            }
+        }
+    }
+
+    .event-chat-ryt {
+        background-color: lighten($d-bg, 3.2%);
+
+        .chat-heading {
+            border-bottom: 2px solid $d-border;
+        }
+
+        .char-type {
+            border-top-color: $primary;
+            border-bottom: 1px solid $primary;
+            background-color: $d-bg;
+        }
+    }
+
+
+    // app calender page
+    #calendar {
+        .fc-header-toolbar button {
+            background-color: $d-bg;
+            color: $white;
+
+            &:hover, &.fc-state-hover {
+                background-color: $d-bg !important;
+            }
+        }
+    }
+
+    .fc-unthemed .fc-today {
+        background-color: $d-bg !important;
+        
+        span {
+            color: $white;
+        }
+    }
+
+    .fc th.fc-widget-header {
+        background-color: $d-bg !important;
+
+        span {
+            color: $d-ctl;
+        }
+    }
+
+    //page invoice
+    .payment-details .table-borderless tbody tr td:not(:last-child), 
+    .invoice-details-table .invoice-upload {
+        color: $d-ctl;
+    }
+
+    .invoice-details-table thead tr th {
+        color: $white;
+    }
+    
+
+
+    //support ticket page
+    .table-show-ticket.table > tbody > tr > td {
+        color: $d-ctl !important;
+    }
+
+    .table-show-ticket.table.table-striped tbody tr:nth-of-type(odd) {
+        background-color: $d-bg;
+    }
+
+    .table-show-ticket.table > tbody > tr > td, 
+    .table-show-ticket.table > tbody > tr > th, 
+    .table-show-ticket.table > tfoot > tr > td, 
+    .table-show-ticket.table > tfoot > tr > th, 
+    .table-show-ticket.table > thead > tr > td, 
+    .table-show-ticket.table > thead > tr > th {
+        color: $white;
+    }
+
+
+    //support ticket single page
+    .support-tickets .problems-list-wrapper .problems-list > li {
+        border-bottom: 1px solid $d-border;
+    }
+
+    .ticket-comment-form label {
+        border: 1px solid $d-border;
+    }
+
+    
+    //page pricing
+    .pricing-wrapper .single-pricing-table .btn {
+        color: $d-ctl;
+        border-color: $d-border;
+    }
+
+    
+    //page login
+    .login-form {
+        a {
+            color: $white;
+        }
+    }
+
+
+    //page error
+    .error-content {
+        a {
+            color: $white;
+        }
+    }
+
+
+    //ico-exchange page
+    .currency-exchange {
+        .input-group-append button {
+            background-color: $d-bg;
+            border-color: $d-border;
+        }
+    }
+
+    .drop-menu .select {
+        color: $white;
+    }
+
+
+    //ico single transaction page
+    .table-trans tbody tr td {
+        color: $d-ctl;
+    }
+
+    .table-trans tr td a {
+        color: $white;
+    }
+
+
+    //ico trading view
+    .input-group.input-with-img .form-control {
+        background-color: $d-bg;
+        border-color: $d-border;
+    }
+
+
+    //payment gateway page
+    .card-gateway .card-body .custom-checkbox {
+        color: $d-ctl;
+    }
+
+
+    //ico wallet page
+    .wallet-card .wallet-address .input-group-prepend button, 
+    .wallet-card .wallet-address .input-group-append button {
+        background-color: lighten($d-bg, 3.2%);
+        border-color: $d-border;
+    }
+
+
+    //page contact details
+    .user-skill {
+        border-color: $d-border;
+    }
+
+    .card.card-full-width ul.contact-address-list > li:not(:last-child):after, 
+    .user-intro::after {
+        background-color: $d-border;
+    }
+
+
+    //page contact employee
+    .employee-contact-table tbody tr td:not(.text-primary) {
+        color: $d-ctl !important;
+    }
+
+
+    //faq page
+    .faq-tab-panel .nav-pills .nav-link {
+        background-color: lighten($d-bg, 3.2%);
+
+        &.active {
+            background-color: $primary;
+        }
+    }
+
+
+
+
+
+
+
+
+}

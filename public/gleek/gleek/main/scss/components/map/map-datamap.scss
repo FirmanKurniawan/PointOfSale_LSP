@@ -1,0 +1,128 @@
+@import "../../abstracts/variable";
+
+.vmap {
+    width: 100%;
+    height: 40rem;
+}
+
+.datamap-sales-hover-tooltip {
+    background: $primary;
+    padding: 5px 10px;
+    color: $white;
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: capitalize;
+    border-radius: 3px;
+  }
+
+.map-coruntry-list {
+    // text-align: center;
+    ul {
+        margin-top: 1rem;
+        li {
+            a {
+                display: block;
+                position: relative;
+                line-height: 3.7rem;
+                color: $pale-sky;
+                font-size: 1.5rem;
+
+                i {
+                    margin-right: .7rem;
+                    font-size: 2rem;
+
+                    @at-root [direction="rtl"] #{&} {
+                        margin-left: .7rem;
+                        margin-right: 0;
+                    }
+                }
+                span {
+                    position: absolute;
+                    right: 0;
+
+                    @at-root [direction="rtl"] #{&} {
+                        right: auto;
+                        left: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.map-coruntry-list-electronics {
+    ul {
+        margin-top: 1rem;
+        li {
+            a {
+                display: block;
+                position: relative;
+                line-height: 3.7rem;
+                color: $pale-sky;
+                font-size: 1.5rem;
+
+                i {
+                    margin-right: .7rem;
+                    font-size: 1.4rem;
+
+                    //rtl support
+                    @at-root [direction="rtl"] #{&} {
+                        margin-left: .7rem;
+                        margin-right: auto;
+                    }
+                }
+                span {
+                    position: absolute;
+                    right: 0;
+                }
+            }
+        }
+    }
+}
+
+#world-map-restaurant {
+    height: 23rem;
+}
+
+
+#australia {
+    height: 14rem;
+    margin-bottom: 1.5rem;
+    max-width: 100%;
+
+    &>svg {
+        left: 0;
+    }
+}
+
+#world-map-hospital {
+    height: 55rem;
+
+    .jqvmap-zoomout, .jqvmap-zoomin {
+        display: none;
+    }
+}
+
+#company-locations {
+    // padding-bottom: 34.85% !important;
+
+    @include respond('phone') {
+        height: 20rem;
+    }
+}
+
+#world-custommer-map {
+    height: 27rem;
+}
+
+.map {
+    height: 100%;
+}
+
+#country-widget-map {
+    height: 100%;
+}
+
+#us-map {
+    height: 20rem;
+}

@@ -1,0 +1,34 @@
+[data-theme-version="dark"] {
+
+    .pignose-calendar.pignose-calendar-blue {
+        background-color: $d-bg;
+        border-color: $d-border;
+    }
+
+    .pignose-calendar-top-month {
+        color: $white !important;
+    }
+
+    .pignose-calendar-top-icon {
+        color: $white !important;
+    }
+
+    .pignose-calendar .pignose-calendar-top .pignose-calendar-top-nav {
+        background-color: lighten($d-bg, 3.2%);
+        border-radius: 50%;
+    }
+
+    .pignose-calendar.pignose-calendar-blue .pignose-calendar-body .pignose-calendar-row .pignose-calendar-unit a {
+        color: $d-ctl;
+    }
+
+    .pignose-calendar.pignose-calendar-blue .pignose-calendar-body .pignose-calendar-row .pignose-calendar-unit.pignose-calendar-unit-sat a, .pignose-calendar.pignose-calendar-blue .pignose-calendar-body .pignose-calendar-row .pignose-calendar-unit.pignose-calendar-unit-sun a {
+        color: #fa4832;
+    }
+
+    .pignose-calendar.pignose-calendar-blue .pignose-calendar-top {
+        background-color: $d-bg;
+        border-bottom-color: $d-border;
+    }
+
+}

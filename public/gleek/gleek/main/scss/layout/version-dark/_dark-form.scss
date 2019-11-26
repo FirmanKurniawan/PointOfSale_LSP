@@ -1,0 +1,75 @@
+
+
+[data-theme-version="dark"] {
+    .form-control {
+        background: $d-bg;
+        border: 1px solid $d-border;
+        color: $d-ctl;
+    }
+
+    .form-group, .input-group {      
+
+        label {
+            color: $d-ctl;
+        }
+    }
+
+    .input-group {
+
+        &-prepend {
+
+            .input-group-text {
+                border: 1px solid $d-border;
+                border-right: none;
+                border-color: $d-border !important;
+
+                @at-root [direction="rtl"]#{&} {
+                    border: 1px solid $d-border;
+                }
+            }
+
+        }
+
+        &-append {
+
+            .input-group-text {
+                border: 1px solid $d-border;
+                border-left: none;
+                border-color: $d-border !important;
+
+                @at-root [direction="rtl"]#{&} {
+                    border: 1px solid $d-border;
+                }
+            }
+
+        }
+
+        &-text {
+            background-color: $d-bg;
+        }
+    }
+
+
+    .bootstrap-select {
+        .btn {
+            background-color: $d-bg;
+            border: 1px solid $d-border !important;
+            color: $d-ctl;
+        }
+    }
+
+    .dropdown-menu {
+        background-color: $d-bg;
+
+        .dropdown-item {
+            color: $d-ctl;
+
+            &:active, &.active, &:hover, &:focus {
+                background-color: lighten($d-bg, 3.2%);
+                color: $d-ctl;
+            }
+        }
+    }
+
+
+}

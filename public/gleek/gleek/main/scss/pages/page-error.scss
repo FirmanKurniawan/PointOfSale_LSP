@@ -1,0 +1,22 @@
+
+
+#error{
+    body{
+        background: $white;
+    }
+}
+
+.error-content{
+    height: 100%;
+    display: flex;
+    // align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.error-text{
+    font-size: 10rem;
+    line-height: 8rem;
+    color: $primary;
+}

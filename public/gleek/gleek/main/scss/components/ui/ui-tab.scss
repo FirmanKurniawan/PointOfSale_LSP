@@ -1,0 +1,181 @@
+@import "../../abstracts/variable";
+@import "../../abstracts/mixin";
+
+.bordered-tab {
+    .nav-tabs{
+        margin-bottom: 0;
+    }
+
+    .tab-pane {
+        border: .1rem solid transparent;
+        border-top: 0;
+        padding: 1.5rem;
+
+        &.active {
+            border-color: $iron;
+        }
+    }
+}
+
+.tab-pane-img{
+    padding: .35rem;
+    border: 1px solid $iron;
+    margin: .8rem 0;
+}
+
+.nav-pills {
+    margin: 1.5rem 0;
+    border-bottom: 1px solid $iron;
+
+    .nav-link {
+    border-radius: 0;
+    font-size: 1.7rem;
+
+    @include respond('desktop'){
+        padding: .8rem 2.2rem;
+    }
+  }
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    background-color: $primary;
+}
+
+.default-tab{
+    .nav-link{
+        background: transparent;
+        border-radius: 0;
+        font-size: 1.7rem;
+        font-weight: 500;
+        color: $l-ctd;
+        padding: 0.5rem 1.8rem;
+
+        @include respond('desktop'){
+            padding: .5rem 2.2rem;
+        }
+
+        &.active {
+            color: $primary;
+        }
+    }
+}
+
+.custom-tab-1{
+    .nav-link{
+        background: transparent;
+        border-radius: 0;
+        font-size: 1.7rem;
+        font-weight: 500;
+        color: $l-ctd;
+
+        @include respond('desktop'){
+            padding: .5rem 2.2rem;
+        }
+
+
+        &.active {
+            background: lighten($primary, 30%);
+            border-color: $iron;
+            color: $primary;
+        }
+    }
+}
+
+
+.nav-pills-icon {
+    margin-top: 0;
+    margin-bottom: 0;
+    border-bottom: 0;
+
+    a {
+        text-align: center;
+        padding: .9rem;
+
+        &:not(.active) i{
+            color: $pale-sky;
+        }
+
+        &.active{
+            color: $primary;
+        }
+    }
+}
+
+.nav-tabs{
+    // margin: 1.5rem 0;
+
+    a{
+        text-align: left;
+        padding: .9rem;
+        color: $dark;
+        font-size: 1.7rem;
+
+        &:not(.active) i{
+            color: $pale-sky;
+        }
+    }
+
+    &-vertical{
+        border-bottom: 0;
+        border-right: 1px solid $iron;
+
+        a{
+            margin-bottom: .5rem;
+
+            &.active{
+                color: $primary;
+                border: 1px solid $primary;
+                border-top: 0;
+                border-left: 0;
+            }
+        }
+
+        &.right-align{
+            border-right: 0;
+            border-left: 1px solid $iron;
+
+            a{
+                padding: 0.9rem 0 .9rem 2rem;
+                
+                &.active{
+                    color: $primary;
+                    border-left: 1px solid $primary;
+                    border-right: 0;
+                    border-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .nav-link{
+        @include respond('desktop'){
+            padding: .9rem 2.2rem;
+        }
+
+        &.active{
+            color: $primary;
+            // border-color: $primary;
+            border-radius: 0;
+            // border-bottom: 1px solid $white;
+        }
+    }
+}
+
+.tab-content-default{
+
+    h3{
+        font-size: 1.7rem;
+        color: $dark;
+        margin-bottom: 0;
+    }
+
+    h4{
+        font-size: 1.5rem;
+        color: $dark;
+    }
+
+    p{
+        margin: 2rem 0 0 0;
+    }
+}

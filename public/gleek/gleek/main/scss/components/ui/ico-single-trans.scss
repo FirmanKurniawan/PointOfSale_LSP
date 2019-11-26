@@ -1,0 +1,19 @@
+.single-transaction{
+    box-shadow: 0px 3px 10px 0px rgba(119, 119, 119, 0.1);
+
+    
+    &-details{
+
+        h6{
+            font-size: 1.7rem;
+            margin-bottom: 0;
+        }
+
+        .label{
+            font-size: 1.7rem;
+            padding: 1.2rem 2.3rem;
+        }
+    }
+
+    
+}

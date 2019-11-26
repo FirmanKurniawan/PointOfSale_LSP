@@ -1,0 +1,38 @@
+.dropdown-toggle:focus {
+    box-shadow: none!important;
+  }
+
+  .dropdown-outline{
+      border: .1rem solid $primary;
+  }
+
+  .dropdown-menu{
+      font-size: inherit;
+
+      @at-root [direction="rtl"] #{&} {
+          right: auto !important;
+      }
+  }
+
+////////////////////
+// Custom Dropdown
+///////////////////
+
+.custom-dropdown{
+    display: inline-block;
+    margin-bottom: 1rem;
+
+    .dropdown-menu{
+        border: .1rem solid rgba(120, 130, 140, 0.29);
+        min-width: 160px;
+        // padding: 1rem;
+        .dropdown-item{
+            padding: 0.5rem 2rem;
+            color: $l-ctl;
+
+            &:hover{
+                background: rgba($primary, 20%);
+            }
+        }
+    }
+}

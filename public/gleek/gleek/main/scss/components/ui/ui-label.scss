@@ -1,0 +1,89 @@
+.label {
+    padding      : .6rem 1rem;
+    line-height  : 1.5rem;
+    font-weight  : 500;
+    border-radius: .4rem;
+    color: $white;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.3rem;
+
+    &-fixed {
+        width: 7.5rem;
+        padding: .6rem 0;
+
+        &-lg {
+            width: 9.5rem;
+            padding: .6rem 0;
+        }
+    }
+
+    &-big {
+        width: 16.8rem;
+        font-size: 1.4rem;
+        padding: 1.1rem 0;
+    }
+
+    &-xl {
+        width: 10.5rem;
+        padding: 1.1rem 0;
+        font-size: 1.5rem;
+    }
+
+    &-lg {
+        width: 9.5rem;
+        padding: 1.1rem 0;
+    }
+
+    &-md {
+        width: 8.5rem;
+        padding: 1.1rem 0;
+    }
+
+    &-sm {
+        width: 7.5rem;
+        padding: 1.1rem 0;
+    }
+}
+
+.label-pill {
+    border-radius: 10rem;
+    padding-left: 0.6em;
+    padding-right: 0.6em;
+  }
+
+.label-rounded {
+    border-radius: 50px;
+}
+
+.label-secondary {
+    background-color: $primary;
+}
+
+.label-primary {
+    background-color: $secondary;
+}
+
+.label-success {
+    background-color: $success;
+}
+
+.label-info {
+    background-color: $info;
+}
+
+.label-warning {
+    background-color: $warning;
+}
+
+.label-danger {
+    background-color: $danger;
+}
+
+.label-dark {
+    background-color: $dark;
+}
+
+.label-light {
+    background-color:darken( $light, 30%);
+}

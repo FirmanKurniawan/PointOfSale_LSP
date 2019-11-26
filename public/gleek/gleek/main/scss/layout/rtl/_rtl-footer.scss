@@ -1,0 +1,32 @@
+html[dir="rtl"] {
+    
+    //footer
+    [direction="rtl"] {
+        .footer{
+            padding-right: 32rem;
+            padding-left: 0;
+
+            @include respond(phone-land) {
+                padding-right: 0;
+            }
+        }
+
+        &[data-container="boxed"] {
+            .footer {
+                padding-right: 0;
+            }
+        }
+
+        &[data-sidebar-style="mini"]:not([data-layout="horizontal"]) {
+            .footer {
+                padding-right: 6rem;
+            }
+        }
+
+        &[data-sidebar-style="compact"]:not([data-layout="horizontal"]) {
+            .footer {
+                padding-right: 15rem;
+            }
+        }
+    }
+}

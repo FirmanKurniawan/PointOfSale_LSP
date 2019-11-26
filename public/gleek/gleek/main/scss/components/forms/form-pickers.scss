@@ -1,0 +1,74 @@
+
+
+.asColorPicker-dropdown {
+    max-width: 26rem;
+}
+
+.asColorPicker-trigger {
+    border  : 0 none;
+    height  : 5rem;
+    position: absolute;
+    right   : -3.5rem;
+    top     : 0;
+    width   : 3.7rem;
+}
+
+.asColorPicker-clear {
+    display        : none;
+    position       : absolute;
+    right          : 1rem;
+    text-decoration: none;
+    top            : .5rem;
+}
+
+
+
+.daterangepicker {
+    td.active {
+        background-color: #1976d2;
+
+        &:hover {
+            background-color: #1976d2;
+        }
+    }
+}
+
+.datepicker {
+    table {
+        tr {
+            td.today {
+                background: #1976d2 none repeat scroll 0 0;
+                color     : #ffffff;
+
+                &:hover {
+                    background: #1976d2 none repeat scroll 0 0;
+                    color     : #ffffff;
+                }
+            }
+
+            td.today.disabled {
+                background: #1976d2 none repeat scroll 0 0;
+                color     : #ffffff;
+
+                &:hover {
+                    background: #1976d2 none repeat scroll 0 0;
+                    color     : #ffffff;
+                }
+            }
+        }
+    }
+
+    td {
+        padding: .5rem 1rem;
+    }
+
+    th {
+        padding: .5rem 1rem;
+    }
+}
+
+.picker {
+    &__select--month, &__select--year {
+        height: 2.5em;
+    }
+}

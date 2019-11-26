@@ -1,0 +1,55 @@
+.bootstrap-media{
+
+    &-custom{
+
+        .media:nth-child(even){
+            background: $primary;
+            color: $athensGray;
+
+            h5,h6{
+                color: $athensGray;
+
+                small{
+                    color: $athensGray !important;
+                }
+            }
+        }
+    }
+}
+
+.media{
+
+    &.bordered{
+        border-bottom: 1px solid $border; 
+        padding-bottom: 1.3rem;
+    }
+
+    &:last-child{
+        border-bottom: 0;
+    }
+
+    &-intro{
+        margin: 2rem  0 3rem 0;
+
+
+        .media-body{
+
+            h4{
+                font-size: 2rem;
+                color: $primary;
+            }
+
+            p{
+                margin: 0;
+            }
+        }
+    }
+
+    &-custom-avatar{
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 45px;
+    }
+}

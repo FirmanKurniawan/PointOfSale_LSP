@@ -1,0 +1,87 @@
+.modal {
+    
+    .form-control {
+        background-color: $white;
+    }
+
+    &.show .modal-dialog {
+        transform: translate(0, 7.5rem);
+    }
+
+    &-header {
+        border: 0;
+        padding: 1.8rem;
+    }
+
+    &-body {
+        padding: 1.8rem;
+    }
+
+    &-footer {
+        border: 0;
+        padding: 1.8rem;
+    }
+    
+    &-title{
+        font-size: 1.8rem !important;
+    }
+}
+
+.modal {
+    .user-img {
+        margin: 4rem 0;
+    }
+
+    .user-img-wrapper {
+        position: relative;
+        height: 14rem;
+        width: 14rem;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba($color: $black, $alpha: .3);
+        border-radius: 50%;
+        color: $white;
+
+        &::after {
+            @include before-after(0, 0, 100%, 100%, "", rgba($black, .5));
+            border-radius: 50%;
+            z-index: -1;
+        }
+
+        img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            z-index: -2;
+            left: 0;
+            top: 0;
+        }
+    }
+}
+
+.add-user-popup {
+
+    .modal-header {
+        background-color: $primary;
+        color: $white;
+        position: relative;
+
+
+        .modal-title {
+            color: $white;
+        }
+
+        .close {
+            position: absolute;
+            right: 2rem;
+            color: $white;
+
+            &:hover {
+                color: $white;
+            }
+        }
+    }
+}

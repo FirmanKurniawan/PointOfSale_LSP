@@ -1,0 +1,44 @@
+.radio-demo-colored {
+    .form-radio {
+        flex-basis: (100% / 7 );
+        margin-bottom: 2rem;
+    }
+}
+
+.demo-checkbox {
+    label {
+        margin-bottom: 2rem;
+        min-width    : 20rem;
+    }
+}
+.form-check {
+    padding-left: 0;
+}
+
+.demo-radio-button {
+    label {
+        margin-bottom: 2rem;
+        min-width    : 20rem;
+    }
+}
+
+
+
+.basic-colored-checkboxes {
+    .form-check {
+        flex-basis: 20%;
+    }
+}
+
+
+.basic-filled-in-checkboxes {
+    .form-check {
+        flex-basis: (100% / 7);
+    }
+}
+
+// .pickdate-row {
+//     .card {
+//         min-height: 32.5rem;
+//     }
+// }

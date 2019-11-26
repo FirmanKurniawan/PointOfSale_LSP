@@ -1,0 +1,119 @@
+.comming-soon{
+
+    &-wrapper{
+        background-image: url("../../assets/images/big/comming-soon-bg.png");
+        height: 100%; 
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .container{
+            max-width: 950px;
+        }
+    }
+
+    &__logo{
+        font-size: 26px;
+        color: $primary;
+        font-weight: 700;
+        margin-bottom: 20px;
+
+        @include media-breakpoint-up(md){
+            margin-bottom: 50px;
+        }
+
+        img{
+            width: 35px;
+            height: 35px;
+            margin-right: .4rem;
+
+            @include media-breakpoint-up(md){
+                width: 50px;
+                height: 50px;
+            }            
+        }
+    }
+
+    &__content{
+
+        h1{
+            color: $primary;
+            font-weight: 700;
+            line-height: 1;
+
+            @include media-breakpoint-up(md){
+                font-size: 6rem;
+            }
+        }
+
+        h3{
+            font-size: 2.2rem;
+            color: #6a707e;
+            margin-top: 1rem;
+            margin-bottom: 1.6rem;
+            
+
+            @include media-breakpoint-up(md){
+                margin-top: 2rem;
+                margin-bottom: 3rem;
+            }
+        }
+    }
+
+    &__footer{
+
+        h2{
+            font-size: 3.5rem;
+            color: $dark;
+        }
+    }
+
+    &__form{
+
+        .input-group{
+            max-width: 610px;
+            margin-right: auto;
+            margin-left: auto;
+
+            .form-control{
+                background: transparent;
+            }
+
+            &-append{
+
+                .input-group-text{
+                    background: $primary;
+                    color: $white;
+                    padding: 0.375rem  1.8rem;
+                }
+            }
+        }
+        
+    }
+
+    &__social{
+
+        li{
+            margin-right: 1.2rem !important;
+
+            a{
+                width: 35px;
+                height: 35px;
+                line-height: 35px;
+                border-radius: 50%;
+                padding: 0;
+
+                @include media-breakpoint-up(md){
+                    width: 50px;
+                    height: 50px;
+                    line-height: 50px;
+                }
+            }
+
+            i{
+                font-size: 1.8rem;
+            }
+        }
+    }
+}
+

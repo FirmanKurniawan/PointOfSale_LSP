@@ -1,0 +1,363 @@
+/*
+Table of Contents
+
+1. Global
+    1.1. variable.scss
+    1.2. fonts.scss
+    1.3. reset.scss
+    1.4. preloader.scss
+    1.5. color.scss
+
+2. Header
+    2.1. header.scss
+
+3. Sidebar
+    3.1. sidebar.scss
+
+3. Widget
+    3.1. widget-stat
+    3.2. widget-chart
+    3.3. widget-timeline
+    3.4. widget-social
+
+4. ICO 
+    4.1. ico-countdown
+    4.2. ico-exchange
+    4.3. ico-timeline
+    4.4. ico-progress
+    4.5. ico-advisor-profile
+    4.6. ico-gateway
+    4.7. ico-wallet
+    4.8. ico-trading-view
+
+5. Email
+    5.1. email
+
+6. Profile
+    6.1. profile
+
+7. Calender
+    7.1. calender-event
+    7.2. calender-date
+
+8. UI
+    8.1. ui-breadcrumb
+    8.2. ui-badge
+    8.3. ui-accordion
+    8.4. ui-card
+    8.5. ui-user-card
+    8.6. ui-button
+    8.7. ui-progressbar
+    8.8. ui-tab
+    8.9. ui-dropdown
+
+9. Conponents
+    9.1. uc-nestable
+    9.2. uc-weather
+    9.3. uc-counterup
+
+10. Map
+    10.1. map-vectormap
+
+11. Table
+    11.1. table-basic
+    11.2. table-datatable
+
+12. Form
+    12.1. form
+    12.2. form-layout.scss";
+    12.3. form-dropzone
+    12.4. form-radio-button
+    12.5. form-switch
+    12.6. form-icheck
+    12.7. form-advance-taginput
+    12.8. form-summernote
+    12.9. form-pickers
+
+13. Chart
+    13.1. chart-amchart
+    13.2. chart-c3
+    13.3. chart-morris
+    13.4. chart-flot
+    13.5. chart-price
+    13.6. chart-chartist
+    13.7. chart-knob
+
+14. Page
+    14.1. page-login-register
+    14.2. page-invoice
+    14.3. page-pricing
+
+15. Footer
+    15.1. footer
+
+
+16. Version Color
+    16.1. version-dark
+    16.2. version-light
+
+17. Responsive
+    17.1. responsive-header
+    17.1. responsive-profile
+    17.1. responsive-ico-countdown
+
+
+*/
+
+
+////////////////////
+// Abstracts
+////////////////////
+@import "./abstracts/mixin";
+@import "./abstracts/variable";
+@import "./abstracts/inheritance";
+
+@import "../../assets/plugins/bootstrap/scss/bootstrap.scss";
+
+
+@import "./layout/custom-grid";
+
+////////////////////
+// Global
+////////////////////
+@import "./base/fonts";
+@import "./base/reset";
+@import "./base/color";
+
+////////////////////
+// Header
+////////////////////
+@import "./layout/header";
+
+
+
+////////////////////
+// Bootstrap select
+////////////////////
+@import "./layout/bootstrap-select";
+
+
+
+////////////////////
+// Sidebar
+////////////////////
+
+@import "./layout/sidebar/sidebar-right";
+@import "./layout/sidebar/sidebar-global";
+@import "./layout/sidebar/sidebar-full";
+@import "./layout/sidebar/sidebar-mini-nav";
+@import "./layout/sidebar/sidebar-vertical-nav";
+@import "./layout/sidebar/sidebar-compact-nav";
+@import "./layout/sidebar/sidebar-horizontal";
+@import "./layout/sidebar/sidebar-overlay";
+
+////////////////////
+// Sidebar
+////////////////////
+
+@import "./layout/theme/theme-boxed";
+@import "./layout/theme/theme-wide-boxed";
+@import "./layout/nav-control";
+@import "./layout/layout-bg";
+
+////////////////////
+// Widget
+////////////////////
+@import "./components/widget/widget-stat";
+@import "./components/widget/widget-chart";
+@import "./components/widget/widget-timeline";
+@import "./components/widget/widget-social";
+
+////////////////////
+// ICO 
+////////////////////
+@import "./layout/ico/ico-countdown";
+@import "./layout/ico/ico-exchange";
+@import "./layout/ico/ico-timeline";
+@import "./layout/ico/ico-progress";
+@import "./layout/ico/ico-advisor-profile";
+@import "./layout/ico/ico-gateway";
+@import "./layout/ico/ico-wallet";
+@import "./layout/ico/ico-trading-view";
+@import "./layout/support-ticket/support-ticket";
+
+////////////////////
+// Email
+////////////////////
+@import "./layout/email";
+
+////////////////////
+// Profile
+////////////////////
+@import "./layout/profile";
+
+////////////////////
+// Calender
+////////////////////
+@import "./components/calender/calender-event";
+@import "./components/calender/calender-date";
+
+////////////////////
+// UI
+////////////////////
+@import "./components/ui/ui-user-avatar";
+@import "./components/ui/ui-breadcrumb";
+@import "./components/ui/ui-badge";
+@import "./components/ui/ui-accordion";
+@import "./components/ui/ui-card";
+@import "./components/ui/ui-user-card";
+@import "./components/ui/ui-button";
+@import "./components/ui/ui-alert";
+@import "./components/ui/ui-progressbar";
+@import "./components/ui/ui-popover";
+@import "./components/ui/ui-tab";
+@import "./components/ui/ui-dropdown";
+@import "./components/ui/app-fullcalander";
+@import "./components/ui/app-chat";
+@import "./components/ui/ui-carousel";
+@import "./components/ui/ui-contact-grid";
+@import "./components/ui/ui-contact-details";
+@import "./components/ui/ui-contact-list";
+@import "./components/ui/ui-pagination";
+@import "./components/ui/ui-object-media";
+@import "./components/ui/ui-pricing";
+@import "./components/ui/ui-grid";
+@import "./components/ui/ui-ribbon";
+@import "./components/ui/ui-modal";
+@import "./components/ui/ui-media";
+@import "./components/chat/chat";
+@import "./components/ui/ui-timeline";
+@import "./components/ui/ui-label";
+
+
+
+@import "./components/ui/ico-single-trans";
+
+////////////////////
+// Conponents
+////////////////////
+@import "./components/uc/uc-nestable";
+@import "./components/uc/uc-weather";
+@import "./components/uc/uc-counterup";
+@import "./components/uc/uc-ticker";
+@import "./components/uc/uc-circle-progress";
+@import "./components/uc/uc-clipboard";
+@import "./components/uc/uc-noui-slider";
+@import "./components/uc/uc-bs-multiselect";
+@import "./components/uc/uc-blockui";
+@import "./components/uc/uc-magnific-popup";
+@import "./components/uc/uc-counter";
+@import "./components/uc/uc-duallist";
+@import "./components/uc/uc-dragula";
+@import "./components/uc/uc-spinkit";
+@import "./components/preloader";
+
+// Map
+/////////////////
+@import "./components/map/map-datamap";
+@import "./components/map/map-gmap";
+
+////////////////////
+// Table
+////////////////////
+@import "./layout/tables/table-basic";
+@import "./layout/tables/table-datatable";
+@import "./layout/tables/table-jsgrid";
+@import "./layout/tables/table-bootgrid";
+@import "./layout/invoice";
+
+////////////////////
+//Form
+////////////////////
+@import "./components/forms/form";
+@import "./components/forms/form-layout";
+@import "./components/forms/form-dropzone";
+@import "./components/forms/form-checkbox";
+@import "./components/forms/form-radio-button";
+@import "./components/forms/form-switch";
+@import "./components/forms/form-bs-customization";
+@import "./components/forms/form-advance-taginput";
+@import "./components/forms/form-summernote";
+@import "./components/forms/form-pickers";
+@import "./components/forms/form-validation";
+@import "./components/forms/form-wizard";
+@import "./components/forms/form-steps";
+@import "./components/forms/form-currency-exchange";
+@import "./components/forms/form-touchspin";
+@import "./components/forms/form-tagsinput";
+@import "./components/forms/form-editor-quill.scss";
+@import "./components/forms/form-addons-select2.scss";
+@import "./components/forms/form-addons-cropper";
+@import "./components/forms/form-addons-typeahead";
+@import "./components/forms//form-email-compose";
+@import "./components/forms//form-email-inbox";
+
+
+
+////////////////////
+//Chart
+////////////////////
+@import "./components/charts/chart-amchart";
+@import "./components/charts/chart-c3";
+@import "./components/charts/chart-morris";
+@import "./components/charts/chart-flot";
+@import "./components/charts/chart-price";
+@import "./components/charts/chart-chartist";
+@import "./components/charts/chart-knob";
+@import "./components/charts/chart-sparkline";
+@import "./components/charts/chart-chartjs";
+@import "./components/charts/chart-easy-pie-chart";
+
+////////////////////
+// Page
+////////////////////
+@import "./pages/page-signin";
+@import "./pages/page-error";
+@import "./pages/page-invoice";
+@import "./pages/page-pricing";
+@import "./pages/page-comming-soon";
+@import "./pages/faq";
+@import "./pages/currency-exchange";
+// @import "./pages/page-ui-widget";
+@import "./pages/index1";
+@import "./pages/index2";
+@import "./pages/index3";
+@import "./pages/index4";
+@import "./pages/index5";
+@import "./pages/index6";
+@import "./pages/index7";
+@import "./pages/index8";
+@import "./pages/index9";
+@import "./pages/index10";
+@import "./pages/index11";
+@import "./pages/index12";
+@import "./pages/index13";
+@import "./pages/index14";
+@import "./pages/index15";
+@import "./pages/index16";
+@import "./pages/index17";
+@import "./pages/index18";
+@import "./pages/index19";
+@import "./pages/index20";
+@import "./pages/index21";
+
+////////////////////
+// Footer
+////////////////////
+@import "./layout/footer";
+
+////////////////////
+// Version Color
+////////////////////
+@import "./layout/version-dark/main";
+
+////////////////////
+// Responsive
+////////////////////
+@import "./responsive/responsive-header";
+@import "./responsive/responsive-profile";
+@import "./responsive/responsive-calender-event";
+@import "./responsive/responsive-ico-countdown";
+@import "./responsive/responsive-page-signin";
+@import "./layout/rtl/rtl";
+@import "demo";

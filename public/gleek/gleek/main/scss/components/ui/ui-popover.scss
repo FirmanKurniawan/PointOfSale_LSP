@@ -1,0 +1,15 @@
+.popover{
+
+    &-header{
+        font-size: 1.5rem;
+        color: $dark;
+    }
+
+    &-body{
+        font-size: 1.3rem;
+    }
+}
+
+.tooltip {
+    font-size: 15px;
+}

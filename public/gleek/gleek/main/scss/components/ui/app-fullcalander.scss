@@ -1,0 +1,249 @@
+
+#calendar .fc-header-toolbar{
+    
+    button{
+        font-size: 14px;
+        border-radius: 5px;
+        box-shadow: none;
+    }
+}
+
+.fc-today-button{
+    border: 1px solid $primary !important;
+    color: $primary;
+    padding: 0 1.4em !important;
+}
+
+.fc-agendaWeek-button{
+    border: 1px solid $warning !important;
+    color: $warning;
+    padding: 0 1.4em !important;
+
+    &.fc-state-active{
+        background: $warning;
+        color: $white;
+    }
+}
+
+.fc-agendaDay-button{
+    border: 1px solid $info !important;
+    color: $info;
+    padding: 0 1.4em !important;
+
+    &.fc-state-active{
+        background: $info;
+        color: $white;
+    }
+}
+
+.fc-prev-button:focus,.fc-next-button:focus{
+    outline: 0;
+    box-shadow: none;
+}
+
+.fc-prev-button{
+    margin-right: .5rem !important;
+}
+
+.fc-prev-button,.fc-next-button{
+    color: $dark;
+    border: 1px solid rgba($dark, 30%) !important;
+}
+
+.fc-right .fc-button-group{
+
+    button{
+        margin-right: 10px;
+        padding: 0 1.4em !important;
+
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+}
+
+.fc-month-button{
+    color: $success;
+    border-color: $success !important;
+
+    &.fc-state-active{
+        background: $success;
+        color: $white;
+    }
+}
+
+.fc-button-group button:focus{
+    outline: 0;
+}
+
+.fc-event{
+    border-radius: 5px;
+}
+
+.fc th.fc-widget-header{
+    background: #FBFBFB;
+    color: $dark;
+    text-transform: capitalize;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.fc-widget-header thead{
+    background: #FBFBFB;
+}
+
+#event-modal{
+
+    .modal-content{
+
+        .modal-header{
+
+            .modal-title{
+                color: $white;
+            }
+        }
+    }
+
+    .modal-body{
+         
+        form .btn{
+            height: 100%;
+            border-radius: 0 4px 4px 0;
+        }
+    }
+}
+
+#add-category .modal-header{
+
+    .modal-title{
+        color: $white;
+    }
+}
+
+// data class rule start
+
+#external-events{
+
+    [data-class="bg-primary"]{
+        background-color: transparent !important;
+        color: $dark;
+
+        &::before{
+            content: "";
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: $primary;
+            margin-right: .9rem;
+            position: relative;
+            top: 2px;
+        }
+    }
+
+    [data-class="bg-success"]{
+        background-color: transparent !important;
+        color: $dark;
+
+        &::before{
+            content: "";
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: $success;
+            margin-right: .9rem;
+            position: relative;
+            top: 2px;
+        }
+    }
+
+    [data-class="bg-warning"]{
+        background-color: transparent !important;
+        color: $dark;
+
+        &::before{
+            content: "";
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: $warning;
+            margin-right: .9rem;
+            position: relative;
+            top: 2px;
+        }
+    }
+
+    [data-class="bg-dark"]{
+        background-color: transparent !important;
+        color: $dark;
+
+        &::before{
+            content: "";
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: $dark;
+            margin-right: .9rem;
+            position: relative;
+            top: 2px;
+        }
+    }
+
+    [data-class="bg-danger"]{
+        background-color: transparent !important;
+        color: $dark;
+
+        &::before{
+            content: "";
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: $danger;
+            margin-right: .9rem;
+            position: relative;
+            top: 2px;
+        }
+    }
+
+    [data-class="bg-info"]{
+        background-color: transparent !important;
+        color: $dark;
+
+        &::before{
+            content: "";
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: $info;
+            margin-right: .9rem;
+            position: relative;
+            top: 2px;
+        }
+    }
+
+    [data-class="bg-pink"]{
+        background-color: transparent !important;
+        color: $dark;
+
+        &::before{
+            content: "";
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: $pink;
+            margin-right: .9rem;
+            position: relative;
+            top: 2px;
+        }
+    }
+
+
+}
+
+// data class rule end

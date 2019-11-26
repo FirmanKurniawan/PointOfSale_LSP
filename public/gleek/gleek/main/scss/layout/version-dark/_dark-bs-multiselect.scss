@@ -1,0 +1,13 @@
+[data-theme-version="dark"] {
+    .multiselect-container {
+        a {
+            color: $d-ctl;
+        }
+
+        .multiselect-group {
+            label {
+                color: $white;
+            }
+        }
+    }
+}

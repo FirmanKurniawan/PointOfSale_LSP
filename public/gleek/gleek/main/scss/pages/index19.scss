@@ -1,0 +1,94 @@
+.advantage-graph {
+    .progress {
+        height: 1.5rem;
+        border-radius: 50px;
+    }
+}
+
+.single-administrator {
+    background-color: $l-bg;
+    box-shadow: none;
+
+    .card-body {
+        padding: 2rem;
+
+        p {
+            margin: 0;
+        }
+    }
+}
+
+.timeline-chart-area {
+    li {
+        span {
+            font-size: 1.2rem;
+        }
+        .icon-1 {
+            color: #e36cd9;
+        }
+        .icon-2 {
+            color: #ff9800;
+        }
+        .icon-3 {
+            color: $warning;
+        }
+    }
+}
+
+.download-chart-area,
+.upload-chart-area {
+    li {
+        span {
+            font-size: 1.2rem;
+        }
+        .icon-1 {
+            color: #ff9800;
+        }
+        .icon-2 {
+            color: #e36cd9;
+        }
+    }
+}
+
+.storage-chart-area {
+    li {
+        span {
+            font-size: 1.2rem;
+        }
+        .icon-1 {
+            color: #ffc107;
+        }
+        .icon-2 {
+            color: #e36cd9;
+        }
+    }
+}
+
+.video-session-table {
+    .table th {
+        padding: 0;
+    }
+
+    .table {
+        [type=checkbox] + label {
+            height: 1.5rem;
+            margin: 0;
+        }
+    }
+
+    .section-header {
+        display: flex;
+
+        @include custommq($max: 1440px) {
+            display: block;
+        }
+
+        .card-title {
+            margin-bottom: 1rem;
+
+            @include custommq($max: 1440px) {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}

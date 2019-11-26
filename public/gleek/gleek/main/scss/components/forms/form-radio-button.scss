@@ -1,0 +1,309 @@
+@import "../../abstracts/variable";
+
+input[type="radio"] {
+    &:checked {
+        left    : -9999px;
+        opacity : 0;
+        position: absolute;
+
+        & + {
+            label {
+                -moz-user-select: none;
+                cursor          : pointer;
+                display         : inline-block;
+                font-size       : 1.6rem;
+                height          : 2.5rem;
+                line-height     : 2.5rem;
+                padding-left    : 3.5rem;
+                position        : relative;
+                transition      : all 0.28s ease 0s;
+
+                &::after {
+                    border-radius   : 50%;
+                    // border          : .2rem solid $primary; //#26a69a
+                    background-color: $primary; //#26a69a
+                    z-index         : 0;
+                    transform       : scale(1.02);
+                    width: 20px;
+                    height: 20px;
+                    left: 0;
+                    top: 0;
+                }
+
+                &::before {
+                    border-radius: 50%;
+                    animation    : 0.2s linear 0s normal forwards 1 running ripple;
+                    border       : .2rem solid transparent;
+                }
+
+                &.radio {
+                    &-red {
+                        &::after {
+                            background-color: $red;
+                        }
+                    }
+                    &-purple {
+                        &::after {
+                            background-color: $purple;
+                        }
+                    }
+                    &-d-purple {
+                        &::after {
+                            background-color: $deep-purple;
+                        }
+                    }
+                    &-blue {
+                        &::after {
+                            background-color: $blue;
+                        }
+                    }
+                    &-l-blue {
+                        &::after {
+                            background-color: $light-blue;
+                        }
+                    }
+                    &-teal {
+                        &::after {
+                            background-color: $teal;
+                        }
+                    }
+                    &-green {
+                        &::after {
+                            background-color: $green;
+                        }
+                    }
+                    &-yellow {
+                        &::after {
+                            background-color: $yellow;
+                        }
+                    }
+                    &-orange {
+                        &::after {
+                            background-color: $orange;
+                        }
+                    }
+                    &-d-orange {
+                        &::after {
+                            background-color: $deep-orange;
+                        }
+                    }
+                    &-maroon {
+                        &::after {
+                            background-color: $maroon;
+                        }
+                    }
+                    &-navy {
+                        &::after {
+                            background-color: $navy;
+                        }
+                    }
+                    &-black {
+                        &::after {
+                            background-color: $black;
+                        }
+                    }
+                    &-gray {
+                        &::after {
+                            background-color: $gray;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &:not(:checked) {
+        left    : -9999px;
+        opacity : 0;
+        position: absolute;
+
+        + {
+            label {
+                -moz-user-select: none;
+                cursor          : pointer;
+                display         : inline-block;
+                font-size       : 1.6rem;
+                height          : 2.5rem;
+                line-height     : 2.5rem;
+                padding-left    : 3.5rem;
+                position        : relative;
+                transition      : all 0.28s ease 0s;
+
+                &::after {
+                    border-radius: 50%;
+                    // border       : 1px solid #b1b8bb;
+                    transform    : scale(0);
+                    z-index      : -1;
+                }
+
+                &::before {
+                    border-radius: 50%;
+                    // border       : 1px solid #b1b8bb;
+                }
+            }
+        }
+    }
+
+    & + {
+        label {
+            &::after {
+                content   : "";
+                margin    : .4rem;
+                position  : absolute;
+                transition: all 0.28s ease 0s;
+                z-index   : 0;
+            }
+
+            &::before {
+                content   : "";
+                height    : 20px;
+                left      : 0;
+                margin    : .4rem;
+                position  : absolute;
+                top       : 0;
+                transition: all 0.28s ease 0s;
+                width     : 20px;
+                z-index   : 0;
+                border: 1px solid #DEE0E2;
+            }
+        }
+    }
+
+    &:disabled {
+        &:checked {
+            + {
+                label {
+                    &::before {
+                        animation       : 0.2s linear 0s normal forwards 1 running ripple;
+                        background-color: transparent;
+                        // border-color    : rgba(0, 0, 0, 0.26);
+                    }
+
+                    &::after {
+                        background-color: rgba(0, 0, 0, 0.26);
+                        // border-color    : #bdbdbd;
+                    }
+                }
+            }
+        }
+
+        &:not(:checked) {
+            + {
+                label {
+                    &::before {
+                        animation       : 0.2s linear 0s normal forwards 1 running ripple;
+                        background-color: transparent;
+                        border-color    : rgba(0, 0, 0, 0.26);
+                        border-color    : rgba(0, 0, 0, 0.26);
+                    }
+                }
+            }
+        }
+
+        + {
+            label {
+                color: rgba(0, 0, 0, 0.26);
+            }
+        }
+    }
+
+    &.radio-outlined {
+        &:checked {
+            & + label {
+                &::after {
+                    width: 12px;
+                    height: 12px;
+                    left: 4px;
+                    top: 4px;
+                }
+
+                &::before {
+                    border: 2px solid #DEE0E2;
+                }
+            }
+        }
+    }
+}
+
+.with-gap[type="radio"] {
+    &:checked {
+        + {
+            label {
+                &::after {
+                    border-radius   : 50%;
+                    border          : 2px solid #26a69a;
+                    background-color: #26a69a;
+                    z-index         : 0;
+                    transform       : scale(0.5);
+                }
+
+                &::before {
+                    border-radius: 50%;
+                    border       : 2px solid #26a69a;
+                }
+            }
+        }
+    }
+
+    &:disabled {
+        &:checked {
+            + {
+                label {
+                    &::before {
+                        animation: 0.2s linear 0s normal forwards 1 running ripple;
+                        border   : 2px solid rgba(0, 0, 0, 0.26);
+                    }
+
+                    &::after {
+                        background-color: rgba(0, 0, 0, 0.26);
+                        border          : medium none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.tabbed[type="radio"] {
+    &:focus {
+        + {
+            label {
+                &::before {
+                    animation : 0.2s linear 0s normal forwards 1 running ripple;
+                    box-shadow: 0 0 0 1rem rgba(0, 0, 0, 0.1);
+                }
+            }
+        }
+    }
+}
+
+.radio-toolbar [type="radio"]+ label{
+    padding-left: 0;
+}
+
+.radio-toolbar label{
+
+    &::before{
+        display: none;
+    }
+
+    &::after{
+        display: none;
+    }
+}
+
+.radio-toolbar input[type="radio"] {
+    display: none;
+  }
+
+.radio-toolbar label {
+display: inline-block;
+color: #dddddd;
+font-size: 1.4rem !important;
+cursor: pointer;
+margin-bottom: 0;
+}
+
+.radio-toolbar input[type="radio"]:checked+label {
+color: #6a707e;
+}

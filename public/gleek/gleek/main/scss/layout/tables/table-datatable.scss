@@ -1,0 +1,87 @@
+@import "../../abstracts/variable";
+
+
+table.dataTable thead th, table.dataTable thead td{
+    border-bottom: 0;
+    border-top: 0;
+}
+
+table.dataTable tfoot th, table.dataTable tfoot td{
+    border-top: 0;
+}
+
+table.dataTable tbody tr, table.dataTable tbody td{
+    background: transparent !important;
+}
+
+table.dataTable thead th{
+    color: $dark;
+    font-weight: 500;
+}
+
+table.dataTable tbody td{
+    padding: 15px 18px;
+}
+
+table.dataTable tr.selected{
+    color: $primary;
+}
+
+table.dataTable tfoot th{
+    color: $dark;
+    font-weight: 500;
+}
+
+table#example{
+    padding: 3rem 0 4rem 0;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current{
+    border-radius: 50%;
+    color: $primary !important;
+    background: rgba($primary, .1);
+    border: 0 !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover{
+    border-radius: 50%;
+    color: $primary !important;
+    background: rgba($primary, .1);
+    border: 0;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button{
+    border: 0;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.previous:hover{
+    background: transparent;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.next:hover{
+    background: transparent;
+}
+
+.dataTables_wrapper {
+    input[type="search"], input[type="text"], select {
+        border: 1px solid $muted;
+        border-radius: 5px;
+        padding: .3rem 1rem;
+        color: rgba(113, 93, 93, 1);
+    }
+}
+
+table.dataTable.no-footer{
+    border-bottom: 0;
+}
+
+
+
+.dataTables_scroll{
+    padding: 2.5rem 0;
+
+    &Foot{
+        padding-top: 1rem;
+    }
+}
+

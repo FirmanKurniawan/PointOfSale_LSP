@@ -1,0 +1,329 @@
+@import "../abstracts/mixin";
+.reaction {
+    &.active {
+        color: #F67B7B;
+    }
+}
+
+.file-uploading-widget {
+
+    .music-list {
+        margin-top: 5rem;
+        margin-bottom: 4.5rem;
+
+        @include custommq($max: 1440px) {
+            margin-bottom: 3rem;
+        }
+
+        li {
+            border-left: 3px solid $primary;
+            border-radius: 3px;
+            padding: 2rem;
+            background-color: $l-bg;
+            margin-bottom: 3rem;
+
+            @include custommq($max: 1440px) {
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+
+    h2 {
+        font-size: 3.5rem;
+    }
+
+    .form-group {
+        label {
+            width: 25.5rem;
+        }
+    }
+
+    .progress {
+        background-color: rgba($color: $warning, $alpha: .2);
+        height: 1rem;
+
+        .progress-bar {
+            background-color: #FF9800;
+        }
+    }
+}
+
+.track-list {
+    li {
+        margin-bottom: 1.2rem;
+    }
+    .track-icon {
+        span {
+            @include circle(3rem, 50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $white;
+            font-size: 1.4rem;
+        }
+    }
+}
+
+.sorting-buttons {
+    margin-top: 4rem;
+    // padding-top: 5rem;
+    ul {
+        li {
+            display: inline-block;
+            width: 24%;
+            text-align: center;
+            position: relative;
+
+            &:not(:last-child) {
+                &::after {
+                    position: absolute;
+                    content: "";
+                    height: 2px;
+                    width: 100%;
+                    background-color: $border;
+                    top: -1.4rem;
+                    left: 50%;
+                }
+            }
+
+            @at-root [direction="rtl"] #{&} {
+                &:not(:first-child) {
+                    &::after {
+                        position: absolute;
+                        content: "";
+                        height: 2px;
+                        width: 100%;
+                        background-color: $border;
+                        top: -1.4rem;
+                        left: 50%;
+                    }
+                }
+
+                &:first-child {
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    .form-group {
+        margin-bottom: 0;
+        position: relative;
+    }
+    .hover-card {
+        opacity: 0;
+        visibility: hidden;
+        transition: all .2s;
+        position: absolute;
+        width: 13rem;
+        bottom: 224%;
+        text-align: center;
+        background-color: #fff;
+        padding: 1rem;
+        box-shadow: 0 0 1rem 0.1rem rgba($black, .1);
+        left: 50%;
+        transform: translateX(-50%);
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -.7rem;
+            background-color: $white;
+            left: 50%;
+            transform: translateX(-50%) rotate(45deg);
+            height: 1.5rem;
+            width: 1.5rem;
+        }
+    }
+    [type=radio]+label {
+        &:hover {
+            &::before {
+                border-color: $primary;
+            }
+            &+.hover-card {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+    [type=radio]:not(:checked)+label {
+        padding: 0;
+        margin: 0;
+        font-size: 1.6rem;
+        color: $l-ctd;
+        display: block;
+        text-align: center;
+        &::before {
+            top: -2.5rem;
+            transform: translateX(-50%);
+            left: 50%;
+            background-color: $white;
+            z-index: 1;
+            border-width: 3px;
+        }
+        &:after {
+            display: none;
+        }
+    }
+    [type=radio]:checked+label {
+        padding: 0;
+        margin: 0;
+        font-size: 1.6rem;
+        color: $l-ctd;
+        display: block;
+        text-align: center;
+        &::after {
+            display: none;
+        }
+        &::before {
+            top: -2.5rem;
+            transform: translateX(-50%);
+            left: 50%;
+            border-color: $primary;
+            z-index: 1;
+            border-width: 3px;
+        }
+    }
+}
+
+.sorting-days {
+    .dropdown {
+        // width: auto !important;
+
+        button.btn {
+            border: 0;
+            padding: 1.2rem 0.8rem;
+            color: $primary;
+
+            &:active, &:focus, &:hover {
+                background-color: $white;
+                color: $primary;
+            }
+        }
+    }
+}
+
+.user-img {
+    position: relative;
+    .activity {
+        height: 1.2rem;
+        width: 1.2rem;
+        border-radius: 50%;
+        display: inline-block;
+        position: absolute;
+        border: 2px solid $white;
+        top: .4rem;
+        left: 0rem;
+        &.active {
+            background-color: $success;
+        }
+        &.deactive {
+            background-color: $deep-pink;
+        }
+
+        &.inactive{
+            background-color: $warning;
+        }
+    }
+}
+
+.revenue-chart-list {
+    li {
+        color: $l-ctd;
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+        i {
+            font-size: 1.6rem;
+            padding-right: 1rem;
+
+            @at-root [direction="rtl"] #{&} {
+                padding-right: auto;
+                padding-left: 1rem;
+            }
+        }
+    }
+}
+
+.views-chart-area {
+    li {
+        color: $l-ctd;
+        .circle-classical {
+            color: #ff9800;
+        }
+        .circle-fusion {
+            color: #9cc653;
+        }
+        .circle-rock {
+            color: #40b9ff;
+        }
+        .circle-uncategorized {
+            color: #ffd145;
+        }
+    }
+}
+
+.reaction-btns {
+    margin-left: 1.1rem;
+
+    a {
+        color: $muted;
+    }
+}
+
+
+.artist-list-card {
+    .single-artist {
+        @include respond('tab-port') {
+            width: 48%;
+            float: left;
+            margin-left: 1%;
+            margin-right: 1%;
+        }
+
+        @include respond(phone) {
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+            font: none;
+        }
+    }
+
+    .show-more-btn {
+        @include respond(tab-port) {
+            clear: both;
+        }
+    }
+
+    .card-body {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+
+        @include custommq($max: 1440px) {
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
+    }
+
+    button.btn {
+        width: 20rem;
+    }
+}
+
+#gauge-1 {
+    height: 21rem !important;
+
+    @include respond(phone) {
+        height: 15rem !important;
+    }
+}
+
+.upload-details {
+    border-bottom: 1px solid $border;
+
+    @include custommq($max: 1440px) {
+        border-bottom: none;
+    }
+}
+

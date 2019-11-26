@@ -1,0 +1,5 @@
+[data-theme-version="dark"] {
+    .twitter-typeahead .tt-menu {
+        background-color: lighten($color: $d-bg, $amount: 3.25%);
+    }
+}

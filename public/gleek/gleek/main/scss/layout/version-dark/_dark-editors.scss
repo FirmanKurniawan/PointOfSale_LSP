@@ -1,0 +1,40 @@
+[data-theme-version="dark"] {
+
+    //summernote
+    .note-editor.note-frame .note-editing-area .note-editable, 
+    .note-editor.note-frame .note-statusbar {
+        background-color: $d-bg;
+        color: $white;
+        border-top-color: $d-border;
+    }
+
+    .note-editor.note-frame {
+        border-color: $d-border;
+    }
+
+
+    //ck
+    .cke_top, 
+    .cke_reset, 
+    .cke_bottom, 
+    .cke_editable {
+        background: $d-bg;
+        color: $white;
+    }
+
+
+    //tinymice
+    .mce-container, 
+    .mce-container *, 
+    .mce-widget, 
+    .mce-widget *, 
+    .mce-reset, 
+    .mce-content-body
+     {
+        background: $d-bg;
+        color: $white;
+        border-color: $d-border;
+    } 
+
+}
+

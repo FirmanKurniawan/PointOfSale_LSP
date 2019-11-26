@@ -1,0 +1,481 @@
+@import "../../abstracts/variable";
+
+.custom-position{
+
+    & [type=checkbox] + label::before{
+        left: -5px;
+        top: 5px;
+    }
+
+    & [type=checkbox] + label::after{
+        left: -5px;
+        top: 5px;
+    }
+
+    & [type=radio] + label::before{
+        left: -5px;
+        top: 5px;
+    }
+
+    & [type=radio] + label::after{
+        left: -5px;
+        top: 5px;
+    }
+}
+
+.tabbed[type="checkbox"] {
+    &:focus {
+        + {
+            label {
+                &::after {
+                    background-color: rgba(0, 0, 0, 0.1);
+                    border          : 0 none;
+                    border-radius   : 50%;
+                    box-shadow      : 0 0 0 1rem rgba(0, 0, 0, 0.1);
+                    transform       : scale(1);
+                }
+            }
+        }
+    }
+}
+
+.filled-in.tabbed[type="checkbox"] {
+    &:focus {
+        + {
+            label {
+                &::after {
+                    background-color: rgba(0, 0, 0, 0.1);
+                    border-color    : #5a5a5a;
+                    border-radius   : .2rem;
+                }
+            }
+        }
+    }
+
+    &:checked {
+        &:focus {
+            + {
+                label {
+                    &::after {
+                        background-color: #26a69a;
+                        border-color    : #26a69a;
+                        border-radius   : .2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+label.without-label{
+    text-indent: -9999px;
+}
+
+.checkbox-event [type="checkbox"]{
+    &:checked {
+        left    : -9999px;
+        opacity : 0;
+        position: absolute;
+
+        + {
+            label {
+                &::before {
+                    backface-visibility: hidden;
+                    border-color       : transparent $primary $primary transparent;
+                    border-style       : solid;
+                    border-width       : .2rem;
+                    height             : 2.2rem;
+                    left               : -.5rem;
+                    top                : -.4rem;
+                    transform          : rotate(40deg);
+                    transform-origin   : 100% 100% 0;
+                    width              : 1.2rem;
+                }
+            }
+        }
+
+        &:disabled {
+            + {
+                label {
+                    &::before {
+                        border-bottom: 2px solid rgba(0, 0, 0, 0.26);
+                        border-right : 2px solid rgba(0, 0, 0, 0.26);
+                    }
+                }
+            }
+        }
+    }
+
+    &:not(:checked) {
+        left    : -9999px;
+        opacity : 0;
+        position: absolute;
+    }
+
+
+    + {
+        label {
+            padding-left    : 2.7rem;
+
+            &::before {
+                height       : 1.9rem;
+                width        : 1.9rem;
+                // margin-top: .5rem;
+                border-radius: 4px;
+                border-color: $primary;
+            }
+        }
+    }
+}
+
+.input-group-prepend .dropdown-toggle::after{
+    margin-left: 0.455em;
+    vertical-align: 0.155em;
+}
+
+
+input[type="checkbox"] {
+    position: relative;
+
+    &:after{
+        line-height: 1.5em;
+        content: '';
+        display: block;
+        width: 2rem;
+        height: 2rem;
+        margin-top: -4px;
+        margin-left: -4px;
+        border: 1px solid #DDDFE1;
+        border-radius: 0;
+        background: $white;
+        line-height: 1.3;
+    }
+
+    &:checked:after{
+        width: 2rem;
+        height: 2rem;
+        display: block;
+        content: "\f00c";
+        font-family: FontAwesome;
+        color: $primary;
+        font-weight: 100;
+        -webkit-text-stroke: 1px white;
+        text-align: center;
+    }
+
+    &.styled-checkbox {
+        left    : -9999px;
+        opacity : 0;
+        position: absolute;
+    
+        &:indeterminate {
+            + {
+                label {
+                    &::before {
+                        backface-visibility: hidden;
+                        border-color       : -moz-use-text-color #26a69a -moz-use-text-color -moz-use-text-color;
+                        border-style       : none solid none none;
+                        border-width       : medium .2rem medium medium;
+                        height             : 2.2rem;
+                        left               : -1.2rem;
+                        top                : -1.1rem;
+                        transform          : rotate(90deg);
+                        transform-origin   : 100% 100% 0;
+                        width              : 1rem;
+                    }
+                }
+            }
+    
+            &:disabled {
+                + {
+                    label {
+                        &::before {
+                            background-color: transparent;
+                            border-right    : .2rem solid rgba(0, 0, 0, 0.26);
+                        }
+                    }
+                }
+            }
+        }
+
+        & + label {
+            -moz-user-select: none;
+            cursor          : pointer;
+            display         : inline-block;
+            font-size       : 1.6rem;
+            height          : 2.5rem;
+            line-height     : 2rem;
+            padding-left    : 3.2rem;
+            position        : relative;
+
+            &::before {
+                border: 1px solid;
+                border-radius: 1px;
+                content      : "";
+                height       : 2rem;
+                left         : 0;
+                margin-top   : .2rem;
+                position     : absolute;
+                top          : 0;
+                transition   : all 0.2s ease 0s;
+                width        : 2rem;
+                z-index      : 0;
+            }
+
+            &::after {
+
+            }
+        }
+
+        &:checked {
+            & + label {
+                &::before {
+                    border: 2px solid;
+                    border-color: transparent #262626 #262626 transparent;
+                    backface-visibility: hidden;
+                    // border-style       : solid;
+                    // border-width       : .2rem;
+                    height             : 2.2rem;
+                    left               : -.5rem;
+                    top                : -.4rem;
+                    transform          : rotate(40deg);
+                    transform-origin   : 100% 100% 0;
+                    width              : 1.2rem;
+                }
+
+                &.check {
+
+                    &-red::before {
+                        border-color: transparent $red $red transparent;
+                    }
+                    
+                    &-purple::before {
+                        border-color: transparent $purple $purple transparent;
+                    }
+
+                    &-d-purple::before {
+                        border-color: transparent $deep-purple $deep-purple transparent;
+                    }
+
+                    &-blue::before {
+                        border-color: transparent $blue $blue transparent;
+                    }
+
+                    &-l-blue::before {
+                        border-color: transparent $light-blue #5C97E6 transparent;
+                    }
+
+                    &-teal::before {
+                        border-color: transparent $teal $teal transparent;
+                    }
+
+                    &-green::before {
+                        border-color: transparent $green $green transparent;
+                    }
+
+                    &-yellow::before {
+                        border-color: transparent $yellow $yellow transparent;
+                    }
+
+                    &-orange::before {
+                        border-color: transparent $orange $orange transparent;
+                    }
+
+                    &-d-orange::before {
+                        border-color: transparent $deep-orange $deep-orange transparent;
+                    }
+
+                    &-maroon::before {
+                        border-color: transparent $maroon $maroon transparent;
+                    }
+
+                    &-gray::before {
+                        border-color: transparent $gray $gray transparent;
+                    }
+
+                    &-navy::before {
+                        border-color: transparent $navy $navy transparent;
+                    }
+
+                    &-black::before {
+                        border-color: transparent $black $black transparent;
+                    }
+                }
+            }
+
+            &:disabled {
+                + {
+                    label {
+                        &::before {
+                            border-bottom: 2px solid rgba(0, 0, 0, 0.26);
+                            border-right : 2px solid rgba(0, 0, 0, 0.26);
+                        }
+                    }
+                }
+            }
+        }
+
+        &.filled-in {
+
+            &:disabled {
+                & + label {
+                    &::after {
+                        background-color: #7F7F7F;
+                    }
+                }
+            }
+
+            & + label {
+                &::before {
+                    transform: scale(0) rotate(0);
+                }
+
+                &::after {
+                    height: 2.4rem;
+                    width: 2.4rem;
+                    left: -2px;
+                    top: -2px;
+                    position: absolute;
+                    content: "";
+                    background-color: $primary;
+                    border-radius: 4px;
+                }
+
+                &.check {
+
+                    &-red::after {
+                        background-color: $red;
+                    }
+                    
+                    &-purple::after {
+                        background-color: $purple;
+                    }
+
+                    &-d-purple::after {
+                        background-color: $deep-purple;
+                    }
+
+                    &-blue::after {
+                        background-color: $blue;
+                    }
+
+                    &-l-blue::after {
+                        background-color: $light-blue;
+                    }
+
+                    &-teal::after {
+                        background-color: $teal;
+                    }
+
+                    &-green::after {
+                        background-color: $green;
+                    }
+
+                    &-yellow::after {
+                        background-color: $yellow;
+                    }
+
+                    &-orange::after {
+                        background-color: $orange;
+                    }
+
+                    &-d-orange::after {
+                        background-color: $deep-orange;
+                    }
+
+                    &-maroon::after {
+                        background-color: $maroon;
+                    }
+
+                    &-gray::after {
+                        background-color: $gray;
+                    }
+
+                    &-navy::after {
+                        background-color: $navy;
+                    }
+
+                    &-black::after {
+                        background-color: $black;
+                    }
+                }
+            }
+
+            &:checked + label {
+                &::before {
+                    border-color: transparent #fff #fff transparent;
+                    height: 1.8rem;
+                    width: 1rem;
+                    left: -2px;
+                    top: -3px;
+                    z-index: 1;
+                    transform: scale(1) rotate(40deg);
+                }
+
+                &.check {
+
+                    &-red::after {
+                        background-color: $red;
+                    }
+                    
+                    &-purple::after {
+                        background-color: $purple;
+                    }
+
+                    &-d-purple::after {
+                        background-color: $deep-purple;
+                    }
+
+                    &-blue::after {
+                        background-color: $blue;
+                    }
+
+                    &-l-blue::after {
+                        background-color: $light-blue;
+                    }
+
+                    &-teal::after {
+                        background-color: $teal;
+                    }
+
+                    &-green::after {
+                        background-color: $green;
+                    }
+
+                    &-yellow::after {
+                        background-color: $yellow;
+                    }
+
+                    &-orange::after {
+                        background-color: $orange;
+                    }
+
+                    &-d-orange::after {
+                        background-color: $deep-orange;
+                    }
+
+                    &-maroon::after {
+                        background-color: $maroon;
+                    }
+
+                    &-gray::after {
+                        background-color: $gray;
+                    }
+
+                    &-navy::after {
+                        background-color: $navy;
+                    }
+
+                    &-black::after {
+                        background-color: $black;
+                    }
+                }
+            }
+        }
+
+    }
+
+    &.form-check-input:disabled ~ .form-check-label {
+        color: $muted;
+    }
+}

@@ -1,0 +1,25 @@
+[data-theme-version="dark"] {
+
+    .card {
+        background: lighten($d-bg, 3.2%);
+        box-shadow: none;
+
+        &:hover {
+            box-shadow: none;
+        }
+
+        &.transparent-card {
+            background: transparent;
+        }
+
+        &-footer {
+            background-color: lighten($d-bg, 3.2%);
+            border-color: $d-border;
+        }
+
+        &-style {
+            background: lighten($d-bg, 3.2%);
+        }
+    }
+
+}

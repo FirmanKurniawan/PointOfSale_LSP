@@ -1,0 +1,115 @@
+.hospital-map {
+    position: relative;
+
+    .map-coruntry-list {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin-left: 2rem;
+
+        @at-root [direction="rtl"] #{&} {
+            margin-right: 2rem;
+            margin-left: auto;
+            left: auto;
+            right: 0;
+        }
+
+        li {
+            span {
+                margin-right: 0.8rem;
+                height: 0.8rem;
+                width: 0.8rem;
+                border-radius: 50px;
+                display: inline-block;
+                position: relative;
+
+                @at-root [direction="rtl"] #{&} {
+                    margin-left: .8rem;
+                    margin-right: auto;
+                }
+
+                &:before {
+                    content: "";
+                    height: 200%;
+                    width: 200%;
+                    background-color: inherit;
+                    left: 50%;
+                    top: 50%;
+                    position: absolute;
+                    border-radius: 50px;
+                    transform: translate(-50%, -50%);
+                    opacity: .3;
+                }
+            }
+        }
+
+        li:not(:last-child) {
+            margin-bottom: .5rem;
+        }
+    }
+}
+
+.popular-posts-area {
+    @include respond('phone') {
+        img {
+            width: 8rem;
+        }
+    }
+}
+
+.storage-space{
+
+    .progress-text {
+        margin-bottom: 5.5rem;
+    }
+
+    .progress{
+        height: 1.3rem;
+        border-radius: 30px;
+        background: rgba($white, .2);
+
+        &-bar{
+            border-radius: 30px;
+        }
+    }
+}
+
+
+.at-aglance-section {
+    
+    .list-icon span {
+        font-size: 3rem;
+    }
+
+    .storage-space {
+        padding: 4.5rem 3rem;
+
+        h3 {
+            line-height: 1;
+        }
+    
+        .media {
+    
+            .icon span {
+                display: inline-block;
+                width: 4.5rem;
+                height: 4.5rem;
+                border-radius: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #F89353;
+            }
+        }
+    }
+}
+
+.popular-posts-area {
+    li {
+        transition: all .3s;
+
+        &:hover {
+            box-shadow: 2px 15px 18px 0px rgba(119, 119, 119, 0.1);
+        }
+    }
+}

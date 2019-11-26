@@ -1,0 +1,27 @@
+[data-theme-version="dark"] {
+
+    .daterangepicker {
+        background-color: lighten($d-bg, 3.2%);
+
+        table tbody tr {
+            background-color: inherit;
+        }
+    }
+
+
+    //material date picker
+    .dtp-date-view {
+        table tbody tr {
+            background-color: inherit;
+        }
+    }
+
+
+    //datepicker pickdate
+    .picker {
+        table tbody tr {
+            background-color: inherit;
+        }
+    }
+
+}

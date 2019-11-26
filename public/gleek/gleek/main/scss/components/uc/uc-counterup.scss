@@ -1,0 +1,22 @@
+
+.counter{
+    padding: 4rem 0;
+
+    &-content{
+        text-align: center;
+        padding: .8rem 0;
+
+        .counter-number{
+            font-size: 3.5rem;
+            font-weight: 500;
+            line-height: 1.2;
+        }
+
+        span{
+            display: inline-block;
+            font-size: 4rem;
+            color: $primary;
+            font-weight: 700;
+        }
+    }
+}

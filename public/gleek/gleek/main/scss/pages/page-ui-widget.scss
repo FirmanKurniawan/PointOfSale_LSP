@@ -1,0 +1,291 @@
+.overview{
+
+    &__single{
+        padding: 2rem;
+        box-shadow: 0 0 3rem rgba(0, 0, 0, 0.05);
+
+        @media(min-width: 1400px){
+            padding: 3rem;
+        }
+  
+        &__content{
+    
+            h1{
+                font-size: 1.9rem;
+                margin-bottom: 0;
+    
+                @include media-breakpoint-up(sm){
+                    font-size: 3.2rem;
+                }
+            }
+  
+            p{
+                text-transform: capitalize;
+                color: $dark;
+                margin-bottom: 0;
+    
+                @include media-breakpoint-up(sm){
+                    font-size: 1.8rem;
+                }
+            }
+      }
+  
+        &__icon{
+            width: 90px;
+            height: 90px;
+            position: relative;
+            border-radius: 5px;
+    
+            @include media-breakpoint-up(sm){
+                width: 100px;
+                height: 100px;
+            }
+    
+            img{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                image-rendering: pixelated;
+            }
+        }
+    }
+}
+
+.table{
+    border: 1px solid red;
+    border-collapse: separate;
+    border-spacing: 0;
+  
+    &-border{
+      border-collapse: collapse;
+      border: 0;
+      box-shadow: 0 0 0 1px red;
+  
+      thead{
+        border-top: 1px solid red;
+      }
+    }
+  
+    @include media-breakpoint-up(sm){
+      margin-bottom: 40px;
+    }
+  
+    >tbody>tr>td{
+      vertical-align: middle;
+    }
+  
+  
+    thead{
+      background-color: $alabaster;
+  
+      th{
+        border: 0;
+        font-size: 1.8rem;
+        color: red;
+        font-weight: normal;
+      }
+    }
+  
+    td{
+      border: 0;
+  
+      p{
+        color: red;
+        max-width: 400px;
+      }
+  
+      h2{
+        font-size: 1.125rem;
+        color: red;
+        text-transform: capitalize;
+        margin-bottom: 0;
+        font-weight: normal;
+      }
+  
+      h5{
+        font-size: 1rem;
+        color: red;
+        margin-bottom: 0;
+      }
+  
+      .badge{
+        font-size: .879rem;
+        color: $white;
+        font-weight: normal;
+        padding: .3rem 1.1rem;
+        border-radius: 30px;
+      }
+    }
+  
+    &-media{
+  
+      .media-body{
+        padding-left: .8rem;
+  
+        img{
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+        }
+  
+        h3{
+          margin-bottom: 0;
+          font-size: 1.125rem;
+        }
+      }
+    }
+  
+    &-comments{
+      min-width: 800px;
+  
+      @include media-breakpoint-up(xl){
+        th:first-child,td:first-child{
+          padding: 15px 0 15px 60px;
+        }
+  
+        th:last-child,td:last-child{
+          padding: 15px 60px 15px 0;
+        }
+      }
+  
+      tbody tr:nth-child(odd){
+        background: green;
+      }
+  
+      thead th:last-child{
+        text-align: center;
+      }
+  
+      td:last-child{
+        text-align: center;
+      }
+    }
+  
+    &-team{
+      min-width: 630px;
+  
+      @include media-breakpoint-up(xl){
+        th:first-child,td:first-child{
+          padding: 15px 0 15px 40px;
+        }
+  
+        th:last-child,td:last-child{
+          padding: 15px 40px 15px 0;
+        }
+      }
+  
+      td{
+  
+        p{
+          margin-bottom: 0;
+        }
+      }
+    }
+  
+    &-task{
+      min-width: 1200px;
+  
+      tbody tr:nth-child(odd){
+        background: green;
+      }
+  
+      td{
+  
+        .danger{
+          color: green;
+        }
+  
+        p{
+          margin: .4rem 0;
+        }
+  
+        h5.paleSky{
+          color: skyblue;
+        }
+  
+        button{
+          border: 0;
+          padding: .3rem .5rem;
+          background: red;
+          margin-right: .3rem;
+          border-radius: 5px;
+  
+          i{
+            font-size: 1rem;
+          }
+  
+          &.edit i{
+            color: green;
+          }
+  
+          &.delete i{
+            color: green;
+          }
+        }
+      }
+  
+      tbody tr:nth-child(even) td button{
+        background: green;
+      }
+    }
+  
+    &-tips{
+      min-width: 890px;
+  
+      @include media-breakpoint-up(xl){
+        th:first-child,td:first-child{
+          padding: 15px 0 15px 30px;
+        }
+  
+        th:last-child,td:last-child{
+          padding: 15px 30px 15px 0;
+        }
+      }
+  
+      td{
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+      }
+  
+      tbody tr{
+        border-bottom: 1px solid red;
+  
+        &:last-child{
+          border-bottom: 0;
+        }
+      }
+    }
+  
+     &-borders{
+      min-width: 600px;
+  
+      @include media-breakpoint-up(xl){
+        td{
+          padding: 24px 0 24px 30px !important;
+        }
+  
+        th{
+          padding: 15px 0 15px 30px !important;
+        }
+      }
+  
+      border-collapse: collapse;
+      border: 0;
+  
+      td{
+        border: 1px solid orange
+      }
+  
+      thead tr th{
+        border-right: 1px solid orange;
+        border-top: 1px solid orange;
+  
+        &:first-child{
+          border-left: 1px solid orange;
+        }
+      }
+    }
+  }
+  
+  

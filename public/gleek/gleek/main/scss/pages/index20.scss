@@ -1,0 +1,182 @@
+.temp-card {
+    padding: 1rem 4.5rem;
+
+    @include custommq($min: 992px, $max: 1550px) {
+        padding: 1.2rem 0;
+    }
+
+    @include respond('phone') {
+        padding: 1.2rem 0;
+    }
+
+    .box-upper {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .temp-shadow-box {
+        padding: 1.8rem 2rem;
+        box-shadow: inset 0 0 2rem rgba($black, .3);
+        border-radius: 1rem;
+        h2,
+        i {
+            font-size: 5.5rem;
+        }
+    }
+    .item {
+        button {
+            background-color: #633FF9;
+            border-radius: 1rem;
+            font-size: 1.8rem;
+        }
+    }
+}
+ 
+.weather-report-container {
+    .tempareture-box {
+        font-size: 10rem;
+        font-weight: bold;
+    }
+    .weather-report-days {
+        display: flex;
+        justify-content: space-between;
+
+        h3 {
+            font-size: 2rem;
+        }
+
+        .days {
+            display: flex;
+            flex-direction: column;
+            height: 15rem;
+            justify-content: space-between;
+            font-size: 2rem;
+            i {
+                font-size: 5rem;
+                color: #AAE8FF;
+            }
+        }
+
+        .next {
+            display: flex;
+            flex-direction: column;
+
+            a {
+                font-size: 1.6rem;
+                text-align: center;
+                font-weight: bold;
+            }
+
+            i {
+                font-size: 3.2rem;
+            }
+        }
+    }
+}
+ 
+.whole-week-days {
+.item {
+
+    @include respond(phone) {
+        flex-basis: 50%;
+        margin-bottom: 1rem;
+    }
+
+        h4, h5 {
+            color: $white;
+            font-weight: 400;
+            margin-bottom: 0;
+        }
+
+        i {
+            font-size: 3rem;
+        }
+    }
+}
+ 
+.tempareture-box-icon {
+    i {
+        color: #aae8ff;
+        font-size: 13rem;
+    }
+}
+ 
+.temp-top {
+    span {
+        color: #6a707e;
+        font-size: 6rem;
+    }
+}
+
+.temp-bottom {
+    .temp-1 {
+        color: #32ccfd;
+        font-size: 4rem;
+
+        @include respond(tab-port) {
+            font-size: 3rem;
+        }
+    }
+}
+
+.temp-bottom {
+    .temp-2 {
+        color: #f89317;
+        font-size: 4rem;
+
+        @include respond(tab-port) {
+            font-size: 3rem;
+        }
+    }
+}
+
+.location-table {
+
+.location-icon {
+    font-size: 3rem;
+    color: #AAE8FF;
+}
+
+.table-padded {
+    border-spacing: 0 1rem;
+}
+}
+
+.weather-report-wrapper {
+
+i {
+    font-size: 5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 i {
+        color: #AAE8FF;
+    //  font-size: 3rem;
+    }
+}
+
+.monthly-weather-report {
+.monthly-weather-report-inner {
+    i {
+        font-size: 3.7rem;
+    }
+}
+}
+
+
+.weather-report-days {
+    position: relative;
+
+    .owl-nav {
+        button {
+            position: absolute;
+
+            &.owl-prev {
+                display: none;
+            }
+        }
+    }
+}

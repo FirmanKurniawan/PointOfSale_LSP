@@ -1,0 +1,15 @@
+
+html[dir="rtl"]{
+    [direction="rtl"] {
+        .btn-icon-left {
+            margin: -.5rem -1.3rem -.5rem 1.5rem;
+        }
+
+        .btn-icon-right {
+            border-right: 1px solid $white;
+            border-left: none;
+            margin: -.8rem 1.3rem -.8rem 0;
+            padding: 1rem 1.3rem 1rem 0;
+        }
+    }
+}

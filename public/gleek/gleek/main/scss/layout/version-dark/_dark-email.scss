@@ -1,0 +1,28 @@
+[data-theme-version="dark"] {
+
+    .toolbar .btn-group .dropdown-menu {
+        background-color: lighten($color: $d-bg, $amount: 3.2%);
+    }
+
+    .email-filter .input-group-prepend .input-group-text {
+        border: none;
+        border-bottom-color: $d-ctl !important;
+    }
+
+    .email-filter .input-group .form-control {
+        border-bottom-color: $d-ctl;
+    }
+
+    .email-filter .bootstrap-select .btn {
+        border: none !important;
+    }
+
+    .email-left-box .intro-title {
+        background-color: transparent;
+    }
+
+    .read-content textarea {
+        background-color: $d-bg;
+    }
+
+}

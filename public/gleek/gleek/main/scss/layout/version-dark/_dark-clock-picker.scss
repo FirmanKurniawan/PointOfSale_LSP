@@ -1,0 +1,18 @@
+[data-theme-version="dark"] {
+
+    .clockpicker-popover, 
+    .clockpicker-popover .popover-title, 
+    .clockpicker-popover .popover-content, 
+    .clockpicker-popover button.btn {
+        background-color: lighten($d-bg, 3.2%);
+    }
+
+    .clockpicker-popover button.btn {
+        color: $d-ctl;
+    }
+
+    .clockpicker-plate {
+        background-color: $d-bg;
+        border-color: $d-border;
+    }
+}

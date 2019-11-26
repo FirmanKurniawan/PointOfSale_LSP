@@ -1,0 +1,16 @@
+[data-theme-version="dark"] {
+    .popover {
+        &-header, &-body {
+            background-color: $d-bg;
+            color: $d-ctl;
+        }
+
+        &-header {
+            border-bottom-color: $d-border; 
+        }
+
+        .arrow::after {
+            border-color: $d-bg;
+        }
+    }
+}

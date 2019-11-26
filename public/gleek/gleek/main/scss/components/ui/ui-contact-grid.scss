@@ -1,0 +1,19 @@
+.contact-options-dropdown {
+    position: absolute;
+    right: 2rem;
+    padding:  0 1rem;
+}
+
+.user-designation {
+    position: relative;
+
+    &:after {
+        position: absolute;
+        width: 3.5rem;
+        height: .1rem;
+        top: 110%;
+        left: calc(50% - 1.5rem);
+        content: "";
+        background: $primary;
+    }
+}

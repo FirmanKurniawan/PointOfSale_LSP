@@ -1,0 +1,56 @@
+.recent-properties-area {
+
+    .media{
+
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+
+        h5 {
+            color: $pale-sky;
+            font-size: 1.7rem;
+        }
+
+        p {
+            font-size: 1.4rem;
+            margin-top: .8rem;
+        }
+    }
+
+    @include respond('phone') {
+        .media img {
+            max-width: 30px;
+        }
+    }
+}
+
+.agent-info {
+    margin-bottom: 5.3rem;
+
+    h4 {
+        span {
+            i {
+                font-size: 1.8rem;
+            }
+        }
+    }
+}
+
+.property-overview-table {
+
+    &.table > tbody > tr > td {
+        color: $pale-sky;
+    }
+
+    &.table-padded {
+        border-spacing: 0 1rem;
+    }
+}
+
+.chartjs-stat-card-1 {
+
+    h2 {
+        font-size: 4rem;
+    }
+}
+

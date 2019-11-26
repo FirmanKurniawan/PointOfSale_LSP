@@ -1,0 +1,8 @@
+.blockUI.blockMsg.blockPage {
+    @include respond('phone') {
+        width: 60% !important;
+        top: 50% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%);
+    }
+}

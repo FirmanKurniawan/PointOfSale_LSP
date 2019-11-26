@@ -1,0 +1,29 @@
+
+.panel-footer {
+    padding: 1rem 2rem;
+    background: $white;
+    border-top: 1px solid rgba(120, 130, 140, 0.13);
+    color: $l-ctl;
+}
+
+// Commentsss
+
+
+.footer {
+    padding-left: 32rem;
+    background-color: $white;
+    
+    .copyright {
+        padding: 1.5rem;
+        background: lighten($l-bg, 5%);
+        p {
+            text-align: center;
+            margin: 0;
+            color: $gray;
+        }
+
+        a{
+            color: $primary;
+        }
+    }
+}

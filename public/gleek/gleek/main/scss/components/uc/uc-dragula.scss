@@ -1,0 +1,24 @@
+.dragula-wrapper {
+    .container {
+        &>div {
+            margin: 1.5rem 0;
+            color: $white;
+            padding: 1rem;
+            background-color: $primary;
+            cursor: pointer;
+
+            &.ex-moved {
+                background-color: $red;
+                color: $white;
+            }
+
+            .handle {
+                padding: 0 0.3rem;
+                display: inline-block;
+                background-color: $white;
+                color: $primary;
+                margin: 0 .5rem .5rem 0;
+            }
+        }
+    }
+}

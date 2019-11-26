@@ -1,0 +1,773 @@
+ //
+
+ button{
+     cursor: pointer;
+
+     &:focus{
+         outline: 0;
+     }
+ }
+
+ .button-card {
+
+    h4 {
+        margin-bottom: 2.5rem;
+    }
+
+     & > div {
+         margin-bottom: 1rem;
+     }
+
+     & .btn-group .dropdown-toggle::after{
+         margin-left: .755em;
+     }
+ }
+
+.btn-page{
+    .btn{
+        margin-bottom: 1.5rem;
+        margin-right: 1.5rem;
+        border-radius: 4px;
+        font-size: 1.7rem;
+
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+}
+
+.btn {
+    padding      : .7rem 1.8rem;
+    // margin-bottom: .5rem;
+    // margin-right : .5rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+
+    &:active,
+    &:focus,
+    &:hover {
+        box-shadow: none!important;
+    }
+
+    &-card{
+        font-size: 1.7rem;
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+
+    &-event{
+        font-size: 1.8rem;
+    }
+
+    &-send{
+        position: relative;
+
+        i{
+            font-size: 1.8rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    &-form{
+        font-size: 1.8rem;
+        padding: .5rem 3rem;
+    }
+
+    &-single-border{
+        background: transparent;
+        border: 0;
+        padding: 0 0 .1rem 0 !important;
+        border-bottom: 1px solid #DDDFE1;
+
+        // &:hover{
+        //     border: 0;
+        //     border-bottom: 1px solid #DDDFE1;
+        // }
+
+        .filter-option{
+            font-size: 14px;
+            color: #6a707e;
+        }
+
+        &.dropdown-toggle::after{
+            color: $muted;
+        }
+
+        .btn{
+
+            &:focus{
+                border: 0 !important;
+            }
+        }
+    }
+
+    &-borderless{
+        background: transparent;
+        border: 0;
+        font-size: 1.4rem;
+        color: #6a707e !important;
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+
+        &.dropdown-toggle::after{
+            color: #abafb3;
+        }
+    }
+}
+
+.btn-lg{
+    font-size: 2.2rem !important;
+}
+
+.btn-xs {
+    font-size: 1.4rem !important;
+    padding  : 0.5 2.5rem !important;
+}
+
+.btn-sm {
+    padding: .6rem 1.5rem !important;
+    font-size: 1.6rem !important;
+}
+
+.btn-flat {
+    border-radius: 0;
+}
+
+.btn-rounded {
+    border-radius: 30px !important;
+}
+
+.btn-icon-right {
+    border-left: 1px solid rgba($white, 22%);
+    display    : inline-block;
+    margin     : -.8rem 0 -.8rem 1.3rem;
+    padding    : 1rem 0 1rem 1.3rem;
+}
+
+.btn-icon-left {
+    background   : $white;
+    border-radius: 10rem;
+    display      : inline-block;
+    margin       : -.5rem 1.3rem -.5rem -1.5rem;
+    padding      : .5rem 1rem .6rem;
+}
+
+.toggle-dropdown::after {
+    margin-left: 0.755em;
+}
+
+.social-btn-icon {
+    .btn {
+        min-width    : 7.5rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
+.social-icon {
+    .btn {
+        padding: .7rem 1.4rem;
+    }
+}
+
+.btn-circle {
+    height       : 5rem;
+    width        : 5rem;
+    border-radius: 50% !important;
+
+    &-sm {
+        width: 4.5rem;
+        height: 4.5rem;
+        font-size: 1.8rem;
+    }
+
+    &-md {
+        width: 6rem;
+        height: 6rem;
+        font-size: 2.5rem;
+
+        i{
+            font-size: 2.4rem;
+        }
+    }
+
+    &-lg {
+        width: 8rem;
+        height: 8rem;
+        font-size: 3.2rem;
+
+        i{
+            font-size: 3.1rem;
+        }
+    }
+}
+
+
+
+//  Outline Button
+////////////////////////////
+// General Button Color
+//////////////////////////
+
+.btn-primary {
+    background  : $primary;
+    border-color: $primary;
+    color       : $white;
+
+    &:active,
+    &:focus,
+    &:hover {
+        background  : darken($primary, 10%);
+        color       : $white;
+        border-color: darken($primary, 10%);
+    }
+}
+
+.btn-secondary {
+    background  : $secondary;
+    border-color: $secondary;
+    color       : $white;
+    
+    
+    &:active,
+    &:focus,
+    &:hover {
+        background  : darken($secondary, 10%);
+        color       : $white;
+        border-color: darken($secondary, 10%);
+    }
+}
+
+.btn-success {
+    background  : $success;
+    border-color: $success;
+    color       : $white;
+    
+    
+    &:active,
+    &:focus,
+    &:hover {
+        background  : darken($success, 10%);
+        color       : $white;
+        border-color: darken($success, 10%);
+    }
+}
+
+.btn-warning {
+    background  : $warning;
+    border-color: $warning;
+    color       : $white;
+    
+    
+    &:active,
+    &:focus,
+    &:hover {
+        background  : darken($warning, 10%);
+        color       : $white;
+        border-color: darken($warning, 10%);
+    }
+}
+
+.btn-danger {
+    background  : $danger;
+    border-color: $danger;
+    color       : $white;
+    
+    
+    &:active,
+    &:focus,
+    &:hover {
+        background  : darken($danger, 10%);
+        color       : $white;
+        border-color: darken($danger, 10%);
+    }
+}
+
+.btn-info {
+    background  : $info;
+    border-color: $info;
+    color       : $white;
+    
+    
+    &:active,
+    &:focus,
+    &:hover {
+        background  : darken($info, 10%);
+        color       : $white;
+        border-color: darken($info, 10%);
+    }
+}
+
+.btn-light {
+    background  : $white;
+    border-color: $iron;
+    color       : $light;
+    
+    
+    // &:active,
+    // &:focus,
+    // &:hover {
+    //     background  : transparent;
+    //     color       : $white;
+    //     border-color: darken($light, 1%);
+    // }
+}
+
+.btn-light:not(:disabled):not(.disabled):active, 
+.btn-light:not(:disabled):not(.disabled).active, 
+.show > .btn-light.dropdown-toggle {
+    border-color: $light;
+    // color: $light;
+    // background: $white;
+}
+
+.btn-dark {
+    background  : $dark;
+    border-color: $dark;
+    color       : $white;
+    
+    
+    &:active,
+    &:focus,
+    &:hover {
+        background  : darken($dark, 10%);
+        color       : $white;
+        border-color: darken($dark, 10%);
+    }
+}
+////////////////////////////
+// Outline Button Color
+//////////////////////////
+
+.btn-outline-primary {
+    background  : transparent;
+    border-color: $primary;
+    color       : $primary;
+
+    &:active,
+    &:focus,
+    &:hover {
+        background  : darken($primary, 10%);
+        color       : $white;
+        border-color: darken($primary, 10%);
+    }
+
+    i{
+        font-size: 1.3rem !important;
+    }
+}
+
+.btn-outline-secondary {
+    background  : transparent;
+    border-color: $secondary;
+    color       : $secondary;
+
+    &:active,
+    &:focus,
+    &:hover {
+        background  : darken($secondary, 10%);
+        color       : $white;
+        border-color: darken($secondary, 10%);
+    }
+}
+
+.btn-outline-success {
+    background  : transparent;
+    border-color: $success;
+    color       : $success;
+
+    &:active,
+    &:focus,
+    &:hover {
+        background  : darken($success, 10%);
+        color       : $white;
+        border-color: darken($success, 10%);
+    }
+}
+
+.btn-outline-warning {
+    background  : transparent;
+    border-color: $warning;
+    color       : $warning;
+
+    &:active,
+    &:focus,
+    &:hover {
+        background  : darken($warning, 10%);
+        color       : $white;
+        border-color: darken($warning, 10%);
+    }
+}
+
+.btn-outline-danger {
+    background  : transparent;
+    border-color: $danger;
+    color       : $danger;
+
+    &:active,
+    &:focus,
+    &:hover {
+        background  : darken($danger, 10%);
+        color       : $white;
+        border-color: darken($danger, 10%);
+    }
+}
+
+.btn-outline-info {
+    background  : transparent;
+    border-color: $info;
+    color       : $info;
+
+    &:active,
+    &:focus,
+    &:hover {
+        background  : darken($info, 10%);
+        color       : $white;
+        border-color: darken($info, 10%);
+    }
+}
+
+.btn-outline-light {
+    // background  : transparent;
+    // border-color: $light;
+    // color       : $white;
+    background: transparent;
+    border-color: $dark;
+    color: $dark;
+
+    &:active,
+    &:focus,
+    &:hover {
+        // background  : darken($light, 10%);
+        // color       : $white;
+        // border-color: darken($light, 10%);
+        background: darken($dark, 10%);
+        color: $dark;
+        border-color: darken($dark, 10%);
+    }
+}
+
+.btn-outline-dark {
+    background  : transparent;
+    border-color: $dark;
+    color       : $dark;
+
+    &:active,
+    &:focus,
+    &:hover {
+        background  : darken($dark, 10%);
+        color       : $white;
+        border-color: darken($dark, 10%);
+    }
+}
+///////////////////
+// Social Buttons
+///////////////////
+
+.btn-facebook {
+    background  : $facebook;
+    border-color: $facebook;
+    color       : $white;
+
+    &:active,
+    &:focus,
+    &:hover {
+        background  : darken($facebook, 10%);
+        color       : $white;
+        border-color: darken($facebook, 10%);
+    }
+}
+
+.btn-twitter {
+    background  : $twitter;
+    border-color: $twitter;
+    color       : $white;
+
+    &:active,
+    &:focus,
+    &:hover {
+        background  : darken($twitter, 10%);
+        color       : $white;
+        border-color: darken($twitter, 10%);
+    }
+}
+
+.btn-youtube {
+    background  : $youtube;
+    border-color: $youtube;
+    color       : $white;
+
+    &:active,
+    &:focus,
+    &:hover {
+        background  : darken($youtube, 10%);
+        color       : $white;
+        border-color: darken($youtube, 10%);
+    }
+}
+
+.btn-instagram {
+    background  : $instagram;
+    border-color: $instagram;
+    color       : $white;
+
+    &:active,
+    &:focus,
+    &:hover {
+        background  : darken($instagram, 10%);
+        color       : $white;
+        border-color: darken($instagram, 10%);
+    }
+}
+
+.btn-pinterest {
+    background  : $pinterest;
+    border-color: $pinterest;
+    color       : $white;
+
+    &:active,
+    &:focus,
+    &:hover {
+        background  : darken($pinterest, 10%);
+        color       : $white;
+        border-color: darken($pinterest, 10%);
+    }
+}
+
+.btn-linkedin {
+    background  : $linkedin;
+    border-color: $linkedin;
+    color       : $white;
+
+    &:active,
+    &:focus,
+    &:hover {
+        background  : darken($linkedin, 10%);
+        color       : $white;
+        border-color: darken($linkedin, 10%);
+    }
+}
+
+.btn-google-plus {
+    background  : $google-plus;
+    border-color: $google-plus;
+    color       : $white;
+
+    &:active,
+    &:focus,
+    &:hover {
+        background  : darken($google-plus, 10%);
+        color       : $white;
+        border-color: darken($google-plus, 10%);
+    }
+}
+
+.btn-google {
+    background  : $google;
+    border-color: $google;
+    color       : $white;
+
+    &:active,
+    &:focus,
+    &:hover {
+        background  : darken($google, 10%);
+        color       : $white;
+        border-color: darken($google, 10%);
+    }
+}
+
+.btn-snapchat {
+    background  : $snapchat;
+    border-color: $snapchat;
+    color       : $black;
+
+    &:active,
+    &:focus,
+    &:hover {
+        background  : darken($snapchat, 10%);
+        color       : $black;
+        border-color: darken($snapchat, 10%);
+    }
+}
+
+.btn-whatsapp {
+    background  : $whatsapp;
+    border-color: $whatsapp;
+    color       : $white;
+
+    &:active,
+    &:focus,
+    &:hover {
+        background  : darken($whatsapp, 10%);
+        color       : $white;
+        border-color: darken($whatsapp, 10%);
+    }
+}
+
+.btn-tumblr {
+    background  : $tumblr;
+    border-color: $tumblr;
+    color       : $white;
+
+    &:active,
+    &:focus,
+    &:hover {
+        background  : darken($tumblr, 10%);
+        color       : $white;
+        border-color: darken($tumblr, 10%);
+    }
+}
+
+.btn-reddit {
+    background  : $reddit;
+    border-color: $reddit;
+    color       : $white;
+
+    &:active,
+    &:focus,
+    &:hover {
+        background  : darken($reddit, 10%);
+        color       : $white;
+        border-color: darken($reddit, 10%);
+    }
+}
+
+.btn-spotify {
+    background  : $spotify;
+    border-color: $spotify;
+    color       : $white;
+
+    &:active,
+    &:focus,
+    &:hover {
+        background  : darken($spotify, 10%);
+        color       : $white;
+        border-color: darken($spotify, 10%);
+    }
+}
+
+.btn-yahoo {
+    background  : $yahoo;
+    border-color: $yahoo;
+    color       : $white;
+
+    &:active,
+    &:focus,
+    &:hover {
+        background  : darken($yahoo, 10%);
+        color       : $white;
+        border-color: darken($yahoo, 10%);
+    }
+}
+
+.btn-dribbble {
+    background  : $dribbble;
+    border-color: $dribbble;
+    color       : $white;
+
+    &:active,
+    &:focus,
+    &:hover {
+        background  : darken($dribbble, 10%);
+        color       : $white;
+        border-color: darken($dribbble, 10%);
+    }
+}
+
+.btn-skype {
+    background  : $skype;
+    border-color: $skype;
+    color       : $white;
+
+    &:active,
+    &:focus,
+    &:hover {
+        background  : darken($skype, 10%);
+        color       : $white;
+        border-color: darken($skype, 10%);
+    }
+}
+
+.btn-quora {
+    background  : $quora;
+    border-color: $quora;
+    color       : $white;
+
+    &:active,
+    &:focus,
+    &:hover {
+        background  : darken($quora, 10%);
+        color       : $white;
+        border-color: darken($quora, 10%);
+    }
+}
+
+.btn-vimeo {
+    background  : $vimeo;
+    border-color: $vimeo;
+    color       : $white;
+
+    &:active,
+    &:focus,
+    &:hover {
+        background  : darken($vimeo, 10%);
+        color       : $white;
+        border-color: darken($vimeo, 10%);
+    }
+}
+
+.btn-icon-left {
+    background: $white;
+}
+
+.btn {
+
+    &-ft {
+        padding: 1.15rem 2rem;
+
+        &-lg {
+            width: 17rem;
+            text-align: center;
+            padding: 1.15rem 0;
+        }
+
+        &-md {
+            width: 14rem;
+            text-align: center;
+            padding: 1.15rem 0;
+        }
+    }
+
+    &-sl {
+
+        &-lg {
+            width: 17rem;
+            text-align: center;
+        }
+
+        &-md {
+            width: 14rem;
+            text-align: center;
+        }
+
+        &-sm {
+            width: 12rem;
+            text-align: center;
+        }
+    }
+}
+
+.btn-switch{
+    padding: 1rem 3rem;
+    border-radius: 0;
+    background: transparent;
+    border: 1px solid #DDDFE1;
+    color: $dark;
+
+    &:focus{
+        border: 0;
+        box-shadow: 0px 3px 10px 0px rgba(119, 119, 119, 0.1) !important;
+    }
+}

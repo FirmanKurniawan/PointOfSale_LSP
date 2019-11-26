@@ -1,0 +1,198 @@
+.wallet{
+
+    &-logo{
+
+    }
+
+    &-title{
+        font-size: 1.8rem;
+        margin-bottom: 0;
+    }
+}
+
+
+.add-wallet{
+    border: .1rem dashed $iron;
+    text-align: center;
+    a{
+        padding: 4rem 1.5rem;
+        display: block;
+        i{
+            font-size: 2.6rem;
+            color: $primary;
+        }
+        p{
+            margin: 0;
+            font-size: 1.6rem;
+            color: $l-ctd;
+        }
+    }
+}
+
+.wallet-card{
+    .wallet-logo{
+        i{
+            font-size: 4rem;
+            position: relative;
+            // top: .3rem;
+        }
+        // h4{
+        //     display: inline-block;
+        //     margin-left: 1rem;
+        //     font-size: 2rem;
+        // }
+    }
+    .wallet-address {
+        margin: 2rem 0;
+
+        .btn.dropdown-toggle {
+            border: .1rem solid $l-border;
+            // background: $l-bg;
+            &:hover,
+            &:focus,
+            &:active,
+            &.active {
+                border: .1rem solid $l-border;
+                // background: $l-bg;
+            }
+        }
+
+        .input-group{
+
+            .form-control{
+
+                &::placeholder{
+                    color: #abafb3;
+                }
+            }
+        }
+
+        .input-group-append {
+            button{
+                background: #F0F0F2;
+                border-color: #DDDFE1;
+            }
+
+            i {
+                color: $primary;
+                font-size: 1.6rem !important;
+            }
+        }
+
+        .input-group-prepend{
+
+            button{
+                background: #F0F0F2;
+                border-color: #DDDFE1;
+
+                i{
+                    font-size: 1.6rem !important;
+                    color: $primary;
+                }
+            }
+
+            .text-muted{
+
+                i{
+                    color: $muted;
+                }
+            }
+        }
+
+        h5{
+            // margin-bottom: 1.5rem;
+            font-size: 1.6rem;
+            color: $pale-sky;
+        }
+
+        .form-control{
+            background: transparent!important;
+            height: 4.5rem;
+            border-color: #DDDFE1;
+        }
+        
+      }
+      .wallet-info{
+          margin-bottom: 1rem;
+          p{
+              margin-bottom: .7rem;
+              font-size: 1.5rem;
+          }
+          .btn{
+              margin-top: 2rem; 
+              margin-right: 1rem;
+              padding: .7rem 3rem;
+
+                @include custommq($min: 1200px, $max: 1410px) {
+                    padding: .7rem 2rem;
+                    font-size: 1.6rem;
+                }
+
+                @include respond('tab-land') {
+                    padding: .7rem 2rem;
+                    font-size: 1.6rem;
+                }
+          }
+      }
+}
+
+
+.wallet-card {
+    .input-group-prepend {
+        .input-group-text {
+            width: 5.5rem;
+            border-radius: 0;
+            border-right: 0;
+            font-size: 1.8rem;
+
+            @at-root [direction="rtl"] #{&} {
+                border-left: 0;
+                border-right: 1px solid $border;
+            }
+        }
+    }
+
+    .input-group-prepend-big {
+        .input-group-text {
+            width: auto;
+            font-size: 1.4rem;
+        }
+    }
+
+    .input-group-append {
+        .input-group-text {
+            width: 5.5rem;
+            border-radius: 0;
+            border-left: 0;
+            font-size: 1.8rem;
+
+            @at-root [direction="rtl"] #{&} {
+                border-left: 1px solid $border;
+            }
+        }
+    }
+
+    .btn {
+        @include custommq($min: 1200px, $max: 1410px) {
+            padding: .7rem 2rem;
+            font-size: 1.6rem;
+
+            &.dropdown-toggle {
+                padding: 1.2rem 2rem;
+            }
+        }
+    
+        
+    
+        @include respond('tab-land') {
+            padding: .7rem 2rem;
+            font-size: 1.6rem;
+        }
+    
+        @include respond('phone-land') {
+            &.dropdown-toggle {
+                padding: 1.2rem 2rem;
+            }
+        }
+    }
+}

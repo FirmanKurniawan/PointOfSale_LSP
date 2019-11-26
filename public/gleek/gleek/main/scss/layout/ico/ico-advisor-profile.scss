@@ -1,0 +1,93 @@
+
+
+
+.user-profile-name {
+    display: inline-block;
+    font-size: 2.8rem;
+    font-weight: 500;
+    padding: 0 1.5rem;
+}
+
+.user-Location {
+    display: inline-block;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    i {
+        font-size: 1.4rem;
+    }
+}
+
+.user-job-title {
+    font-size: 1.4rem;
+    padding-bottom: .5rem;
+    padding-left:1.5rem;
+    color: $primary;
+}
+
+.ratings {
+    h4 {
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        padding-top: 1rem;
+        padding-bottom: .2rem;
+        padding-left:1.5rem;
+    }
+    span {
+        margin-right: 1rem;
+    }
+}
+
+.rating-star {
+    margin-bottom: 1rem;
+    padding-left:1.5rem;
+}
+
+.user-send-message {
+    margin-top: 1.5rem;
+    padding-left:1.5rem;
+}
+
+
+
+.contact-information,
+.basic-information{
+    margin: 1.5rem;
+    h4 {
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        padding-top: 1rem;
+        padding-bottom: 1.5rem;
+        // font-family: $mol;
+        
+    }
+}
+
+.contact-title {
+    display: inline-block;
+    padding-bottom: 1.5rem;
+    width: 17rem;
+    font-size: 1.6rem;
+    color: $l-ctl;
+}
+
+
+.phone-number,
+.mail-address,
+.contact-email,
+.contact-website,
+.contact-skype,
+.birth-date,
+.gender{
+    font-size: 1.6rem;
+    color: $l-ctd;
+}
+
+
+
+.profile-widget {
+    margin: .8rem 0;
+    text-align: center;
+    .stat-text {
+        padding-bottom: .6rem;
+    }
+}

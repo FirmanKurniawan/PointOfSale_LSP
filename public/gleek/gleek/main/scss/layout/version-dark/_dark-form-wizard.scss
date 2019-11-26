@@ -1,0 +1,16 @@
+[data-theme-version="dark"] {
+
+    .form-wizard .form-wizard-right, 
+    .sw-theme-circles .step-content, 
+    .sw-theme-circles .sw-toolbar-bottom {
+        background-color: lighten($d-bg, 3.2%);
+    }
+
+    .step-form-horizontal .wizard .steps li.current a, 
+    .step-form-horizontal .wizard .steps li.disabled a, 
+    .step-form-horizontal .wizard .steps li.done a {
+        color: $d-ctl;
+        background-color: lighten($d-bg, 3.2%);
+    }
+
+}

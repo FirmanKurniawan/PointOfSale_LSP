@@ -1,0 +1,41 @@
+[data-theme-version="dark"] {
+    
+    .header {
+        background-color: lighten($d-bg, 3.2%);
+    }
+
+    .header-right {
+        .icons > a {
+            color: $d-ctl;
+
+            i {
+                color: $d-ctl;
+            }
+        }
+
+        .notify-close {
+            color: $white;
+        }
+        
+        .dropdown-content-body {
+            ul > li {
+                background-color: lighten($d-bg, 3.2%);
+
+                a {
+                    color: $d-ctl;
+                }
+            }
+        }
+
+        .notification-heading {
+            color: $white;
+        }
+    }
+
+    .header-left {
+        .header-search .input-group .input-group-text {
+            background-color: $d-bg;
+        }
+    }
+
+}

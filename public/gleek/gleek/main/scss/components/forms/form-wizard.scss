@@ -1,0 +1,198 @@
+@import "../../abstracts/variable";
+$form-min-height: 60.5rem;
+
+.form-wizard {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: $form-min-height;
+
+    .form-wizard-left {
+        flex-basis: 25%;
+        padding: 4rem 5rem 3rem;
+        justify-content: space-around;
+        min-height: $form-min-height;
+        
+        @include respond(tab-land) {
+            flex-basis: 100%;
+            min-height: 40rem;
+        }
+        
+        &.step-anchor {
+            margin-bottom: -10rem;
+            background-color: $primary;
+            display: block;
+            text-align: center;
+        
+            @include respond(tab-land) {
+                margin-bottom: 0;
+            }
+
+            &>li {
+                margin: 0;
+                display: inline-block;
+                z-index: 1;
+                width: 23%;
+                text-align: center;
+
+                .form-wizard-content {
+                    display: none;
+                    position: absolute;
+                    top: 11.5rem;
+                    left: 0;
+                    width: 100%;
+                    padding: 0 5rem;
+                    height: calc(100% - 11.5rem);
+                    color: $white;
+
+                    h4 {
+                        color: $white;
+                    }
+
+                    a {
+                        color: $white;
+                        font-size: 1.6rem;
+                    }
+
+                    &-upper {
+                        h4 {
+                            margin: 1.5rem 0;
+                        }
+                    }
+
+                    &-bottom {
+                        position: absolute;
+                        width: 100%;
+                        left: 0;
+                        bottom: 2.5rem;
+                    }
+                }
+
+                &.active {
+                    .form-wizard-content {
+                        display: block;
+                    }
+
+                    &>a.nav-link {
+                        border-color: $white;
+                    }
+                }
+
+                &.done>a.nav-link {
+                    border-color: $white;
+                    background-color: $white;
+                    color: $primary;
+                }
+
+                &>a.nav-link {
+                    padding: 0;
+                    height: 30px;
+                    width: 30px;
+                    border-radius: 50px;
+                    border: 2px solid transparent;
+                    background-color: $primary;
+                    box-shadow: none !important;
+                    color: $white;
+                    font-size: 1.6rem;
+                    line-height: 23px;
+                    position: relative;
+                    display: inline-block;
+                }
+
+                &:not(:last-child)>a.nav-link {
+                    &::before {
+                        position: absolute;
+                        top: 50%;
+                        left: 125%;
+                        width: 130%;
+                        border: 1px dashed $white;
+                        content: "";
+        
+                        @include respond(tab-land) {
+                            border: 0;
+                        }
+
+                    }
+                }
+            }
+
+            &::before {
+                display: none;
+            }
+        }
+    }
+
+    .form-wizard-right {
+        flex-basis: 75%;
+        padding: 3rem;
+        background-color: $white;
+        
+        @include respond(tab-land) {
+            flex-basis: 100%;
+        }
+    }
+
+    input[type="number"] {
+        color: $muted;
+    }
+
+    .emial-setup {
+        label.mailclinet {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 15rem;
+            height: 15rem;
+            border-radius: 50%;
+            cursor: pointer;
+            background-color: #EEF5F9;
+
+            .mail-icon {
+                font-size: 6rem;
+                display: inline-block;
+                line-height: 1;
+                margin-top: -1rem;
+            }
+
+            .mail-text {
+                font-size: 1.4rem;
+                text-align: center;
+                margin-top: -.5rem;
+            }
+
+            input[type="radio"] {
+                display: none;
+            }
+        }
+    }
+
+    .skip-email {
+        margin-top: 6rem;
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        a {
+            color: $primary;
+            text-decoration: underline;
+        }
+    }
+    
+    .btn-toolbar.sw-toolbar {
+        flex-basis: 75%;
+        margin-left: auto;
+        padding: 3rem;
+        
+        @include respond(tab-land) {
+            flex-basis: 100%;
+        }
+
+        // .sw-btn-group-extra {
+        //     button.btn {
+                
+        //     }
+        // }
+    }
+}
+

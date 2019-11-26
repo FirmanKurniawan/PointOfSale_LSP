@@ -1,0 +1,61 @@
+
+
+  .countdown-content{
+    padding: 10rem 0;
+    h1{
+        font-weight: 600;
+        font-size: 4.8rem;
+        margin-bottom: 5rem;
+        color: $l-ctd;
+    }
+    p{
+        font-size: 1.8rem;
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+        line-height: 3rem;
+        color: $l-ctd;
+    }
+  }
+
+  .timer{
+    .days,
+    .hours,
+    .minutes,
+    .seconds{
+        font-weight: 600;
+        font-size: 4rem;
+        color: $l-ctd;
+        span{
+            font-size: 1.8rem;
+            font-weight: 400;
+        }
+    }
+  }
+
+  .countdown-right-content{
+      margin-top: 5rem;
+      h6{
+          margin: 1.5rem 0;
+          color: $l-ctd!important;
+      }
+      .progress{
+          height: 2rem;
+      }
+  }
+
+  .countdown-token-card {
+    margin-top: 3rem;
+    .card{
+        border: 0!important;
+        padding-top: 1rem;
+        text-align: center;
+        h2{
+            font-weight: 700;
+            color: $white!important;
+        }
+        h5 {
+            color: $white!important;
+        }
+
+    }
+  }

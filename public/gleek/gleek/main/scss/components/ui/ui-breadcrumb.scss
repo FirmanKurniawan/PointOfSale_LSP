@@ -1,0 +1,67 @@
+
+.breadcrumb {
+    margin-bottom: 0;
+    
+    .breadcrumb-item {
+        a {
+            color: $muted;
+        }
+    }
+    .breadcrumb-item.active a {
+        color: $primary; 
+    }
+
+    &-item.active{
+        color: $primary;
+    }
+}
+
+
+.page-titles {
+    margin-bottom: 6rem;
+    margin-top: -15px;
+    margin-left: -30px;
+    margin-right: -30px;
+    padding: 15px 30px;
+    background: lighten($primary, 28%);
+
+    @include respond('phone-land') {
+        margin-left: -15px;
+        margin-right: -15px;
+        padding: 15px 0;
+    }
+
+    h4 {
+        margin-bottom: 0;
+        margin-top: 0;
+        color: $primary;
+        font-size: 2rem;
+        span {
+            font-size: 1.4rem;
+            font-weight: 400
+        }
+    }
+    .breadcrumb {
+        padding: 0;
+        // margin-top   : 5px;
+        background: transparent;
+        font-size: 1.4rem;
+        float: right;
+        li {
+            margin-top: 0;
+            margin-bottom: 0;
+
+            &.active a {
+                color: $primary;
+            }
+        }
+        .breadcrumb-item+.breadcrumb-item {
+            &:before {
+                content: "\f068";
+                font-family: "fontAwesome";
+                font-size: .8rem;
+                color: $primary;
+            }
+        }
+    }
+}

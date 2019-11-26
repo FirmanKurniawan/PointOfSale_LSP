@@ -1,0 +1,18 @@
+html[dir="rtl"] {
+
+    [direction="rtl"] {
+        .email-left-box {
+            float: right;
+        }
+
+        .email-right-box {
+            padding-right: 34rem;
+            padding-left: 0;
+        }
+
+        .email-list .message .col-mail-2 {
+            left: 0;
+            right: 9rem;
+        }
+    }
+}

@@ -1,0 +1,11 @@
+.position-absolute{
+
+    &.chart-position{
+        
+        &--bottomLeft{
+            width: 100%;
+            bottom: 0;
+            left: 0;
+        }
+    }
+}

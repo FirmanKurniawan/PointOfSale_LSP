@@ -1,0 +1,80 @@
+////////////////
+// Compact Nav
+////////////////
+[data-sidebar-style="compact"] {
+    .header-left {
+        margin-left: 0;
+    }
+}
+
+[data-sidebar-style="compact"][data-layout="vertical"] {
+    .nav-header {
+        a{
+            padding: 0.75rem 1.7rem;
+        }
+
+        img {
+            max-width: 45px;
+        }
+    }
+}
+
+@media (min-width:767px) {
+    [data-sidebar-style="compact"] {
+        .nav-control {
+            display: none;
+        }
+
+        .nav-header {
+            width: 15rem;
+        }
+
+        .nk-sidebar {
+            width: 15rem;
+        }
+        .metismenu {
+            li {
+                text-align: center;
+                a {
+                    padding: 1rem 1.5rem 1rem 1.5rem;
+                }
+            }
+        }
+        .nav-text {
+            display: block;
+            margin-top: .5rem;
+        }
+        .nav-badge {
+            display: none;
+        }
+        .footer {
+            padding-left: 15rem;
+        }
+        .content-body {
+            margin-left: 15rem;
+        }
+    }
+}
+
+[data-sidebar-style="compact"][data-header-position="fixed"][data-container="boxed"][data-layout="vertical"] {
+    .header {
+        width: calc(1199px - 15rem);
+    }
+}
+
+[data-layout="vertical"][data-sidebar-style="compact"] {
+    .nk-sidebar {
+        .metismenu {
+            ul ul a {
+                padding: 1rem 1.5rem;
+            }
+
+            &>li {
+                &>a.has-arrow::after {
+                    top: 35%;
+                }
+            }
+        }
+
+    }
+}

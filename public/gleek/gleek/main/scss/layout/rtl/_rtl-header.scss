@@ -1,0 +1,63 @@
+html[dir="rtl"] {
+
+    //header styles
+    [direction="rtl"] {
+        .header {
+            margin-right: 32rem;
+
+            @include respond('phone-land') {
+                margin-right: 6rem;
+            }
+
+            .header-left {
+                float: right;
+            }
+
+            .header-right {
+                float: left;
+
+                .icons {
+                    float: right;
+                }
+
+                .drop-down {
+                    right: auto;
+                    left: 0;
+
+                    .dropdown-content-body ul > li {
+                        text-align: right;
+
+                        .notification-content {
+                            margin-right: 6.5rem;
+                            margin-left: 2.5rem;
+                        }
+
+                        .notify-close {
+                            left: 1.5rem;
+                            right: auto;
+                        }
+                    }
+                }
+            }
+        }
+
+        &[data-layout="horizontal"] {
+            .header {
+                margin-right: 14.5rem;
+            }
+        }
+
+        &[data-sidebar-style="mini"] {
+            .header {
+                margin-right: 6rem;
+            }
+        }
+
+        &[data-sidebar-style="compact"] {
+            .header {
+                margin-right: 14.5rem;
+            }
+        }
+    }
+
+}

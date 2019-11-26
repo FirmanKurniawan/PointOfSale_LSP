@@ -1,0 +1,103 @@
+ // Variable.scss
+.morris-hover {
+    position: absolute;
+    z-index: 1;
+}
+
+.morris-hover.morris-default-style .morris-hover-row-label {
+    font-weight: bold;
+    margin: 0.25em 0;
+}
+
+.morris-hover.morris-default-style .morris-hover-point {
+    white-space: nowrap;
+    margin: 0.1em 0;
+    color: rgba(255, 255, 255, 0.8)!important;
+}
+
+.morris-hover.morris-default-style {
+    border-radius: .2rem;
+    padding: 1rem 1.2rem;
+    border: none;
+    color: #666;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff!important;
+}
+
+#morris-area-chart1,
+#morris-area-chart2,
+#morris-area-chart3,
+#morris-area-chart4,
+#morris-area-chart5,
+#morris-area-chart6 {
+    height: 20rem;
+}
+
+#crypto-btc-card,
+#crypto-eth-card,
+#crypto-rpl-card,
+#crypto-ltc-card {
+    height: 17rem;
+}
+
+#ticket-sale-trend {
+    height: 42.3rem !important;
+
+    // &>svg {
+    //     min-width: 100% !important;
+    // }
+
+    .morris-hover {
+        background-color: #FDA23F;
+    }
+}
+
+#count-avarage-students {
+    height: 38.5rem !important;
+
+    @include respond('tab-land') {
+        height: 25.5rem !important;
+    }
+}
+
+#job-applicants-chart {
+    max-width: 100% !important;
+    width: 100% !important;
+    height: 35rem !important;
+}
+
+#timeline-chart {
+    height: 32.3rem;
+}
+
+#workout-statistics {
+    height: 29rem !important;
+
+    .morris-hover.morris-default-style {
+        background-color: $white;
+        color: $warning !important;
+        height: 15rem !important;
+        width: 22rem !important;
+        box-shadow: 2px 3px 10px 0px rgba(119, 119, 119, 0.1);
+        padding: 2rem;
+
+        * {
+            padding: .5rem 0;
+        }
+
+        .morris-hover-point {
+            &:nth-child(2) {
+                color: $primary !important;
+            }
+            &:last-child {
+                color: $dark !important;
+            }
+        }
+    }
+}
+
+#morris-donut-chart {
+    text {
+        font-size: 6px !important;
+    }
+}

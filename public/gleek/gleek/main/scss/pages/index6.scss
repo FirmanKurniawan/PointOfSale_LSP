@@ -1,0 +1,8 @@
+
+#sales-graph {
+    height: 45.6rem !important;
+
+    @include respond('phone') {
+        height: 25rem !important;
+    }
+}

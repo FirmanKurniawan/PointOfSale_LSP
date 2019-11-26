@@ -1,0 +1,7 @@
+@import "../../abstracts/variable";
+
+button.multiselect {
+    min-width: 17rem;
+    background-color: $primary;
+    color: $white;
+}

@@ -1,0 +1,75 @@
+[data-theme-version="dark"] {
+    
+    .nk-sidebar {
+        box-shadow: none;
+        background-color: lighten($d-bg, 3.2%);
+    
+        ul {
+            background-color: lighten($d-bg, 3.2%);
+        }
+
+        .metismenu {
+            background-color: lighten($d-bg, 3.2%);
+            
+            &>li {
+                
+                &:hover,
+                &:focus {
+                    >a {
+                        background: lighten($d-bg, 3.2%);
+                        color: $white;
+                    }
+                }
+
+                &.active {
+                    >a {
+                        background: lighten($d-bg, 3.2%);
+                        color: $white;
+                    }
+                }
+                a {
+                    &>i {
+                        color: $d-ctl;
+                    }
+                }
+            }
+            
+            a {
+                color: $d-ctd;
+                
+            }
+            .mega-menu{
+                ul.in {
+                    li {
+                        a {
+                            &:hover,
+                            &:focus,
+                            &.active  {
+                                
+                                color: $white;
+                                background-color: $d-bg;
+                                
+                            }
+                        }
+                    }
+                }
+            }
+            a {
+                &:hover,
+                &:focus,
+                &:active, 
+                &.active {
+                    background-color: $d-bg;
+                }
+            }
+            .has-arrow {
+                &:after {
+                    right: 2.5rem;
+                    top: 48%;
+                }
+            }
+        }
+    }
+    
+
+}

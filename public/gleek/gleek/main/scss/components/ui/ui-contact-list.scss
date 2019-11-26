@@ -1,0 +1,42 @@
+@import './../../abstracts/variable';
+
+
+.filter-form {
+    margin: 2.5rem 0;
+
+    label{
+        font-size: 1.7rem;
+    }
+}
+
+.add-employee-button {
+    text-align: right;
+}
+
+.employee-contact-table{
+
+    tr th,td{
+        color: $dark;
+    }
+
+    tbody tr td:not(.text-primary){
+        color: $dark !important;
+    }
+
+    tbody tr td.text-primary{
+        color: $primary !important;
+    }
+
+    tbody .label-big{
+        width: 19.8rem;
+        padding: .9rem 0;
+    }
+}
+
+table.employee-contact-table thead .sorting::after{
+    color: $dark !important;
+}
+
+.list-group-item.active h5{
+    color: $white;
+}

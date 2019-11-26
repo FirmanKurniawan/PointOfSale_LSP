@@ -1,0 +1,151 @@
+
+
+.photo-content{
+    position: relative;
+    .cover-photo{
+        background: url(../../assets/images/profile/cover.jpg);
+        background-size: cover;
+        background-position: center;
+        min-height: 25rem;
+        width: 100%;
+
+    }
+    .profile-photo {
+        bottom: -7.5rem;
+        left: 10rem;
+        max-width: 15rem;
+        position: absolute;
+      }
+}
+
+
+.profile-info{
+    padding: 3rem 2rem;
+    // margin-bottom: 3rem;
+    background: $l-bg;
+
+    h4 {
+        color: $l-ctd!important;
+    }
+
+    h4.text-primary {
+        color: $primary!important;
+    }
+
+    p {
+        color: $l-ctl;
+    }
+
+    .prf-col{
+        min-width: 25rem;
+        padding: 1rem 5rem 0;
+    }
+}
+
+.profile-interest{
+    .row{
+        margin: 0 -.7rem;
+        .int-col{
+            padding: 0 .7rem;
+            .interest-cat{
+                margin-bottom: 1.4rem;
+                position: relative;
+                display: block;
+                &:after{
+                    background: $black;
+                    bottom: 0;
+                    content: "";
+                    left: 0;
+                    opacity: 0.5;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    z-index: 0;
+                }
+                img{
+                    // margin-bottom: 1.2rem;
+                }
+                p{
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    padding: 5px;
+                    left: 0;
+                    margin: 0;
+                    z-index: 1;
+                    color:white;
+                    font-size: 1.2rem;
+                }
+            }
+            
+        }
+    }
+}
+
+
+.profile-tab{
+    .nav-item{
+        .nav-link{
+            font-size: 1.8rem;
+            padding: 1rem 0 .5rem;
+            // margin-bottom: -.1rem;
+            margin-right: 3rem;
+            transition: all 0.5s ease-in-out;
+            border: none;
+            border-bottom: .2rem solid transparent;
+            color: $l-ctl;
+
+            &:hover, &.active{
+                border: 0;
+                background: transparent;
+                background: transparent;
+                border-bottom: .2rem solid $primary;
+                color: $l-ctd;
+            }
+
+        }
+        
+    }
+}
+
+
+.post-input{
+    .form-control{
+        height: 7.5rem;
+        font-weight: 400;
+        margin: 1.5rem 0;
+    }
+    a{
+        display: inline-block;
+        font-size:2.2rem;
+        i{
+            display: block;
+            margin-right: 1.5rem;
+            padding: .7rem 2rem;
+            border-radius: .5rem;
+            border: .1rem solid $l-border;
+            color: $l-ctl;
+        }
+    }
+    
+    .btn{
+        padding: .7rem 3rem;
+        font-size: 1.4rem;
+        margin-top: -1rem;
+    }
+}
+
+
+.profile-uoloaded-post{
+    margin-top: 3rem;
+    img{
+        margin-bottom: 2rem;
+    }
+    a{
+        h4{
+            margin-bottom: 1rem;
+            color: $l-ctd;
+        }
+    }
+}
